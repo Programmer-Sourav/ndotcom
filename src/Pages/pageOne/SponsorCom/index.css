@@ -1,0 +1,115 @@
+#btn1 {
+    border: none;
+    border-radius: 30px;
+    /* height: auto; */
+    width: auto;
+    margin: auto;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    background-color: rgb(255, 255, 255);
+    color: #787676;
+}
+
+.more-4{
+    border: none;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    color: #787676;
+}
+
+#main1_sc {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#main_sc {
+    height: 200px;
+    margin-top: 20px;
+    border: 1px solid rgb(231, 229, 229);
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    color: rgb(21, 20, 20)
+}
+
+#main_sc:hover {
+    box-shadow: rgba(43, 43, 43, 0.1) 0px 4px 15px;
+}
+
+img {
+    width: 60px;
+    height: 50px;
+    margin-top: 20px;
+    /* padding: 5px 3px; */
+    border: 1px solid #d2d0d0;
+    border-radius: 7px;
+}
+.card-title h3{
+    font-size: 1.5vw;
+    margin-top: 0 !important;
+    font-weight: 600;
+}
+
+#word_sc {
+    color: rgb(159, 157, 157);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    /* height: 20px; */
+}
+#word_sc p i{
+    color: gold;
+}
+.word-sc-data{
+    font-size: 12px;
+}
+
+.word-sc-data div{
+    margin: auto;
+    width: fit-content;
+    padding: 2px 4px;
+    border: 1px solid #d2d0d0;
+    border-radius: 14px;
+    color: #575656;
+    margin-bottom: 7px !important;
+    margin-top: 7px;
+}
+.word-sc-data span{
+    padding: 2px 4px;
+    border: 1px solid #d2d0d0;
+    border-radius: 14px;
+    color: #575656;
+    margin-left: 5px;
+    /* margin-top: 10px !important; */
+}
+
+
+#auto_sc {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sam {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.view-all{
+    text-align: center;
+    margin-top: 20px;
+}
+.view-all button{
+    color: #5036fa;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 7px 15px;
+    border: 1px solid #3c1ffc;
+}

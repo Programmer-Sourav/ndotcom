@@ -1,0 +1,166 @@
+body {
+    width: 100%;
+}
+
+#navbar {
+    width: 95%;
+    /* border: 2px solid ; */
+    /* margin: 10px 30px 0px 130px; */
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+}
+
+.pages {
+    display: flex;
+    margin-left: 10px;
+    width: 30%;
+
+}
+
+#logo {
+    width: 20%;
+    margin: 10px;
+    /* margin-left: 40px !important; */
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/*  */
+.dropbtn {
+    padding: 0px 10px;
+    font-size: 20px;
+    color: #434343;
+    font-weight: 100;
+}
+
+.dropdown h2:hover {
+    border-bottom: 3px solid tomato;
+    border-radius: 5px;
+}
+
+/* font awesome */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: auto;
+    border-radius: 5px;
+    font-size: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+
+.dropdown-content h2 {
+    font-size: 15px;
+    width: 180px;
+    
+}
+
+.dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown:hover .dropbtn {
+    color: #000000;
+    cursor: pointer;
+}
+
+.hr {
+    border: 1px solid rgb(108, 98, 98);
+}
+
+.hr+div {
+    margin-left: 20px;
+}
+
+/*  */
+
+.buttons {
+    /* border: 2px solid red; */
+    /* display: flex; */
+    /* margin-left: 300px; */
+    margin-top: 7px;
+    width: 30%;
+    color: white;
+    /* margin: auto; */
+}
+.buttons input{
+    padding: 8px 20px;
+    border-radius: 20px;
+    outline: 1px solid #c5c4c4;
+    border: none;
+}
+.buttons button{
+    border: none;
+    border-radius: 40px;
+    padding: 5px 7px;
+    margin-left: -45px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #3e55ff;
+}
+
+/*  */
+
+.foremp {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    color: #807f7f;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.sup-p{
+    background-color: rgb(247, 51, 7);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 1px 4px;
+    border-radius: 9px;
+    margin-left: -5px !important;
+    margin-top: -40px !important;
+}
+.user-icon{
+    border: 1px solid #434343;
+    padding: 2px 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 28px;
+    /* text-align: center; */
+    /* align-items: center;   */
+    width: 20%;
+}
+.user-icon i{
+    font-size: 18px;
+    /* margin-right: 10px; */
+}
+.fa-user{
+    /* border: 1px solid red; */
+    padding: 2px 6px;
+    border-radius: 10px;
+    background-color: #dfdddd;
+    color: #ffffff;
+}

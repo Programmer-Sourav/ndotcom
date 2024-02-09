@@ -1,0 +1,137 @@
+#feat_sc {
+    /* margin: auto; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    margin-bottom: 60px;
+    text-align: center;
+}
+.feat-option{
+    margin-top: 25px;
+
+}
+.feat-option a{
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 20px;
+    color: #3d3d3f;
+    border: 1px solid #3d3d3f;
+    padding: 5px 8px;
+    border-radius: 14px;
+}
+.all-op{
+    background-color: #efefff;
+    font-weight: 500 !important;
+    border: 1px solid #141414 !important;
+    color: #111111 !important;
+}
+
+
+#middiv_sc {
+    display: flex;
+    width: 95%;
+    /* height: 150px; */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin: auto;
+}
+
+
+#ba_sc {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border: 1px solid rgb(230, 227, 227);
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    height: 300px;
+    width: 20%;
+
+}
+
+#ba_sc:hover {
+    box-shadow: rgba(116, 209, 249, 0.12) 0px 2px 4px 0px, rgba(121, 206, 243, 0.32) 0px 2px 16px 0px;
+}
+
+#ba_sc>img {
+    margin: auto;
+}
+
+#bd_sc {
+   border-radius: 7px;
+    padding: 10px;
+    background-color: #fef8f1;
+    margin: auto;
+    justify-content: center;
+}
+.title-com{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px !important;
+}
+.review-com{
+    color: #999797;
+    font-size: 17px;
+}
+.review-com span{
+    margin-right: 6px;
+}
+.review-com span i{
+    color: gold;
+    font-size: 14px;
+}
+
+#bd_sc>p {
+    margin: auto;
+    text-align: center;
+}
+
+#bm_sc p{
+    text-align: center;
+}
+
+#bp_sc {
+    /* height: 30px; */
+    /* width: 100px; */
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: auto;
+    border: 1px solid rgb(232, 235, 246);
+    background-color: rgb(232, 235, 246);
+    color: rgb(41, 116, 244);
+
+}
+
+#bp_sc:hover {
+    cursor: pointer;
+}
+
+#bm_sc {
+    font-size: 17px;
+    color: #3d3d3f;
+}
+
+
+
+#bottomDivButton { 
+    height: 50px;
+    width: 200px;
+    margin-left: 42%;
+    border: 1px solid #457eff;
+    color: #457eff;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 35px;
+
+}
+
+#bottomDivButton:hover {
+    cursor: pointer;
+    background-color: #98b6fb;
+}
+
+#bdv_Sc:hover {
+    cursor: pointer;
+    background-color: #98b6fb;
+}

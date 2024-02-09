@@ -1,0 +1,108 @@
+body{
+    width: 100%;
+}
+.parent-div{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.child-left{
+    width: 20%;
+    border: 1px solid rgb(129, 128, 128);
+    border-radius: 10px;
+    padding: 10px 15px 13px 20px;
+    height: fit-content;
+}
+.quick-link{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+.quick-link a{
+    text-decoration: none;
+    font-size: 17px;
+}
+.child-left div{
+    padding: 4px 7px;
+}
+.child-left div :hover{
+    background-color: rgb(209, 210, 211);
+    /* padding: 0px 8px; */
+    border-radius: 10px;
+}
+/*  */
+.child-right{
+    width: 80%;
+    margin-left: 15px;
+}
+.child-right div{
+  padding: 15px;
+  border: 1px solid #a1a0a0;
+  border-radius: 15px;
+    
+}
+.child-right div b span {
+    font-size: 17px;
+    color: rgb(8, 186, 17);
+}
+.child-right div p{
+    font-size: 17px;
+    color: #4e4e4e;
+}
+.up-resume-btn{
+    text-align: center;
+    align-items: center;
+    border: 1px dashed rgb(114, 152, 250) !important;
+    border-radius: 15px;
+}
+.up-resume-btn button{
+    padding: 4px 9px;
+    background-color: #ffffff;
+    border: 1px solid #3371f8;
+    color: #2165f7;
+    border-radius: 15px;
+    font-size: 17px;
+    margin-top: 30px;
+    margin-bottom: 0 !important;
+}
+/*  */
+.low-part{
+    display: flex;
+    margin-top: 10px;
+    border: none !important;
+    background-color: #ECF5FF;
+}
+.low-part img{
+    width: 70px;
+    margin-right: 20px;
+}
+.low-part p span{
+    font-size: 23px;
+    font-weight: 500;
+    color: black;
+}
+.low-part a{
+    text-decoration: none;
+    font-size: 18px;
+    margin: 30px 15px 0px 150px;
+}
+/*  */
+.resume-headline{
+    margin-top: 20px;
+    border: 1px solid #bdbcbc !important;
+    box-shadow: 1px 1px 0px 0px #a1a0a0;
+}
+.add-headline{
+    display: flex;
+    justify-content: space-between;
+}
+.add-headline b span{
+   margin-left: 10px !important;
+}
+.add-headline a{
+    text-decoration: none;
+    color: #0444ce;
+}
+.headline-para{
+    font-size: 17px !important;
+}

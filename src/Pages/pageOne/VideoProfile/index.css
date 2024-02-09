@@ -1,0 +1,82 @@
+body{
+    width: 100%;
+}
+.videoprofile{
+    display: flex;
+    border: 1px solid rgb(178, 176, 176);
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    background: linear-gradient(rgba(253, 253, 255, 0.7), rgba(181, 158, 255, 0.3));
+}
+/* left one */
+.left-one{
+    width: 30%;
+    padding: 15px;
+    
+}
+.left-one h3{
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.left-one p{
+    font-size: 17px;
+    color: rgb(109, 110, 110);
+    margin-top: -13px !important;
+    margin-bottom: 30px;
+}
+.left-one input{
+    padding: 15px 100px 15px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: 1px solid rgb(135, 134, 134);
+}
+.left-one button{
+    border: none;
+    margin-left: -100px;
+    background-color: rgb(63, 63, 252);
+    padding: 7px 12px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 15px;
+}
+.store{
+    margin-top: 40px;
+}
+.store a img{
+    width: 120px;
+}
+/* center one  */
+.center-one{
+    width: 15%;
+}
+.center-one div{
+    padding: 7px 0px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #c1c1c1;
+    margin: 40px 16px 0px;
+}
+.center-one div p{
+    color: #767575;
+    font-size: 16px;
+}
+.center-one div img{
+    width: 90px;
+}
+/*  */
+.right-one{
+    
+    height: 290px;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding-bottom: 0 !important;
+    width: 47%;
+}
+.right-one img{
+    height: 290px;
+    padding-bottom: 0 !important;
+
+}

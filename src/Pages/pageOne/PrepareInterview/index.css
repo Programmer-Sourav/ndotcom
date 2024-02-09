@@ -1,0 +1,118 @@
+body {
+    width: 100%;
+    margin-top: 50px;
+}
+.main-body {
+    background: linear-gradient(rgba(253, 251, 250, 0.7), rgba(252, 210, 183, 0.7));
+    width: 95%;
+    margin: auto;
+    border-radius: 15px;
+    border: 1px solid salmon;
+    height: 380px;
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* gap: 15px; */
+}
+
+.left-one {
+    background-image: url("https://static.naukimg.com/s/0/0/i/ab-interview-ot.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* height: 250px; */
+    width: 30%;
+    margin-left: 20px;
+
+}
+.left-one button{
+   border: none;
+   border-radius: 0px 0px 10px 10px;
+   font-size: 15px;
+   /* border: 1px solid saddlebrown; */
+   background-color: lavender;
+   padding: 4px 15px !important;
+}
+.left-one p{
+    margin-top: 21vw;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+/*  */
+.main-center-card{
+    background-color: #FFFFFF;
+    height: 450px;
+    width: 40%;
+    margin-top: -30px !important;
+    border: 1px solid rgb(195, 194, 194);
+    padding: 0px 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+.center-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    
+}
+/*  */
+.card-small{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid rgb(188, 187, 187);
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+}
+.card-small img{
+    width: 45px;
+    margin-left: 10px;
+}
+.card-small p{
+    text-align: left;
+    font-weight: 400;
+}
+.card-small p span{
+    color: #606060;
+    font-size: 14px;
+    /* text-align: left; */
+}
+.card-small b{
+    color: #7f7e7e;
+    margin-right: -19px !important;
+}
+.main-center-card h5{
+    color: #3b41f8;
+}
+.main-center-card h2{
+    text-align: start;
+    font-size: 24px;
+}
+/* right-one */
+.right-one{
+    background-color: #FFFFFF;
+    height: 450px;
+    width: 30%;
+    margin: -30px 20px 0px 10px!important;
+    border: 1px solid rgb(195, 194, 194);
+    padding: 0px 20px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+.right-one p{
+    font-size: 18px;
+    text-align: left;
+    margin-left: 25px;
+}
+.right-one p span{
+    color: #767575;
+}
+.right-hr{
+    width: 78%;
+}
+.right-one a{
+    text-decoration: none;
+    font-size: 17px;
+}

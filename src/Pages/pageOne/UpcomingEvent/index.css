@@ -1,0 +1,116 @@
+body{
+    width: 100%;
+}
+.up-event-challenge{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 15px; */
+    width: 90%;
+    margin: auto;
+}
+.upcoming-event{
+    height: 350px;
+    /* border: 1px solid red; */
+    border-radius: 15px;
+    /* width: 33%; */
+}
+.upcoming-event img{
+    height: 250px;
+    width: 60%;
+    margin-left: 30px;
+    /* border: 1px solid red; */
+}
+.upcoming-event h2{
+    text-align: start;
+    margin: 20px 0px 0px 30px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*  */
+.entry-closes{
+    border: 1px solid rgb(172, 170, 170);
+    border-radius: 20px;
+    height: 380px;
+    margin-right: 15px;
+    /* box-shadow: 1px 1px 1px black; */
+}
+.entry-closes:hover{
+    box-shadow: 1px 0px 0px 0px rgb(162, 161, 161);
+}
+.fallout-img{
+    background: linear-gradient(rgba(41, 41, 41, 0.7), rgba(42, 42, 42, 0.7)), url("./img/eventsBannerFallback_7.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 20px 20px 0px 0px;
+    /* width: 33%; */
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.fallout-img span{
+    color: #FFFFFF;
+    text-align: start;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: -48px !important;
+    margin-top: 7px;
+}
+/* btn */
+.webinar{
+    height: 20px;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgb(238, 238, 252);
+    color: #4e4d4d;
+    font-size: 15px;
+    margin-right: -38px !important;
+}
+/*  */
+.coding-ninjas{
+    display: flex;
+    justify-content: flex-start;
+}
+.coding-ninjas img{
+    margin: 20px 15px 0px 20px;
+    width: 50px;
+    height: 45px;
+    border-radius: 10px;
+}
+.coding-ninjas p{
+    font-weight: bold;
+    margin-top: 19px;
+    font-size: 18px;
+}
+.coding-ninjas p span{
+    font-size: 15px;
+    font-weight: 400;
+    color: #5b5a5e;
+}
+/*  */
+.enrolled-td{
+    display: flex;
+    justify-content: space-around;
+    font-size: 17px;
+    color: #636266;
+}
+.hr-line{
+    width: 85%;
+    margin: auto;
+    color: #636266;
+}
+/*  */
+.detail-expert{
+    display: flex;
+    justify-content: space-around;
+}
+.detail-expert a{
+    text-decoration: none;
+    margin-top: 20px;
+}
+.learn-exp{
+    font-size: 15px;
+    border: 1px solid #760272;
+    border-radius: 10px;
+    padding: 2px 7px;
+    color: #760272;
+}
