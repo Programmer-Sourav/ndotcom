@@ -3,15 +3,13 @@ import "./header.css";
 export default function Header() {
   return (
     <>
-      <head>
-        <title>My Naukri</title>
-      </head>
       <body>
         <div id="navbar">
           <div id="logo">
             <img
               src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png"
               alt="logo"
+              
             />
           </div>
           <div class="pages">
@@ -23,8 +21,8 @@ export default function Header() {
                 <div>
                   <h2>Popular Catogories</h2>
                   <a href="#">IT jobs</a>
-                  <a href="#">Marketing jobs</a>
                   <a href="#">Sales jobs</a>
+                  <a href="#">Marketing jobs</a>
                   <a href="#">Data Science jobs</a>
                   <a href="#">HR jobs</a>
                   <a href="#">Engineering jobs</a>
@@ -136,31 +134,28 @@ export default function Header() {
               </div>
             </div>
           </div>
-          <div id="buttons">
-            <button class="login" onclick="window.location.href='login.html'">
-              Login
-            </button>
-            <button
-              class="regis"
-              onclick="window.location.href='register.html'"
-            >
-              Register
+          <div class="buttons">
+            <input type="text" placeholder="Search jobs here" />{" "}
+            <button>
+              <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
 
           <div class="foremp">
-            <div class="dropdown">
-              <h2 class="dropbtn" onclick="window.location.href = '#'">
-                For employers
-                <i class="fa-solid fa-chevron-down"></i>{" "}
-              </h2>
-              <div class="dropdown-content">
-                <div>
-                  <a href="#">Buy online</a>
-                  <a href="#">Our hiring solution</a>
-                  <a href="#">Employer Login</a>
-                </div>
-              </div>
+            <div>
+              <span class="notifica">
+                {" "}
+                <i class="fa-regular fa-bell"></i>
+                <sup class="sup-p">2</sup>
+              </span>
+            </div>
+            <div class="user-icon">
+              <span>
+                <i class="fa-solid fa-bars"></i>
+              </span>
+              <span>
+                <i class="fa-solid fa-user"></i>
+              </span>
             </div>
           </div>
         </div>

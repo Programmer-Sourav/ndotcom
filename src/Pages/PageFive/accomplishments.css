@@ -1,0 +1,68 @@
+.abody{
+    display: flex;                                    /*justify-content works on main axis, 
+                                                         align item works along cross-axis*/
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px lightgray; 
+    padding: 16px;  
+    flex-direction: column;   
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 2px 2px 2px 2px lightgray;                
+}
+
+.itembox{
+    display: flex;
+    flex-direction: column;
+    width: 752px;
+}
+
+.itembox .topportion{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 752px;
+   height: 40px;
+}
+
+.itembox .topportion .labelportion{
+   
+}
+
+
+.itembox .topportion .buttonportion{
+   background-color: transparent;
+   color: blue;
+   outline: none;
+}
+
+.itembox .belowportion{
+  margin-top: 8px;
+  text-align: left;
+}
+
+
+
+ /* .abody {
+    display: flex;
+    align-items: flex-start;
+    background: blue;
+}
+
+.itembox {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+  /*  width: 752px;
+}
+
+.topportion {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.belowportion {
+    margin-top: 8px; /* Add spacing between top and below portions */
+   /* text-align: left;
+} */

@@ -1,0 +1,110 @@
+.skillsbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 752px;
+}
+
+
+.headerdesign{
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+}
+
+.skillsheader{
+   font: bold;
+   font-size: 16px;
+   margin-left: -8px;
+   text-align: left;
+   margin-top: 16px;
+}
+
+.headerdesign .skillsadd{
+  font: bold;
+  font-size: 16px;
+  color: green;
+  margin-top: 16px;
+}
+
+.skillspara{
+  font-size: 16px;
+  color: gray;
+  margin-left: -8px;
+  text-align: left;
+}
+
+.flex-outside-inputbox{
+display: flex;
+flex-direction: row;
+height: auto;
+}
+
+.inputbox{
+border: 1px solid gray;
+min-height: 40px;
+width: 752px;
+padding-left: 16px;
+border-radius: 0px;
+margin-left: -8px;
+}
+
+.skillspillsholder{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: -8px;
+}
+.skillpills{
+  border: 1px solid lightgray;
+  height: 24px;
+  width: 72px;
+  margin-right: 8px;
+  padding: 4px;
+}
+.skillpills:hover{
+  cursor: pointer;
+}
+.skillpillswithcloseparent{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid lightgray;
+  margin-bottom: 8px;
+  margin-left: -8px;
+}
+.skillpillswithcloseparent:hover{
+  cursor: pointer;
+}
+.skillpillswithclose{
+  height: 24px;
+  width: 64px;
+  margin-right: 8px;
+  padding: 4px;
+}
+.closebtn{
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  padding: 4px;
+  margin-left: -16px;
+}
+.bottombtnpanel{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.btnone{
+ color: blue;
+ height: 40px;
+ background-color: white;
+ font: bolder;
+ border-radius: 0px;
+}
+
+.btntwo{
+  color: white;
+  height: 40px;
+  background-color: blue;
+  font: bolder;
+  border-radius: 0px;
+}

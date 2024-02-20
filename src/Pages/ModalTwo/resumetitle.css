@@ -1,0 +1,72 @@
+.rtbody{
+display: flex;
+flex-direction: column;
+width: 512px;
+justify-content: flex-start;
+}
+.headline{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: -20px;
+}
+.headlinestyle{
+    color: black;
+    font: bolder;
+}
+.addheadline{
+    color: green;
+    font: bolder;
+}
+
+.addheadline:hover{
+    cursor: pointer;
+}
+.graytext{
+    color: gray;
+    font-size: 16px;
+}
+.inputdesign{
+    height: 72px;
+    width: 512px;
+    margin-top: 16px;
+    border-radius: 1px solid gray;
+}
+
+.characterprompt{
+    color: gray;
+    font-size: 16px;
+    text-align: right;
+}
+
+.btnflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.btnone{
+    background-color: white;
+    color: blue;
+    text-align: center;
+    font: bold;
+    outline: none;
+ }
+ 
+ .btntwo{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font: bold;
+    border-radius: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 72px;
+ }
+ .btnone:hover{
+  cursor: pointer;
+ }
+
+ .btntwo:hover{
+  cursor: pointer;
+ }

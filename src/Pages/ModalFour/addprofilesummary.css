@@ -1,0 +1,74 @@
+.apsbody{
+    display: flex;
+    flex-direction: column;
+    width: 712px;
+}
+
+.headerflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: -16px;
+}
+
+.headertitle{
+   font: bolder;
+}
+
+.rightadd{
+    color: green;
+    text-align: center;
+}
+.sectionstyle{
+    color: gray;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 16px;
+}
+.textareadesign{
+    width: 712px; /* Set width as desired */
+    height: 84px; /* Set height as desired */
+    padding: 8px; /* Set padding as desired */
+    white-space: pre-wrap; /* Wrap text when needed */
+    resize: none; /* Disable resizing */
+    font-family: Arial, sans-serif; /* Set font family as desired */
+    font-size: 16px; /* Set font size as desired */  
+    margin-top: 16px;
+    border: 1px solid gray; 
+}
+
+.characterleftprompt{
+display: flex;
+flex-direction: row;    
+justify-content: flex-end;
+color: gray;
+font-size: 12px;
+}
+
+.bottombtnflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center; /* Align items vertically */
+    margin-top: 16px;
+    height: 32px;
+}
+
+.cancelbtn, .savebtn {
+    text-align: center;
+    font-size: 16px;
+    height: auto;
+    border-radius: 0px;
+}
+
+.cancelbtn {
+    color: blue;
+    background-color: white;
+    margin-right: 8px;
+}
+
+.savebtn {
+    color: white;
+    background-color: blue;
+    margin-left: 8px;
+}

@@ -1,0 +1,63 @@
+.ppbody{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    height: 400px;
+    padding-left: 16px;
+}
+
+.careerpara{
+    text-align: left;
+}
+
+.careerprofileholder{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.careerprofileholder .careerone{
+   display: flex;
+   flex-direction: column;
+   height: 128px;
+   width: 512px;
+}
+
+.careerprofileholder .careertwo{
+    display: flex;
+    flex-direction: column;
+    height: 128px;
+    width: 512px;
+}
+
+.careerprofileholder .careerone .careeractionbtn{
+    outline: none;
+    color: blue;
+    border: none; /* Remove default border */
+    background: none; /* Remove default background */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-bottom: 16px;
+}
+.careerprofileholder .careerone .careeractionbtn:hover,
+.careerprofileholder .careerone .careeractionbtn:active {
+    outline: none;
+}
+
+
+
+.careerprofileholder .careertwo .careeractionbtn{
+    outline: none;
+    color: blue;
+    border: none; /* Remove default border */
+    background: none; /* Remove default background */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-bottom: 16px;
+
+}
+.careerprofileholder .careertwo .careeractionbtn:hover,
+.careerprofileholder .careertwo .careeractionbtn:active {
+    outline: none;
+}

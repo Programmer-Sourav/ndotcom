@@ -1,0 +1,40 @@
+
+.body{
+    display: flex;
+    align-items: flex-start;
+}
+
+.inputotp{
+    height: 60px;
+    width: 60px;
+    border-radius: 8px;
+    border: 1px solid blueviolet;
+    font-size: 20px;
+    margin: 8px;
+    text-align: center;
+}
+
+.otpbox{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+.graytext{
+    text-align: left;
+    margin-top: 8px;
+}
+
+.verifybtn{
+    width: 92px;
+    height: 40px;
+    color: white;
+    background: blueviolet;
+    border-radius: 32px;
+    font: bold;
+}
+
+.headerdesign{
+    text-align: left;
+}

@@ -1,0 +1,64 @@
+/* .fbody{
+   display: flex;
+   align-items: flex-start;
+   height: 128px;
+   background-color: blue;
+}
+
+.headerbox{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   height: 40px;
+}
+
+.headerbox .leftheader{
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+
+.headerbox .rightheader{
+   align-items: flex-end;
+   background-color: transparent;
+   color: blue;
+   outline: none;
+}
+
+
+.summarypara{
+   text-align: left;
+   margin-top: 16px;
+} */
+
+.fbody {
+   display: flex;
+   flex-direction: column; /* Align children in a column */
+   align-items: stretch; /* Stretch children to full width */
+   background-color: white;
+   border-radius: 16px;
+   box-shadow: 2px 2px 2px 2px lightgray;
+}
+
+.headerbox {
+   display: flex;
+   justify-content: space-between; /* Spacing between children */
+   height: 40px;
+   padding: 8px;
+}
+
+.leftheader {
+   margin-right: auto; /* Pushes the header left to the extreme left */
+}
+
+.rightheader{
+   background-color: transparent;
+   color: blue;
+   outline: none;
+}
+
+.summarypara {
+   text-align: left;
+   padding: 8px;
+}
+

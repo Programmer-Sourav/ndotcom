@@ -1,0 +1,92 @@
+.pbody{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+.leftcontainer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+.rigthcontainer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.leftcard{
+    display: flex;
+    flex-direction: column;
+    height: 108px;
+    background-color: white;
+    width: 712px;
+    box-shadow: 0px 4px 8px rgba(0.2, 0.2, 0.2, 0.2); /* Add box shadow */
+    padding-left: 16px;
+    padding-bottom: 8px;
+}
+
+.deptcard{
+    display: flex;
+    flex-direction: column;
+    height: 88px;
+    background-color: white;
+    width: 712px;
+    box-shadow: 0px 4px 8px rgba(0.2, 0.2, 0.2, 0.2); /* Add box shadow */
+    padding-bottom: 8px;
+    margin-top: 16px;
+}
+
+.deptheaderflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.headerflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 8px;
+}
+.titlestyle{
+   font: bolder;
+   font-weight: 600;
+   
+}
+.addbtnstyle{
+   font: bolder;
+   color: green;
+}
+.graytext{
+    color: gray
+}
+
+.bottomflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: -16px;
+}
+
+.graytextbold{
+    color: gray;
+    font: bolder;
+    font-weight: 600;
+
+}
+.bluetextbold{
+    color: blue;
+    font: bold;
+    font-weight: 500;
+}
+.bluesection{
+    color: blue;
+    text-align: center;
+}
+
+.bluebuttondesign{
+    color: blue;
+    font: bold;
+    margin-left: auto;
+    padding-right: 16px;
+}

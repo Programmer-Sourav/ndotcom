@@ -1,0 +1,107 @@
+
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: whitesmoke;
+    margin-left: 32px;
+}
+
+.inputfield{
+    height: 40px; 
+    width: 512px;
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    padding-left: 16px;
+    margin-bottom: 8px;
+}
+.labeldesign{
+    font-weight:bold;
+    color: #000000;
+    margin-bottom: 8px;  
+}
+.inputbox{
+    height: 40px; 
+    width: 512px;
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    display: flex; /* Added */
+    align-items: center; /* Added */
+    text-align: start;
+    margin-bottom: 8px;
+}
+.inputbox input {
+    margin: 0; /* Reset margin */
+}
+.workcontainer{
+    display: flex;
+    flex-direction: row;
+}
+.workbuttondesign{
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    height: 88px;
+    width: 248px;
+    margin-right: 16px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.leftside-workbutton{
+  padding-left: -32px
+  ;
+
+}
+
+.leftside-workbutton p {
+    margin-top: -20px;
+    font-size: 12px;
+}
+
+.resume-upload-btn{
+    background: orangered;
+    color: white;
+    padding: 4px 16px 4px 16px;
+    margin-top: 8px;
+    border-radius: 16px;
+    font-size: 16px;
+}
+
+.resume-upload-btn:hover {
+    cursor: pointer !important;
+}
+
+.resume-upload-btn-holder{
+    border: 1px solid lightgray;
+    margin-top: 8px;
+    border-radius: 16px;
+    font-size: 12px;
+    color: lightgray;
+    margin-bottom: 8px;
+   
+}
+
+.graytext{
+    color: gray;
+    font-size: 12px;
+    margin-top: -8px;
+}
+
+.resume-upload-btn-holder span {
+    color: gray;
+    padding-right: 16px;
+}
+.graytext-two{
+    color: gray;
+    font-size: 12px;
+}
+.graytext-two .a{
+    font-size: bold;
+}
+.registerbtn{
+    background: blue;
+    color: white;
+    border-radius: 32px;
+}
+
+
