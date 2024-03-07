@@ -18,6 +18,10 @@ import ResumeTitle from './Pages/ModalTwo/ResumeTitle'
 import SkillsModal from './Pages/ModalThree/SkillsModal'
 import AddProfileSummary from './Pages/ModalFour/AddProfileSummary'
 import PendingActions from './Pages/PageSix/PendingActions'
+import ProfileRightModal from './Pages/ModalFive/ProfileRightModal'
+import HistoryHeader from './Pages/PageSeven/HistoryHeader.jsx/HistoryHeader'
+import Leftcontainer from './Pages/PageSeven/LeftContainer/LeftContainer'
+import RightContainer from './Pages/PageSeven/RightContainer/RightContainer'
 
 
 function App() {
@@ -49,11 +53,15 @@ function App() {
       {/* <CareerProfile/> */}
       {/* <PersonalProfile/> */}
       {/* <AddProjects/> */}
-      {/* <BasicDetails/> */}
+      <BasicDetails/>
       {/* <ResumeTitle/> */}
       {/* <SkillsModal/> */}
       {/* <AddProfileSummary/> */}
-      <PendingActions/>
+      {/* <PendingActions/> */}
+      {/* <ProfileRightModal/> */}
+      {/* <HistoryHeader/> */}
+      {/* <Leftcontainer/> */}
+      <RightContainer/>
     </>
   )
 }

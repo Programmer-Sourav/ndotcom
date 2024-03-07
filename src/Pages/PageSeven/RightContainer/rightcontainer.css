@@ -1,0 +1,79 @@
+.rightbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.topheader{
+   height: 128px;
+   display: flex;
+   flex-direction: row;
+}
+
+.topleft{
+  display: flex;
+  flex-direction: column;
+}
+
+.topright{
+ display: flex;
+flex-direction: column;
+}
+
+.subheaderblock{ 
+    display: inline-block;
+    width: auto;
+    margin-right: 16px;
+    color: gray;
+}
+
+.subheaderholder{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.appstatusholder{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+
+.appstatuscontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.greencircle {
+    background-color: green;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    display: inline-block; /* Ensure elements are displayed inline */
+}
+
+.greenbar {
+    background-color: green;
+    height: 4px;
+    width: 172px;
+    display: inline-block; /* Ensure elements are displayed inline */
+    vertical-align: middle; /* Align the bar vertically with the circle */
+    margin-top: 8px;
+}
+.statusrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.eachstatus{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.statusheader{
+    width: 172px;
+    font: bolder;
+}
+.graytext{
+    width: 172px;
+}

@@ -1,0 +1,98 @@
+.pmbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.topcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.leftimage{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: lightgray;
+    border: 6px solid green;
+}
+.rightcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 128px;
+    margin-top: 16px;
+}
+
+.secondcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.thirdcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.thirdcontainerleft{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  height: 108px;
+}
+.thirdcontainerright{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 108px;
+}
+.bottomcontainer{
+    display: flex;
+    flex-direction: column;
+    height: 192px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.headerstyle{
+    margin-left: -16px;
+    font-weight: bolder;
+    padding-left: 8px;
+    font-size: 20px;
+}
+.designtstyle{
+  color: gray;
+  
+}
+.updateclassstyle{
+    color: blue;
+    background-color: transparent;
+    outline: none;
+    font: bolder;
+    font: 800;
+    margin-left: 8px;
+    border: none;
+}
+
+.textsecondary{
+   color: black;
+   font: bolder;
+   font-weight: 600;
+   font-size: 16px;
+}
+
+.textsecondarygray{
+  color: gray;
+}
+.headerbottom{
+   margin-bottom: 4px;
+   color: #000000;
+}
+.paradesign{
+    color: #000000;
+    padding-top: 8px;
+}

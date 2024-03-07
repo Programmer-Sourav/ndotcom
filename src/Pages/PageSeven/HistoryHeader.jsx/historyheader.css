@@ -1,0 +1,31 @@
+.historyheader{
+    display: flex;
+    flex-direction: row;
+}
+
+.leftcontainer {
+    height: 72px;
+    align-items: flex-start;
+    margin-bottom: 16px; 
+    width: 70%;
+}
+
+.rightcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    margin-top: 16px; 
+    width: 30%;
+}
+.marginfix{
+    margin-bottom: -16px;
+}
+.parafix{
+    width: 60px;
+    text-align: left;
+}
+.headerfix{
+    text-align: center;
+}

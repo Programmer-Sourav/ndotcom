@@ -53,10 +53,11 @@ export default function PendingActions(){
             <section className="graytext">Tell recruiters about the languages you know and your proficiency level in those languages.</section>
         </div>
 
-
+  
         </div>
         <div className="rightcontainer">
-
+          <div className="percentagedesign">20%</div>
+          <section className="textstyle">of your profile is completed.</section>
         </div>
 
         </div>

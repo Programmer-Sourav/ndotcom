@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 192px;
+}
+
+.topbuttoncontainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.custombtn {
+    border: 1px solid gray; 
+    background-color: transparent; 
+    padding: 8px 16px;
+    margin-left: 16px;
+    font-size: 16px; 
+    cursor: pointer;
+    border-radius: 24px;
+    outline: "none",
+}

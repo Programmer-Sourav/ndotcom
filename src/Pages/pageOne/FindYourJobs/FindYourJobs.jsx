@@ -1,6 +1,20 @@
+import { useState } from "react";
 import "./index.css";
 
 export default function FindYourJobs() {
+
+  const [inputSearch, setInputSearch] = useState("")
+  const [dropdownValue, setDropdownValue] = useState("Fresher")
+  const [locationValue, setLocationvalue] = useState("")
+
+  const onInputSearch = (e) =>{
+    setInputSearch(e.target.value)
+  }
+
+  const onChangeSelectedValue = (e) =>{
+    setDropdownValue(e.target.value)
+  }
+
   return (
     <>
     <body>
@@ -14,10 +28,11 @@ export default function FindYourJobs() {
             id="search"
             placeholder="&#xF002 Enter skills / designations / companies"
             style="font-family: Arial, FontAwesome"
-            oninput="Searchfun()"
+            value={inputSearch}
+            onChange={(e)=>{onInputSearch(e)}}
           />
           <span>|</span>
-          <select id="exper">
+          <select  value={dropdownValue}  onChange={()=>{onChangeSelectedValue()}}>
             <option>Experience</option>
             <option value="fresher">Fresher</option>
             <option value="1">1 Years</option>
@@ -52,7 +67,8 @@ export default function FindYourJobs() {
             type="search"
             id="location"
             placeholder="Enter Location"
-            oninput="Location()"
+            value={locationValue}
+            onChange = {()=>{onLocationChange()}}
           />
           <button class="btn" onclick="window.location.href='jobs1.html'">
             Search
