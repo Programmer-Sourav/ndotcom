@@ -22,6 +22,7 @@ import ProfileRightModal from './Pages/ModalFive/ProfileRightModal'
 import HistoryHeader from './Pages/PageSeven/HistoryHeader.jsx/HistoryHeader'
 import Leftcontainer from './Pages/PageSeven/LeftContainer/LeftContainer'
 import RightContainer from './Pages/PageSeven/RightContainer/RightContainer'
+import SendOTP from "./Pages/PageFour/SendOTP"
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
 
   return (
     <>
+     {/* <SendOTP/> */}
      {/* <Home/>
      <TestPage/> */}
      {/* <PageOne/> */}
@@ -47,21 +49,23 @@ function App() {
      </Routes> */}
      {/* <PageOne/> */}
      {/* <RightSide/>    */}
-      {/* <PageFour/> */}
+      {/*<PageFour/> */}
       {/* <ProfileSummary/> */}
-      {/* <Accomplishments/> */}
+      {/***Currently working */}
+      {/* <Accomplishments/>  */}
+      {/* <SkillsModal/> */}
       {/* <CareerProfile/> */}
       {/* <PersonalProfile/> */}
       {/* <AddProjects/> */}
-      <BasicDetails/>
-      {/* <ResumeTitle/> */}
+      {/* <BasicDetails/> */}
+      <ResumeTitle/>
       {/* <SkillsModal/> */}
       {/* <AddProfileSummary/> */}
       {/* <PendingActions/> */}
       {/* <ProfileRightModal/> */}
       {/* <HistoryHeader/> */}
       {/* <Leftcontainer/> */}
-      <RightContainer/>
+      {/* <RightContainer/> */}
     </>
   )
 }

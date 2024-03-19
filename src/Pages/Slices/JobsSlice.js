@@ -1,4 +1,13 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { createAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+
+export const addBasicDetails = createAction("addBasicDetails")
+export const addResumeTitle = createAction("addResumeTitle")
+export const cancelResumeTitle = createAction("cancelResumeTitle")
+export const addProjects = createAction("addProjects")
+export const addLinks = createAction("addLinks")
+export const addCareerProfile = createAction("addCareerProfile")
+export const addSkills = createAction("addSkills")
+export const addProfileSummary = createAction("addProfileSummary")
 
 export const addBasicDetailsAsync = createAsyncThunk(
     "/profile-creation/addBasicDetailsAsync",
@@ -12,6 +21,19 @@ export const addBasicDetailsAsync = createAsyncThunk(
     }
 )
 
+export const addProfileSummaryASync = createAsyncThunk(
+  "/profile-creation/addProfileSummaryAsync", 
+   async(profileSummary) =>{
+    const response = await fetch({url: "url", method: "POST", body: profileSummary})
+    //return ""
+   }   
+)
+
+export const addResumeTitleAsync = createAsyncThunk("/profile-creation/addResumeTitleAsync",
+async(resumeTitle) =>{
+  const response = await fetch({url: "url", method: "POST", body: resumeTitle})
+  //return ""
+})
 
 export const jobsSlice = createSlice(
     {
@@ -37,25 +59,32 @@ export const jobsSlice = createSlice(
            
          }
     },
-    extraReducers : {
-        [addBasicDetailsAsync.pending] : (state)=>{
-            state.status = "loading"
-        },
+    extraReducers: (builder) =>{
+        builder.addCase(addBasicDetails, (state, action)=>{
 
-        [addBasicDetailsAsync.fulfilled] : (state) =>{
-            state.status = "fulfilled"
-            //add basic details 
-        },
-        [addBasicDetailsAsync.rejected] : (state) =>{
-            state.status = "error";
-            state.error = action.error.message;
-        }
+        })
+         // and provide a default case if no other handlers matched
+      .addDefaultCase((state, action) => {})
     }
+//     extraReducers : {
+//         [addBasicDetailsAsync.pending] : (state)=>{
+//             state.status = "loading"
+//         },
+// // 
+//         [addBasicDetailsAsync.fulfilled] : (state) =>{
+//             state.status = "fulfilled"
+//             //add basic details 
+//         },
+//         [addBasicDetailsAsync.rejected] : (state) =>{
+//             state.status = "error";
+//             state.error = action.error.message;
+//         }
+//     }
 
 }
 
 )
 
-
+export const { createJobProfile, setBasicProfileDetails } = jobsSlice.actions;
 
 export default jobsSlice.reducer;

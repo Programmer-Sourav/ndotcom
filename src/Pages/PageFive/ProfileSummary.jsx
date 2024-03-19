@@ -1,12 +1,14 @@
-import { Fragment } from "react"
+import { Fragment, useState } from "react"
 import "./components.css"
 
 export default function ProfileSummary(){
 
-
+    const [summary, setSummary] = useState("")
+    
     function addOnBtnPress(){
 
     }
+
     return(
         
         <div className="fbody">

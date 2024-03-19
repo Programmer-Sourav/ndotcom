@@ -2,6 +2,9 @@
 .body{
     display: flex;
     align-items: flex-start;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 64px;
 }
 
 .inputotp{

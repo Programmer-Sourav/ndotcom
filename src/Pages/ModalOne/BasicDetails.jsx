@@ -7,8 +7,8 @@ import { addBasicDetailsAsync } from "../Slices/JobsSlice"
 export default function BasicDetails(){
 
     const [name, setName] = useState("")
-    const [experience, setExperience] = useState("")
-    const [currentCountry, setCurrentCountry] = useState("")
+    const [experience, setExperience] = useState("Freshers")
+    const [currentCountry, setCurrentCountry] = useState("India")
     const [selectedState, setSelectedState] = useState("Bangalore")
     const [mobileNumber, setMobileNumber] = useState("")
     const [telephone, setTelephone] = useState({countryCode: "", areaCode: "", phoneNumber: ""})
@@ -19,29 +19,24 @@ export default function BasicDetails(){
     const dispatch = useDispatch()
 
     function changeExperience(value){
-        console.log(value)
         setExperience(value)
     }
 
 
     function changeCountry(value){
-        console.log(value)
         setCurrentCountry(value)
     }
 
 
     function onSelectChange(value){
-        console.log(value)
         setSelectedState(value)
     }
 
     function onSetMobileNumber(value){
-        console.log(value)
        setMobileNumber(value)
     }
 
     function onSelectedAvailability(value){
-        console.log(value)
         setSelectedAvailability(value)
     }
 
@@ -51,8 +46,14 @@ export default function BasicDetails(){
 
     const saveOnButtonClick = () =>{
        const  basicDetailsObject = {name: name, experience: experience, country: currentCountry, state: selectedState, mobile: mobileNumber, telephone: telephone, availaibility: selectedAvailability}
-       console.log(222, basicDetailsObject)
        dispatch(addBasicDetailsAsync(basicDetailsObject))
+    }
+
+    const onChangeTelephone = (e) => {
+        const { name, value} = e.target;
+        setTelephone(prevTelephone=>(
+            {...prevTelephone, [name] : value}
+        ))
     }
 
 
@@ -63,11 +64,11 @@ export default function BasicDetails(){
             <input type="text" value={name} onChange={(e)=>{setName(e.target.value)}} className="inputdesign"/>
             <div className="radiogroup">
             <label  className="labelinput">
-            <input type="radio" value={experience} checked={experience.includes("Freshers")} onChange={(e)=>{changeExperience(e.target.value)}}/>
+            <input type="radio" value="Freshers" checked={experience==="Freshers"} onChange={(e)=>{changeExperience(e.target.value)}}/>
             Freshers
             </label>
             <label className="labelinput">
-            <input type="radio" value={experience} checked={experience.includes("Experienced")} onChange={(e)=>{changeExperience(e.target.value)}}/>
+            <input type="radio" value="Experienced" checked={experience==="Experienced"} onChange={(e)=>{changeExperience(e.target.value)}}/>
             Experienced
             </label>
             </div>
@@ -76,11 +77,11 @@ export default function BasicDetails(){
             <label className="labelinput">Current location</label>
             <div className="radiogroupwithoutmargin">
             <label  className="labelinput">
-            <input type="radio" value={currentCountry} checked={currentCountry.includes("India")} onChange={(e)=>{changeCountry(e.target.value)}}/>
+            <input type="radio" value="India" checked={currentCountry==="India"} onChange={(e)=>{changeCountry(e.target.value)}}/>
             India
             </label>
             <label className="labelinput">
-            <input type="radio" value={currentCountry} checked={currentCountry.includes("Outside India")} onChange={(e)=>{changeCountry(e.target.value)}}/>
+            <input type="radio" value="Outside India" checked={currentCountry==="Outside India"} onChange={(e)=>{changeCountry(e.target.value)}}/>
             Outside India
             </label>
             </div>
@@ -106,9 +107,9 @@ export default function BasicDetails(){
 
         <label className="labelinputauto">Telephone number</label>
         <div className="telephonebox">
-        <input type="text" value={telephone.countryCode} onChange={(e)=>{setTelephone(e.target.value)}} className="styledinputone" placeholder="Country code"/>
-        <input type="text" value={telephone.areaCode} onChange={(e)=>{setTelephone(e.target.value)}} className="styledinputtwo" placeholder="Area code"/>
-        <input type="text" value={telephone.phoneNumber} onChange={(e)=>{setTelephone(e.target.value)}} className="styledinputthree" placeholder="Phone number"/>
+        <input type="text" name="countryCode" value={telephone.countryCode} onChange={onChangeTelephone} className="styledinputone" placeholder="Country code"/>
+        <input type="text" name="areaCode"  value={telephone.areaCode} onChange={onChangeTelephone} className="styledinputtwo" placeholder="Area code"/>
+        <input type="text" name="phoneNumber"  value={telephone.phoneNumber} onChange={onChangeTelephone} className="styledinputthree" placeholder="Phone number"/>
         </div>
         <label className="labelinputauto">Email address</label>
         <div className="flexstyle">
@@ -118,10 +119,10 @@ export default function BasicDetails(){
         <label className="labelinputauto">Availaibility to join</label>
         <div className="flexstyle">
         <span value={selectedAvailability} onClick={()=>{onSelectedAvailability("15 days or less")}} className="btnstyle" >15 days or less</span>
-        <span value={selectedAvailability} onClick={(e)=>{onSelectedAvailability("1 Month")}} className="btnstyle" >1 Month</span>
-        <span value={selectedAvailability} onClick={(e)=>{onSelectedAvailability("2 Months")}} className="btnstyle" >2 Months</span>
-        <span value={selectedAvailability} onClick={(e)=>{onSelectedAvailability("3 Months")}} className="btnstyle" >3 Months</span>
-        <span value={selectedAvailability} onClick={(e)=>{onSelectedAvailability("More than 3 months")}} className="btnstyle">More than 3 months</span>
+        <span value={selectedAvailability} onClick={()=>{onSelectedAvailability("1 Month")}} className="btnstyle" >1 Month</span>
+        <span value={selectedAvailability} onClick={()=>{onSelectedAvailability("2 Months")}} className="btnstyle" >2 Months</span>
+        <span value={selectedAvailability} onClick={()=>{onSelectedAvailability("3 Months")}} className="btnstyle" >3 Months</span>
+        <span value={selectedAvailability} onClick={()=>{onSelectedAvailability("More than 3 months")}} className="btnstyle">More than 3 months</span>
         </div>
         <div className="btnflex">
         <span onClick={()=>{cancelOnButtonClick()}} className="btnone">Cancel</span>
