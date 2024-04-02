@@ -23,6 +23,11 @@ import HistoryHeader from './Pages/PageSeven/HistoryHeader.jsx/HistoryHeader'
 import Leftcontainer from './Pages/PageSeven/LeftContainer/LeftContainer'
 import RightContainer from './Pages/PageSeven/RightContainer/RightContainer'
 import SendOTP from "./Pages/PageFour/SendOTP"
+import ResumeSection from './Pages/pageTwo/ResumeSection/ResumeSection'
+import ChakraModal from './Pages/pageTwo/ResumeSection/ChakraModal'
+import { ChakraProvider } from '@chakra-ui/react'
+import AddProjectModal from './Pages/PageFive/AddProjectModal'
+import OnlineProfileModal from './Pages/PageFive/OnlineProfileModal'
 
 
 function App() {
@@ -36,13 +41,17 @@ function App() {
 
   return (
     <>
+    <AddProjectModal/>
+    <ChakraProvider>
+    {/* <Accomplishments/>  */}
      {/* <SendOTP/> */}
      {/* <Home/>
      <TestPage/> */}
      {/* <PageOne/> */}
      {/* <button onClick={setCountHandler}>Increment Counter</button>
      <p>{count}</p> */}
-     {/* <PageTwo/> */}
+     <OnlineProfileModal/>
+     <PageTwo/>
      {/* <Routes>
       <Route path='/index' element={PageOne}>Index</Route>
       <Route path='/home' element={PageTwo}>Home</Route>
@@ -50,22 +59,19 @@ function App() {
      {/* <PageOne/> */}
      {/* <RightSide/>    */}
       {/*<PageFour/> */}
-      {/* <ProfileSummary/> */}
       {/***Currently working */}
-      {/* <Accomplishments/>  */}
       {/* <SkillsModal/> */}
-      {/* <CareerProfile/> */}
-      {/* <PersonalProfile/> */}
-      {/* <AddProjects/> */}
       {/* <BasicDetails/> */}
-      <ResumeTitle/>
-      {/* <SkillsModal/> */}
+      {/* <ResumeTitle/> */}
       {/* <AddProfileSummary/> */}
       {/* <PendingActions/> */}
       {/* <ProfileRightModal/> */}
       {/* <HistoryHeader/> */}
       {/* <Leftcontainer/> */}
       {/* <RightContainer/> */}
+      {/* <ResumeSection/> */}
+      {/* <ResumeTitle/> */}
+      </ChakraProvider>
     </>
   )
 }

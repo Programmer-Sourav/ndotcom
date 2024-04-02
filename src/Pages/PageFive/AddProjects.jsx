@@ -1,5 +1,6 @@
 import { Fragment } from "react"
 import "./addprojects.css"
+import AddProjectModal from "./AddProjectModal"
 
 export default function AddProjects(){
 
@@ -13,7 +14,8 @@ export default function AddProjects(){
         <div className="headerbox">
         <h3 classname="leftheader">Projects</h3>
         {/* <span className="project-percentage">Add 8%</span> */}
-        <button onClick={addOnBtnPress} className="rightheader">Add project</button>
+        {/* <button onClick={addOnBtnPress} className="rightheader">Add project</button> */}
+        <AddProjectModal/>
         </div>
         <p className="summarypara"> Add details about projects you have done in college, internship or at work. </p>
         </div>

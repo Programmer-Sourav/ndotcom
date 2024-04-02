@@ -5,6 +5,7 @@
     background-color: white;
     border-radius: 16px;
     box-shadow: 2px 2px 2px 2px lightgray;
+    height: 396px;
 }
 
 .careerpara{
@@ -15,20 +16,23 @@
     display: flex;
     justify-content: space-between;
     text-align: left;
+    border: 1px !important;
 }
 
 .careerprofileholder .careerone{
    display: flex;
    flex-direction: column;
    height: 128px;
-   width: 512px;
+   width: auto;
+   border: 1px !important;
 }
 
 .careerprofileholder .careertwo{
     display: flex;
     flex-direction: column;
     height: 128px;
-    width: 512px;
+    width: auto;
+    border: 1px !important;
 }
 
 .careerprofileholder .careerone .careeractionbtn{

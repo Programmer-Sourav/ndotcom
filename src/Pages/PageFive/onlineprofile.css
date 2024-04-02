@@ -1,0 +1,21 @@
+.opbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.inputbox{
+width: 512px;
+height: 40px;
+border: 1px solid lightgray;
+border-radius: 16px;
+padding: 8px;
+}
+
+.inputboxdesc{
+width: 512px;
+height: 128px;
+border: 1px solid lightgray;
+border-radius: 16px;
+padding: 8px;
+}
