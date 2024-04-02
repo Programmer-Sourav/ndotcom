@@ -4,18 +4,19 @@
     align-items: flex-start;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 2px 2px 2px 2px lightgray; 
+   
     padding: 16px;  
     flex-direction: column;   
     background-color: white;
-    border-radius: 16px;
-    box-shadow: 2px 2px 2px 2px lightgray;                
+    border-radius: 16px;  
+    border: 1px !important;             
 }
 
 .itembox{
     display: flex;
     flex-direction: column;
     width: 752px;
+    border: 1px !important;
 }
 
 .itembox .topportion{
@@ -24,6 +25,7 @@
    justify-content: space-between;
    width: 752px;
    height: 40px;
+   border: 1px !important;
 }
 
 .itembox .topportion .labelportion{
@@ -35,6 +37,7 @@
    background-color: transparent;
    color: blue;
    outline: none;
+   height: 32px;
 }
 
 .itembox .belowportion{

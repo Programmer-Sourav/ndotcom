@@ -17,7 +17,7 @@
 }
 
 .inputdesign{
-    height: 40px;
+    height: 40px !important;
     width: 512px;
     border: 1px solid lightgray;
     border-radius: 16px;
@@ -151,8 +151,10 @@
     font-size: 12px;
     border-radius: 16px;
     text-align: center;
-    height: 16px;
+    height: auto;
     font-weight: bold;
+    justify-content: center;
+    align-items: center;
 }
 
 .btnflex{
@@ -177,4 +179,8 @@
    font: bold;
    padding-left: 8px;
    padding-right: 8px;
+}
+.h-two-style{
+    font-size: large;
+    font: 600;
 }

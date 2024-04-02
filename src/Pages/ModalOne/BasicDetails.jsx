@@ -3,6 +3,7 @@ import { useState } from "react"
 import "./basic.css"
 import { useDispatch } from "react-redux"
 import { addBasicDetailsAsync } from "../Slices/JobsSlice"
+import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalOverlay, useDisclosure } from "@chakra-ui/react"
 
 export default function BasicDetails(){
 
@@ -15,6 +16,7 @@ export default function BasicDetails(){
     const [emailId, setEmailId] = useState("")
     const [selectedAvailability, setSelectedAvailability] = useState("")
 
+    const { isOpen, onClose, onOpen} = useDisclosure();
     
     const dispatch = useDispatch()
 
@@ -58,8 +60,15 @@ export default function BasicDetails(){
 
 
     return(
+        <>
+        <Button onClick={onOpen}>Add Basic Details</Button> 
+        <Modal isOpen = {isOpen} onClose={onClose} size="xl">
+        <ModalOverlay/>
+        <ModalContent>
+        <ModalCloseButton/>
+        <ModalBody>
         <div className="modalforbasic"> 
-            <h2>Basic details</h2>
+            <h2 className="h-two-style">Basic details</h2>
             <label className="labelinput">Name</label>
             <input type="text" value={name} onChange={(e)=>{setName(e.target.value)}} className="inputdesign"/>
             <div className="radiogroup">
@@ -89,11 +98,11 @@ export default function BasicDetails(){
 
            <div className="inputgroup">
            <input type="text" value={selectedState} onChange={(e)=>{onSelectChange(e.target.value)}} className="styledinput" placeholder="Tell us about your current location"/>
-           <select onChange={()=>{onSelectChange()}} className="styledinput">
-             <option>Bangalore</option>
-             <option>Agartala</option>
-             <option>Calcutta</option>
-             <option>Hyderabad</option>
+           <select onChange={()=>{onSelectChange()}} value={currentCountry} className="styledinput">
+             <option>India</option>
+             <option>Dubai</option>
+             <option>USA</option>
+             <option>Canada</option>
              </select>
              </div>
 
@@ -124,10 +133,16 @@ export default function BasicDetails(){
         <span value={selectedAvailability} onClick={()=>{onSelectedAvailability("3 Months")}} className="btnstyle" >3 Months</span>
         <span value={selectedAvailability} onClick={()=>{onSelectedAvailability("More than 3 months")}} className="btnstyle">More than 3 months</span>
         </div>
-        <div className="btnflex">
-        <span onClick={()=>{cancelOnButtonClick()}} className="btnone">Cancel</span>
-        <span onClick={()=>{saveOnButtonClick()}} className="btntwo">Save</span>   
-        </div>
        </div>
+       </ModalBody>
+       <ModalFooter>
+        <Button colorScheme='blue' mr={3} onClick={onClose}>
+                Close
+        </Button>
+        <Button variant='ghost' onClick={()=>{saveOnButtonClick()}} >Save</Button>
+        </ModalFooter>
+       </ModalContent>  
+       </Modal>
+       </>
     )
 }

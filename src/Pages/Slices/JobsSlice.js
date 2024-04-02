@@ -9,6 +9,7 @@ export const addCareerProfile = createAction("addCareerProfile")
 export const addSkills = createAction("addSkills")
 export const addProfileSummary = createAction("addProfileSummary")
 
+
 export const addBasicDetailsAsync = createAsyncThunk(
     "/profile-creation/addBasicDetailsAsync",
 
@@ -24,6 +25,7 @@ export const addBasicDetailsAsync = createAsyncThunk(
 export const addProfileSummaryASync = createAsyncThunk(
   "/profile-creation/addProfileSummaryAsync", 
    async(profileSummary) =>{
+    console.log(2222, profileSummary)
     const response = await fetch({url: "url", method: "POST", body: profileSummary})
     //return ""
    }   
@@ -44,12 +46,11 @@ export const jobsSlice = createSlice(
           companiesList : [],
           status: "idle",
           error: null,
-          profileData: {
-            
-          },
-          basicProfileDetails: {
-           
-          }
+          profileData: "",
+          basicProfileDetails: "",
+          profileSummaryData: "",
+          resumeTitle: "",
+          skills: ""
         },
     reducers: {
          createJobProfile : (state, action ) =>{
@@ -57,6 +58,16 @@ export const jobsSlice = createSlice(
          },
          setBasicProfileDetails : (state, action) =>{
            
+         },
+         addProfileSummary  : (state, action) =>{
+              state.profileSummaryData = action.payload
+         },
+         addResumeTitle : (state, action) =>{
+          state.resumeTitle = action.payload
+         },
+         addSkills : (state, action) =>{
+          console.log(55555, action.payload)
+          state.skills = action.payload
          }
     },
     extraReducers: (builder) =>{

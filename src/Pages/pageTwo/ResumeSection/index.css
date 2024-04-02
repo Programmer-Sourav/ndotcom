@@ -17,6 +17,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 7px;
+    align-items: center;
 }
 .quick-link a{
     text-decoration: none;
@@ -105,4 +106,24 @@ body{
 }
 .headline-para{
     font-size: 17px !important;
+}
+.profile-summary{
+    border: 1px !important;
+   
+}
+.career-profile{
+    border: 1px !important;
+    margin: -8px;
+}
+.personal-profile{
+    border: 1px !important;
+    margin: -8px;
+}
+.add-projects{
+    border: 1px !important;
+    margin: -8px;
+}
+.acomplishments{
+    border: 1px !important;
+    margin: -8px;
 }
