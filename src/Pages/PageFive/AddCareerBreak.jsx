@@ -1,3 +1,44 @@
+import { Button, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, useDisclosure } from "@chakra-ui/react"
+import "./careerbreak.css"
+import { useState } from "react"
+
+export default function AddCareerBreak(){
+
+    const [careerBreakBoolean, setCareerBreakBoolean] = useState("yes")
+    const [careerBreakReason, setCareerBreakReason] = useState("")
+
+    const { isOpen, onOpen, onClose} = useDisclosure()
+
+
+    return(
+        <>
+        <Button onClick={onOpen}>Add career break</Button>
+        <Modal isOpen={isOpen} onClose={onClose} size="xl">
+        <ModalOverlay/>
+        <ModalContent> 
+        <ModalCloseButton/>
+        <ModalBody>  
+        <div className="cbbody"> 
+         <label>
+           Do you have any career break? 
+         </label>
+         <label>
+         <input type="radio" value={careerBreakBoolean} checked={{}} onChange={()=>{setCareerBreakBoolean()}}/>
+         Yes
+         </label>
+         <label>
+         <input type="radio" value={careerBreakBoolean} checked={{}} onChange={()=>{setCareerBreakBoolean()}}/>
+         Yes
+         </label>
+         <label>Reason for Career Break?</label>
+         <input type="text" value={careerBreakReason} onChange={()=>{setCareerBreakReason()}}/>
+        </div>
+        </ModalBody>  
+        </ModalContent>   
+        </Modal>
+        </>
+    )
+}
 
 import "./adibody.css"
 
