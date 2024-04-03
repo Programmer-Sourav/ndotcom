@@ -28,6 +28,14 @@ import ChakraModal from './Pages/pageTwo/ResumeSection/ChakraModal'
 import { ChakraProvider } from '@chakra-ui/react'
 import AddProjectModal from './Pages/PageFive/AddProjectModal'
 import OnlineProfileModal from './Pages/PageFive/OnlineProfileModal'
+import AddIndustry from './Pages/PageFive/AddIndustry'
+import AddDepartment from './Pages/PageFive/AddDepartment'
+import DesiredJobTypeModal from './Pages/PageFive/DesiredJobTypeModal'
+import DesiredEmployementType from './Pages/PageFive/DesiredEmployementType'
+import AddPrefferedShift from './Pages/PageFive/AddPrefferedShift'
+import AddPreferredWorkLocationModal from './Pages/PageFive/AddPreferredLocationModal'
+import AddPersonalDetailsModal from './Pages/PageFive/AddPersonalDetailsModal'
+import AddDateOfBirthModal from './Pages/PageFive/AddDateOfBirthModal'
 
 
 function App() {
@@ -41,7 +49,7 @@ function App() {
 
   return (
     <>
-    <AddProjectModal/>
+    {/* <AddProjectModal/> */}
     <ChakraProvider>
     {/* <Accomplishments/>  */}
      {/* <SendOTP/> */}
@@ -50,7 +58,14 @@ function App() {
      {/* <PageOne/> */}
      {/* <button onClick={setCountHandler}>Increment Counter</button>
      <p>{count}</p> */}
-     <OnlineProfileModal/>
+     {/* <OnlineProfileModal/> */}
+     {/* <AddIndustry/> */}
+     {/* <AddPreferredWorkLocationModal/> */}
+     {/* <DesiredJobTypeModal/> */}
+     {/* <DesiredEmployementType/> */}
+     {/* <AddPrefferedShift/> */}
+     {/* <AddPersonalDetailsModal/> */}
+     <AddDateOfBirthModal/>
      <PageTwo/>
      {/* <Routes>
       <Route path='/index' element={PageOne}>Index</Route>
