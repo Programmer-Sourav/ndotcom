@@ -25,7 +25,8 @@ export default function Accomplishments(){
             <div className="itembox">
             <div className="topportion">
             <h3 className="labelportion">Work Sample</h3>
-            <button onClick={addWhenClicked} className="buttonportion">Add</button>
+            {/* <button onClick={addWhenClicked} className="buttonportion">Add</button> */}
+            <WorkSampleModal/>
             </div>
             <p className="belowportion">
              Add link to your projects(e.g. Github links etc.)
@@ -45,7 +46,8 @@ export default function Accomplishments(){
             <div className="itembox">
             <div className="topportion">
             <h3 className="labelportion">Presentation</h3>
-            <button onClick={addWhenClicked} className="buttonportion">Add</button>
+            {/* <button onClick={addWhenClicked} className="buttonportion">Add</button> */}
+            <PresentationModal/>
             </div>
             <p className="belowportion">
              Add links to your online presentation (e.g. Slideshare presentation links etc.)
@@ -65,7 +67,8 @@ export default function Accomplishments(){
             <div className="itembox">
             <div className="topportion">
             <h3 className="labelportion">Certification</h3>
-            <button onClick={addWhenClicked} className="buttonportion">Add</button>
+            {/* <button onClick={addWhenClicked} className="buttonportion">Add</button> */}
+            <AddCertification/>
             </div>
             <p className="belowportion">
              Add details of certifications you have achieved/completed.

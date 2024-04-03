@@ -23,7 +23,7 @@ export default function PresentationModal(){
     
     return(
         <>
-        <Button onClick={onOpen}  style={{height: "32px", outline: "none", color: "blue"}}>Add</Button>   {/*onOpen prop will be supplied to button onClick*/}
+        <Button onClick={onOpen}  style={{height: "32px", outline: "none", color: "blue", backgroundColor: "white"}}>Add</Button>   {/*onOpen prop will be supplied to button onClick*/}
         <Modal isOpen={isOpen} onClose={onClose} size="xl"> {/* Modal will receive isOpen prop to open */}
         <ModalOverlay/> 
         <ModalContent>   
@@ -33,9 +33,9 @@ export default function PresentationModal(){
         <h2>White paper/Research publication/Journal entry</h2>   
         <p>Add links to your online publications.</p>
         <h3>Presentation url</h3>
-        <input type="text" value={whitePaperStats.whitePaperName} name="paresentationName" onChange={(e)=>{onChangeProfileDetails(e)}} className="inputbox"/>
+        <input type="text" value={presentation.paresentationName} name="paresentationName" onChange={(e)=>{onChangeProfileDetails(e)}} className="inputbox"/>
         <h3>Presentation Description</h3>
-        <textarea value={whitePaperStats.whitePaperDesc} name="presentationDesc" onChange={(e)=>{onChangeProfileDetails(e)}} className="inputboxdesc"/>
+        <textarea value={presentation.presentationDesc} name="presentationDesc" onChange={(e)=>{onChangeProfileDetails(e)}} className="inputboxdesc"/>
         </div>  
         </ModalBody>
         <ModalFooter>

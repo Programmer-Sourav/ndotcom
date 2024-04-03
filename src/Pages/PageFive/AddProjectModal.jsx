@@ -17,7 +17,7 @@ export default function AddProjectModal(){
     }
     return(
         <>
-        <Button onClick={onOpen}>Add Project</Button>
+        <Button onClick={onOpen} style={{color: "blue", outline: "none", backgroundColor: "white" }}>Add Project</Button>
         <Modal isOpen={isOpen} onClose={onClose} size="xl">
         <ModalOverlay/> 
         <ModalContent> 

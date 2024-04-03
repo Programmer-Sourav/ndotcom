@@ -3,7 +3,7 @@ import "./onlineprofile.css"
 import { Button, CloseButton, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalOverlay, useDisclosure } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
 
-export default function AddCartification(){
+export default function AddCertification(){
 
     const { onClose, onOpen, isOpen } = useDisclosure()
 
@@ -23,7 +23,7 @@ export default function AddCartification(){
     
     return(
         <>
-        <Button onClick={onOpen}  style={{height: "32px", outline: "none", color: "blue"}}>Add</Button>   {/*onOpen prop will be supplied to button onClick*/}
+        <Button onClick={onOpen}  style={{height: "32px", outline: "none", color: "blue", backgroundColor: "white"}}>Add</Button>   {/*onOpen prop will be supplied to button onClick*/}
         <Modal isOpen={isOpen} onClose={onClose} size="xl"> {/* Modal will receive isOpen prop to open */}
         <ModalOverlay/> 
         <ModalContent>   
