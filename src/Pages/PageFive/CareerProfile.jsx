@@ -1,3 +1,6 @@
+import AddDepartment from "./AddDepartment"
+import AddPrefferedShift from "./AddPrefferedShift"
+import DesiredJobTypeModal from "./DesiredJobTypeModal"
 import "./careerprofile.css"
 
 export default function CareerProfile(){
@@ -13,19 +16,24 @@ export default function CareerProfile(){
         <div className = "careerprofileholder"> 
         <div className= "careerone"> 
         <label>Current industry</label>
-        <label onClick={addCurrentIndustry} className="careeractionbtn">Add current industry</label>
+        {/* <label onClick={addCurrentIndustry} className="careeractionbtn">Add current industry</label> */}
+        <addCurrentIndustry/>
         <label>Desired job type</label>
-        <label onClick={addCurrentIndustry} className="careeractionbtn">Add desired job type</label>
+        {/* <label onClick={addCurrentIndustry} className="careeractionbtn">Add desired job type</label> */}
+        <DesiredJobTypeModal/>
         <label>Preferred Shift</label>
-        <label onClick={addCurrentIndustry} className="careeractionbtn">Add preferred shift</label>
+        {/* <label onClick={addCurrentIndustry} className="careeractionbtn">Add preferred shift</label> */}
+        <AddPrefferedShift/>
         <label>Expected salary</label>
         <label onClick={addCurrentIndustry} className="careeractionbtn">Add expected salary</label>
         </div>
         <div className= "careertwo"> 
         <label>Department</label>
-        <label onClick={addCurrentIndustry} className="careeractionbtn">Add department</label>
+        {/* <label onClick={addCurrentIndustry} className="careeractionbtn">Add department</label> */}
+        <AddDepartment/>
         <label>Desired employeement type</label>
-        <label onClick={addCurrentIndustry} className="careeractionbtn">Add desired employeement type</label>
+        {/* <label onClick={addCurrentIndustry} className="careeractionbtn">Add desired employeement type</label> */}
+        <DesiredJobTypeModal/>
         <label>Preferred work location</label>
         <label onClick={addCurrentIndustry} className="careeractionbtn">Add preferred work location</label>
         </div>
