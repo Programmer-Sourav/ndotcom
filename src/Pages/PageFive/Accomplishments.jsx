@@ -1,4 +1,5 @@
 import "./accomplishments.css"
+import OnlineProfileModal from "./OnlineProfileModal"
 
 
 export default function Accomplishments(){
@@ -15,7 +16,8 @@ export default function Accomplishments(){
             <div className="itembox">
             <div className="topportion">
             <h3 className="labelportion">Online profile</h3>
-            <button onClick={addWhenClicked} className="buttonportion">Add</button>
+            {/* <button onClick={addWhenClicked} className="buttonportion">Add</button> */}
+            <OnlineProfileModal/>
             </div>
             <p className="belowportion">
              Add link to online profiles (e.g. LinkedIn, Facebook etc.)

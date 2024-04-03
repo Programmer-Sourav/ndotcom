@@ -65,7 +65,7 @@ function App() {
      {/* <DesiredEmployementType/> */}
      {/* <AddPrefferedShift/> */}
      {/* <AddPersonalDetailsModal/> */}
-     <AddDateOfBirthModal/>
+     {/* <AddDateOfBirthModal/> */}
      <PageTwo/>
      {/* <Routes>
       <Route path='/index' element={PageOne}>Index</Route>
