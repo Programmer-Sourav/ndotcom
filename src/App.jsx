@@ -51,6 +51,7 @@ function App() {
     <>
     {/* <AddProjectModal/> */}
     <ChakraProvider>
+    {/* <AddProjectModal/> */}
     {/* <Accomplishments/>  */}
      {/* <SendOTP/> */}
      {/* <Home/>

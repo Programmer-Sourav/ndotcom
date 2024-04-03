@@ -3,17 +3,18 @@ import "./onlineprofile.css"
 import { Button, CloseButton, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalOverlay, useDisclosure } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
 
-export default function OnlineProfileModal(){
+export default function WorkSampleModal(){
 
     const { onClose, onOpen, isOpen } = useDisclosure()
 
-    const [profileDetails, setProfileDetails] = useState({profileName: "", url: "", pDescription: ""})
+    const [githubStats, setGithubStats] = useState({githubLink: "", githubDesc: ""})
+    
 
     const dispatch = useDispatch();
 
     function onChangeProfileDetails(e){
        const { name, value} = e.target;
-       setProfileDetails({...profileDetails, [name] : value })
+       setGithubStats({...githubStats, [name] : value })
     }
 
     const addOnBtnPress = () =>{
@@ -22,21 +23,19 @@ export default function OnlineProfileModal(){
     
     return(
         <>
-        <Button onClick={onOpen}>Add</Button>   {/*onOpen prop will be supplied to button onClick*/}
+        <Button onClick={onOpen}  style={{height: "32px", outline: "none", color: "blue"}}>Add</Button>   {/*onOpen prop will be supplied to button onClick*/}
         <Modal isOpen={isOpen} onClose={onClose} size="xl"> {/* Modal will receive isOpen prop to open */}
         <ModalOverlay/> 
         <ModalContent>   
         <ModalCloseButton></ModalCloseButton> 
         <ModalBody>
         <div className="opbody">
-        <h2>Online Profiles</h2>   
-        <p>Add links to your social profiles.</p>
-        <h3>Social Profile</h3>
-        <input type="text" value={profileDetails.profileName} name="profileName" onChange={(e)=>{onChangeProfileDetails(e)}} className="inputbox"/>
-        <h3>URL</h3>
-        <input type="text" value={profileDetails.url} name="url" onChange={(e)=>{onChangeProfileDetails(e)}} className="inputbox"/>
+        <h2>Work Sample</h2>   
+        <p>Add links to your github profiles.</p>
+        <h3>Github profile url</h3>
+        <input type="text" value={githubStats.githubLink} name="githubLink" onChange={(e)=>{onChangeProfileDetails(e)}} className="inputbox"/>
         <h3>Description</h3>
-        <textarea value={profileDetails.pDescription} name="pDescription" onChange={(e)=>{onChangeProfileDetails(e)}} className="inputboxdesc"/>
+        <textarea value={githubStats.githubDesc} name="githubDesc" onChange={(e)=>{onChangeProfileDetails(e)}} className="inputboxdesc"/>
         </div>  
         </ModalBody>
         <ModalFooter>
