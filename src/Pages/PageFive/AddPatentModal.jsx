@@ -3,17 +3,18 @@ import "./onlineprofile.css"
 import { Button, CloseButton, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalOverlay, useDisclosure } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
 
-export default function OnlineProfileModal(){
+export default function AddPatentModal(){
 
     const { onClose, onOpen, isOpen } = useDisclosure()
 
-    const [profileDetails, setProfileDetails] = useState({profileName: "", url: "", pDescription: ""})
+    const [patentStatus, setPatentStatus] = useState({patentUrl: "", patentDesc: ""})
+    
 
     const dispatch = useDispatch();
 
     function onChangeProfileDetails(e){
        const { name, value} = e.target;
-       setProfileDetails({...profileDetails, [name] : value })
+       setPatentStatus({...patentStatus, [name] : value })
     }
 
     const addOnBtnPress = () =>{
@@ -22,21 +23,19 @@ export default function OnlineProfileModal(){
     
     return(
         <>
-        <Button onClick={onOpen} style={{height: "32px", color: "blue", backgroundColor: "white", outline: "none" }}>Add</Button>   {/*onOpen prop will be supplied to button onClick*/}
+        <Button onClick={onOpen}  style={{height: "32px", outline: "none", color: "blue"}}>Add</Button>   {/*onOpen prop will be supplied to button onClick*/}
         <Modal isOpen={isOpen} onClose={onClose} size="xl"> {/* Modal will receive isOpen prop to open */}
         <ModalOverlay/> 
         <ModalContent>   
         <ModalCloseButton></ModalCloseButton> 
         <ModalBody>
         <div className="opbody">
-        <h2>Online Profiles</h2>   
-        <p>Add links to your social profiles.</p>
-        <h3>Social Profile</h3>
-        <input type="text" value={profileDetails.profileName} name="profileName" onChange={(e)=>{onChangeProfileDetails(e)}} className="inputbox"/>
-        <h3>URL</h3>
-        <input type="text" value={profileDetails.url} name="url" onChange={(e)=>{onChangeProfileDetails(e)}} className="inputbox"/>
-        <h3>Description</h3>
-        <textarea value={profileDetails.pDescription} name="pDescription" onChange={(e)=>{onChangeProfileDetails(e)}} className="inputboxdesc"/>
+        <h2>Patents</h2>   
+        <p>Add details of patents you have filled.</p>
+        <h3>Patent url</h3>
+        <input type="text" value={patentStatus.patentUrl} name="patentUrl" onChange={(e)=>{onChangeProfileDetails(e)}} className="inputbox"/>
+        <h3>Patent Description</h3>
+        <textarea value={patentStatus.patentDesc} name="patentDesc" onChange={(e)=>{onChangeProfileDetails(e)}} className="inputboxdesc"/>
         </div>  
         </ModalBody>
         <ModalFooter>
