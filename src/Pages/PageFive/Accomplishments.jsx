@@ -1,4 +1,5 @@
 import "./accomplishments.css"
+
 import WorkSampleModal from "./WorkSample"
 import PresentationModal from "./PresentationModal"
 import AddCertification from "./AddCertification"
@@ -22,8 +23,10 @@ export default function Accomplishments(){
             <div className="itembox">
             <div className="topportion">
             <h3 className="labelportion">Online profile</h3>
+
             <OnlineProfileModal/>
             {/* <button onClick={addWhenClicked} className="buttonportion">Add</button> */}
+
             </div>
             <p className="belowportion">
              Add link to online profiles (e.g. LinkedIn, Facebook etc.)

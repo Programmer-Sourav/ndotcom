@@ -23,7 +23,9 @@ export default function OnlineProfileModal(){
     
     return(
         <>
+
         <Button onClick={onOpen} style={{backgroundColor: "transparent", color: "blue", height: "32px"}}>Add</Button>   {/*onOpen prop will be supplied to button onClick*/}
+
         <Modal isOpen={isOpen} onClose={onClose} size="xl"> {/* Modal will receive isOpen prop to open */}
         <ModalOverlay/> 
         <ModalContent>   
