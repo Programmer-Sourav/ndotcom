@@ -2,6 +2,7 @@ import { useState } from "react"
 import "./onlineprofile.css"
 import { Button, CloseButton, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalOverlay, useDisclosure } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
+import { jobsSlice } from "../Slices/JobsSlice";
 
 export default function OnlineProfileModal(){
 
@@ -17,12 +18,14 @@ export default function OnlineProfileModal(){
     }
 
     const addOnBtnPress = () =>{
-        dispatch()
+        dispatch(jobsSlice.actions.addProfileSummary(profileDetails))
     }
     
     return(
         <>
-        <Button onClick={onOpen} style={{height: "32px", color: "blue", backgroundColor: "white", outline: "none" }}>Add</Button>   {/*onOpen prop will be supplied to button onClick*/}
+
+        <Button onClick={onOpen} style={{backgroundColor: "transparent", color: "blue", height: "32px"}}>Add</Button>   {/*onOpen prop will be supplied to button onClick*/}
+
         <Modal isOpen={isOpen} onClose={onClose} size="xl"> {/* Modal will receive isOpen prop to open */}
         <ModalOverlay/> 
         <ModalContent>   

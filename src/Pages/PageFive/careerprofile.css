@@ -25,6 +25,7 @@
    height: 128px;
    width: auto;
    border: 1px !important;
+   outline: none;
 }
 
 .careerprofileholder .careertwo{

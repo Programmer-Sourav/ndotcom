@@ -1,5 +1,12 @@
 import "./accomplishments.css"
+
+import WorkSampleModal from "./WorkSample"
+import PresentationModal from "./PresentationModal"
+import AddCertification from "./AddCertification"
 import OnlineProfileModal from "./OnlineProfileModal"
+import WhitePaperModal from "./WhitePaperModal"
+import AddPatentModal from "./AddPatentModal"
+
 
 
 export default function Accomplishments(){
@@ -16,8 +23,10 @@ export default function Accomplishments(){
             <div className="itembox">
             <div className="topportion">
             <h3 className="labelportion">Online profile</h3>
-            {/* <button onClick={addWhenClicked} className="buttonportion">Add</button> */}
+
             <OnlineProfileModal/>
+            {/* <button onClick={addWhenClicked} className="buttonportion">Add</button> */}
+
             </div>
             <p className="belowportion">
              Add link to online profiles (e.g. LinkedIn, Facebook etc.)
@@ -38,7 +47,8 @@ export default function Accomplishments(){
             <div className="itembox">
             <div className="topportion">
             <h3 className="labelportion">White paper/Research publication/Journal entry</h3>
-            <button onClick={addWhenClicked} className="buttonportion">Add</button>
+            {/* <button onClick={addWhenClicked} className="buttonportion">Add</button> */}
+            <WhitePaperModal/>
             </div>
             <p className="belowportion">
              Add links to your online publications.
@@ -59,7 +69,8 @@ export default function Accomplishments(){
             <div className="itembox">
             <div className="topportion">
             <h3 className="labelportion">Patent</h3>
-            <button onClick={addWhenClicked} className="buttonportion">Add</button>
+            <AddPatentModal/>
+            {/* <button onClick={addWhenClicked} className="buttonportion">Add</button> */}
             </div>
             <p className="belowportion">
              Add details of patents you have filed.
