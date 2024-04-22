@@ -16,7 +16,7 @@ export default function DesiredEmployementType(){
     }
     return(
         <>
-        <Button onClick={onOpen} style={{background: "white", color: "blue", outline: "none", height: "32px"}}>Add desired employement type</Button>
+        <Button onClick={onOpen} style={{background: "white", color: "blue", outline: "none", height: "32px", width: "180px", display: "flex", justifyContent: "left", outline: "none", border:"none"}}>Add desired employement type</Button>
         <Modal  isOpen={isOpen} onClose={onClose}>
          <ModalOverlay/>
          <ModalContent>

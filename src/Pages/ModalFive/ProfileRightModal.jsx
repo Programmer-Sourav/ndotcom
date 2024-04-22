@@ -1,10 +1,14 @@
+import { useDispatch } from "react-redux"
 import "./profilemodal.css"
+import { jobsSlice } from "../Slices/JobsSlice"
 
 export default function ProfileRightModal(){
 
 
+    const dispatch = useDispatch()
     const updateProfile = () =>{
-
+      //will pass updates
+      dispatch(jobsSlice.actions.actionUpdateProfile(""))
     }
 
     return(

@@ -16,7 +16,7 @@ export default function AddIndustry(){
     }
     return(
         <>
-        <Button onClick={onOpen} style={{background: "white", color: "blue"}}>Add current industry</Button>
+        <Button onClick={onOpen} style={{background: "white", color: "blue", width: "180px", display: "flex", justifyContent: "left", outline: "none", border:"none"}}>Add current industry</Button>
         <Modal  isOpen={isOpen} onClose={onClose}>
          <ModalOverlay/>
          <ModalContent>

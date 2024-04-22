@@ -1,5 +1,7 @@
 import AddDepartment from "./AddDepartment"
+import AddIndustry from "./AddIndustry"
 import AddPrefferedShift from "./AddPrefferedShift"
+import DesiredEmployementType from "./DesiredEmployementType"
 import DesiredJobTypeModal from "./DesiredJobTypeModal"
 import "./careerprofile.css"
 
@@ -17,7 +19,7 @@ export default function CareerProfile(){
         <div className= "careerone"> 
         <label>Current industry</label>
         {/* <label onClick={addCurrentIndustry} className="careeractionbtn">Add current industry</label> */}
-        <addCurrentIndustry/>
+        <AddIndustry/>
         <label>Desired job type</label>
         {/* <label onClick={addCurrentIndustry} className="careeractionbtn">Add desired job type</label> */}
         <DesiredJobTypeModal/>
@@ -33,7 +35,7 @@ export default function CareerProfile(){
         <AddDepartment/>
         <label>Desired employeement type</label>
         {/* <label onClick={addCurrentIndustry} className="careeractionbtn">Add desired employeement type</label> */}
-        <DesiredJobTypeModal/>
+        <DesiredEmployementType/>
         <label>Preferred work location</label>
         <label onClick={addCurrentIndustry} className="careeractionbtn">Add preferred work location</label>
         </div>

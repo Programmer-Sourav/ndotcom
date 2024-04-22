@@ -1,13 +1,14 @@
+import { useState } from "react"
 import "./personalprofile.css"
 
 export default function PersonalProfile(){
 
 
     function addCurrentIndustry(){
-
+      
     }
 
-    return(
+return(
         
  <div className="ppbody">
         <h3>Personal details</h3>

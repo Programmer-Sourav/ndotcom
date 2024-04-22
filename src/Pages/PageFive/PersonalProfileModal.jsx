@@ -4,7 +4,7 @@ import { Button, CloseButton, Modal, ModalBody, ModalCloseButton, ModalContent, 
 import { useDispatch } from "react-redux";
 import { jobsSlice } from "../Slices/JobsSlice";
 
-export default function OnlineProfileModal(){
+export default function PersonalProfileModal(){
 
     const { onClose, onOpen, isOpen } = useDisclosure()
 

@@ -8,6 +8,8 @@ export const addLinks = createAction("addLinks")
 export const addCareerProfile = createAction("addCareerProfile")
 export const addSkills = createAction("addSkills")
 export const addProfileSummary = createAction("addProfileSummary")
+export const actionUpdateProfile = createAction("updateProfile")
+export const actionAddProfileDetails = createAction("addProfileDetails")
 
 
 export const addBasicDetailsAsync = createAsyncThunk(
@@ -21,6 +23,14 @@ export const addBasicDetailsAsync = createAsyncThunk(
          return response.data
     }
 )
+
+export const actionAddProfileDetailsAsync = createAsyncThunk("/profile-creation/addProfileDetailsAsync", 
+    async(profileDetailsObject) =>{
+      const response = await fetch(
+        {profileName: "profileName", method: 'POST', body: profileDetailsObject}
+      )
+      return response.data;
+    })
 
 export const addProfileSummaryASync = createAsyncThunk(
   "/profile-creation/addProfileSummaryAsync", 
@@ -50,7 +60,17 @@ export const jobsSlice = createSlice(
           basicProfileDetails: "",
           profileSummaryData: "",
           resumeTitle: "",
-          skills: ""
+          skills: "",
+          personalProfile: {
+            genderAndMaritalStatus: "",
+            dateOfBirth:"",
+            category: "",
+            differentlyAbled: "",
+            careerBreak:"",
+            workPermit: "",
+            address: "",
+            languages: ""
+          }
         },
     reducers: {
          createJobProfile : (state, action ) =>{
@@ -58,6 +78,9 @@ export const jobsSlice = createSlice(
          },
          setBasicProfileDetails : (state, action) =>{
            
+         },
+         setPersonalProfile: (state, action) =>{
+            state.personalProfile = action.payload;
          },
          addProfileSummary  : (state, action) =>{
               state.profileSummaryData = action.payload
@@ -68,7 +91,11 @@ export const jobsSlice = createSlice(
          addSkills : (state, action) =>{
           console.log(55555, action.payload)
           state.skills = action.payload
+         },
+         actionUpdateProfile : (state, action) =>{
+          //
          }
+
     },
     extraReducers: (builder) =>{
         builder.addCase(addBasicDetails, (state, action)=>{
