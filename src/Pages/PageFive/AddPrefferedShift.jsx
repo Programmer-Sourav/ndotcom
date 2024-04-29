@@ -7,7 +7,7 @@ import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, 
 
 export default function AddPrefferedShift(){
 
-    const [prefferedShift, setPrefferedShift] = useState("")
+    const [prefferedShift, setPrefferedShift] = useState("Full Day")
     const { onOpen, isOpen, onClose} = useDisclosure();
 
 
@@ -25,11 +25,11 @@ export default function AddPrefferedShift(){
         <div className="adibod"> 
         <label><p>Add Preffered Shift:</p>
         <label>
-        <input type="radio" value={prefferedShift} checked={{}} onChange={setPrefferedShift}/>
+        <input type="radio" value={prefferedShift} checked={prefferedShift==="Full Day"} onChange={()=>{setPrefferedShift("Full Day")}}/>
         Full Day
         </label>
         <label> 
-        <input type="radio" value={prefferedShift} checked={{}} onChange={setPrefferedShift}/>
+        <input type="radio" value={prefferedShift} checked={prefferedShift==="Night Shift"} onChange={()=>{setPrefferedShift("Night Shift")}}/>
         Night Shift
         </label>
         </label>

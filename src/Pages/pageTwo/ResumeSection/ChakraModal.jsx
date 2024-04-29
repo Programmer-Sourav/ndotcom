@@ -9,7 +9,7 @@ import {
     useDisclosure,
     Button
   } from '@chakra-ui/react'
-  import "../../ModalTwo/resumetitle.css"
+import "../../ModalTwo/resumetitle.css"
 import { useDispatch } from 'react-redux'
 import { useEffect, useRef, useState } from 'react'
 import { addResumeTitle, jobsSlice } from '../../Slices/JobsSlice'
@@ -44,7 +44,7 @@ export default function ChakraModal() {
     // },[])
     return (
       <>
-        <Button onClick={onOpen}>Add Resume Headline</Button>
+        <Button onClick={onOpen} style={{background: "transparent", outline: "none"}}>Add Resume Headline</Button>
   
         <Modal isOpen={isOpen} onClose={onClose} size="xl">
           <ModalOverlay />

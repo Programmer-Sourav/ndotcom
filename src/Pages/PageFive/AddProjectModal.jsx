@@ -34,10 +34,10 @@ export default function AddProjectModal(){
              <p className="pstyle">Project status</p>
              <div className="psflex">
              <label>
-             <input type="radio" value={radioSelection} checked={{}} onChange={(e)=>{setRadioSelection()}}/>
+             <input type="radio" value={radioSelection} checked={radioSelection==="In progress"} onChange={(e)=>{setRadioSelection()}}/>
              In progress</label>
              <label>
-             <input type="radio" value={radioSelection} checked={{}} onChange={(e)=>{setRadioSelection()}}/>
+             <input type="radio" value={radioSelection} checked={radioSelection==="Completed"} onChange={(e)=>{setRadioSelection()}}/>
              Finished</label>
              </div>
              <p className="pstyle">Worked from</p>

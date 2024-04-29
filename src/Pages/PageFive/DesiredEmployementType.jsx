@@ -7,12 +7,12 @@ import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, 
 
 export default function DesiredEmployementType(){
 
-    const [desiredEmployement, setDesiredEmployement] = useState("")
+    const [desiredEmployement, setDesiredEmployement] = useState("Permanent")
     const { onOpen, isOpen, onClose} = useDisclosure();
 
 
-    const addOnBtnPress = () =>{
-
+    const addOnBtnPress = (value) =>{
+      setDesiredEmployement(value)
     }
     return(
         <>
@@ -25,11 +25,11 @@ export default function DesiredEmployementType(){
         <div className="adibod"> 
         <label><p>Select Desired job type:</p>
         <label>
-        <input type="radio" value={desiredEmployement} checked={{}} onChange={addOnBtnPress}/>
+        <input type="radio" value={desiredEmployement} checked={desiredEmployement==="Permanent"} onChange={()=>{addOnBtnPress("Permanent")}}/>
         Permanent
         </label>
         <label> 
-        <input type="radio" value={desiredEmployement} checked={{}} onChange={addOnBtnPress}/>
+        <input type="radio" value={desiredEmployement} checked={desiredEmployement==="Contractual"} onChange={()=>{addOnBtnPress("Contractual")}}/>
         Contractual
         </label>
         </label>
