@@ -7,7 +7,7 @@ import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, 
 
 export default function AddCategory(){
 
-    const [category, setCategory] = useState("")
+    const [category, setCategory] = useState("General")
   
   
     const { onOpen, isOpen, onClose} = useDisclosure();
@@ -18,7 +18,7 @@ export default function AddCategory(){
     }
     return(
         <>
-        <Button onClick={onOpen} style={{background: "white", color: "blue", outline: "none", height: "32px"}}>Add gender, marital status, more info</Button>
+        <Button onClick={onOpen} style={{background: "white", color: "blue", outline: "none", height: "32px"}}>Add category</Button>
         <Modal  isOpen={isOpen} onClose={onClose} size="xl">
          <ModalOverlay/>
          <ModalContent>
@@ -26,14 +26,17 @@ export default function AddCategory(){
          <ModalBody>
         <div className="adibod"> 
         <label><p>Add Category:</p>
-        <label>General
-         <input type="radio" value={category} checked={{}} onChange={(e)=>{setCategory(e.target.value)}} />
+        <label>
+         <input type="radio" value={category} checked={category==="General"} onChange={()=>{setCategory("General")}} />
+         General
          </label>
-         <label>SC
-         <input type="radio" value={category}checked= {{}} onChange={(e)=>{setCategory()}} />
+         <label>
+         <input type="radio" value={category} checked={category==="SC"} onChange={(e)=>{setCategory("SC")}} />
+         SC
          </label>
-         <label>ST
-         <input type="radio" value={category} checked= {{}} onChange={(e)=>{setCategory()}} />
+         <label>
+         <input type="radio" value={category} checked={category==="ST"} onChange={(e)=>{setCategory("ST")}} />
+         ST
          </label>
         </label>
         </div>

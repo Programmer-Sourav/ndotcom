@@ -16,7 +16,7 @@ export default function DifferentlyAbledModal(){
     }
     return(
         <>
-        <Button onClick={onOpen} style={{background: "white", color: "blue", outline: "none", height: "32px"}}>Add desired job type</Button>
+        <Button onClick={onOpen} style={{background: "white", color: "blue", outline: "none", height: "32px"}}>Add disability status</Button>
         <Modal  isOpen={isOpen} onClose={onClose}>
          <ModalOverlay/>
          <ModalContent>

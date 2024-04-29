@@ -74,7 +74,7 @@ export default function SkillsModal(){
 
     return(
         <>
-        <Button onClick={onOpen}>Add key skills</Button>
+        <Button onClick={onOpen} style={{background: "transparent", outline: "none" }}>Add key skills</Button>
         <Modal isOpen = {isOpen} onClose={onClose} size="xl">
         <ModalOverlay />
           <ModalContent>

@@ -70,7 +70,31 @@ export const jobsSlice = createSlice(
             workPermit: "",
             address: "",
             languages: ""
-          }
+          },
+         careerProfile: {
+           currentIndustry: "",
+           jobType: "",
+           department: "",
+           employeementType: "",
+           preferredShift: "",
+           preferredWorkLocation: "",
+           expectedSalary: ""
+         },
+        projectDetails: {
+          projectTitle: "",
+          tag: "",
+          projectStatus: "",
+          workedFrom: "",
+          detailsOfProject: ""
+        },
+        accomplishmentsDetails : {
+          onlineProfile: {socialProfile: "", url: "", description: ""},
+          workSample: {githubProfile: "", description: ""},
+          publication: {publicationUrl: "", description: ""},
+          presentation: {presentationUrl: "", description: ""},
+          patent: {patentUrl: "", patentDescription: ""},
+          certification: {certificationUrl : "", certificationDescription: ""}
+        }
         },
     reducers: {
          createJobProfile : (state, action ) =>{

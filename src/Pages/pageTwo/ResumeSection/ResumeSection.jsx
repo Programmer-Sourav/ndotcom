@@ -12,6 +12,7 @@ import CareerProfile from "../../PageFive/CareerProfile";
 import PersonalProfile from "../../PageFive/PersonalProfile";
 import AddProjects from "../../PageFive/AddProjects";
 import Accomplishments from "../../PageFive/Accomplishments";
+import AddProjectModal from "../../PageFive/AddProjectModal";
 
 
 export default function ResumeSection() {
@@ -65,41 +66,38 @@ export default function ResumeSection() {
                 <small>Resume</small>
                 <a href="#">Upload</a>
               </div>
-              <div className="quick-link">
-                <small>Resume headline</small>
-                <a href="#">Add</a>
+                <div className="quick-link">
+                <a href="#resume-headline"> <small>Resume Headline</small></a>
               </div>
+            
               <div className="quick-link">
                 <small>Key skills</small>
-                <a href="#">Add</a>
+                <SkillsModal/>
               </div>
               <div className="quick-link">
                 <small>Education</small>
-                <a href="#">Add</a>
+                
               </div>
               <div className="quick-link">
                 <small>IT skills</small>
-                <a href="#">Add</a>
+                <SkillsModal/>
               </div>
               <div className="quick-link">
                 <small>Projects</small>
-                <a href="#">Add</a>
+                <AddProjectModal/>
               </div>
               <div className="quick-link">
                 <small>Public summary</small>
                 <AddProfileSummary/>
               </div>
               <div className="quick-link">
-                <small>Accomplishments</small>
-                <a href="#"></a>
+                <a href="#accomplishments"> <small>Accomplishments</small></a>
               </div>
               <div className="quick-link">
-                <small>Career profile</small>
-                <a href="#"></a>
+                <a href="#career-profile"> <small>Career profile</small></a>
               </div>
               <div className="quick-link">
-                <small>Personal details</small>
-                <a href="#"></a>
+                <a href="#personal-profile"> <small>Personal details</small></a>
               </div>
             </div>
           </div>
@@ -137,7 +135,7 @@ export default function ResumeSection() {
               </div>
             </div>
 
-            <div className="resume-headline">
+            <div id = "resume-headline" className="resume-headline">
               <p className="add-headline">
                 <b>
                   Resume headline <span>Add 8%</span>
@@ -168,21 +166,21 @@ export default function ResumeSection() {
             <div className="profile-summary">
             <ProfileSummary/>
             </div>
-            <div className="career-profile">
+     <div id="career-profile" className="career-profile">
       <CareerProfile/>
       </div>
-      <div className="personal-profile">
+      <div id="personal-profile" className="personal-profile">
       <PersonalProfile/>
       </div>
       <div className="add-projects">
       <AddProjects/>
       </div>
-      <div className="acomplishments">
+      <div id="accomplishments" className="acomplishments">
       <Accomplishments/> 
       </div>
-          </div>
+      </div>
         
-        </div>
+      </div>
       </body>
     </>
   );
