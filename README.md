@@ -8,8 +8,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 Features: 
-1. OTP verification with Google Firebase
-   -
+1. OTP verification with Google Firebase - lazy load the script 
 2. Worked majorly on Chakra UI MODALS
 3. Resume upload with SERVICE WORKERS
 4. Interaction with Backend APIs
