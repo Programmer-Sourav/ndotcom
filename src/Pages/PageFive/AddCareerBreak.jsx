@@ -1,6 +1,8 @@
 import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, useDisclosure, ModalFooter } from "@chakra-ui/react"
 import "./careerbreak.css"
 import { useState } from "react"
+import { jobsSlice } from "../Slices/JobsSlice"
+import { useDispatch } from "react-redux"
 
 export default function AddCareerBreak(){
 
@@ -9,8 +11,11 @@ export default function AddCareerBreak(){
 
     const { isOpen, onOpen, onClose} = useDisclosure()
 
+    const dispatch = useDispatch();
+    
     function addOnBtnPress(){
-      
+        const careerBreak = {hasBreak: careerBreakBoolean, reason: careerBreakReason}
+        dispatch(jobsSlice.actions.setPersonalProfile(careerBreak))
     }
 
     return(

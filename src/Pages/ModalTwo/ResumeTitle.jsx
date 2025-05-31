@@ -12,7 +12,10 @@ export default function ResumeTitle(){
     const dispatch = useDispatch()
 
     const onSaveResumeTitle = (e) =>{
+      const resumeTitle = e.target.value;
+      console.log(3333, resumeTitle);  
       dispatch(addResumeTitle(e.target.value))
+      setResumeHeadline("");
     }
 
     const onCancelResume = () =>{
@@ -20,8 +23,10 @@ export default function ResumeTitle(){
     }
 
     const onResumeHeadlineChange = (e) =>{
-        setResumeHeadline(e.target.value)
+        const resumeTitle = e.target.value;
+        setResumeHeadline(e.target.value);
     }
+
 
     return(
         <div className="rtbody"> 

@@ -2,6 +2,7 @@ import { useState } from "react"
 import "./onlineprofile.css"
 import { Button, CloseButton, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalOverlay, useDisclosure } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
+import { jobsSlice } from "../Slices/JobsSlice";
 
 export default function WorkSampleModal(){
 
@@ -18,7 +19,8 @@ export default function WorkSampleModal(){
     }
 
     const addOnBtnPress = () =>{
-        dispatch()
+        const workSample = githubStats;
+        dispatch(jobsSlice.actions.actionAccomplishments(workSample))
     }
     
     return(

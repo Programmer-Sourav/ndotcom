@@ -3,6 +3,8 @@ import "./adibody.css"
 
 import { useState } from "react"
 import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalOverlay, useDisclosure } from "@chakra-ui/react"
+import { jobsSlice } from "../Slices/JobsSlice";
+import { useDispatch } from "react-redux";
 
 
 export default function AddDepartment(){
@@ -10,9 +12,10 @@ export default function AddDepartment(){
     const [department, setDepartment] = useState("")
     const { onOpen, isOpen, onClose} = useDisclosure();
 
-
+    const dispatch = useDispatch();
+ 
     const addOnBtnPress = () =>{
-
+          dispatch(jobsSlice.actions.actionCreateCareerProfile({department: department}))
     }
     return(
         <>

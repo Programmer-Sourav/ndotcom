@@ -20,6 +20,7 @@ export default function AddProfileSummary(){
 
     const onSaveButtonClick = () =>{
         dispatch(jobsSlice.actions.addProfileSummary(profieSummary))
+        setProfileSummary("");
     }
 
     const onCancelButtonClick = (e) =>{

@@ -127,3 +127,27 @@ body{
     border: 1px !important;
     margin: -8px;
 }
+
+@media screen and (min-width: 480px) {
+    .body {
+      font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .body{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .body{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1900px ) {
+    .body{
+        font-size: 20px;
+    }
+}

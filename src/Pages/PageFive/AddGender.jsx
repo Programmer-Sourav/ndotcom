@@ -1,6 +1,8 @@
 import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, useDisclosure, ModalFooter } from "@chakra-ui/react"
 import "./careerbreak.css"
 import { useState } from "react"
+import { useDispatch } from "react-redux"
+import { jobsSlice } from "../Slices/JobsSlice"
 
 export default function AddGender(){
 
@@ -10,8 +12,11 @@ export default function AddGender(){
 
     const { isOpen, onOpen, onClose} = useDisclosure()
 
+    const dispatch = useDispatch()
+
     function addOnBtnPress(){
-      
+      const genderAndMaritalStatus = {gender: gender, maritalStatus: maritalStatus}
+      dispatch(jobsSlice.actions.setPersonalProfile(genderAndMaritalStatus))
     }
 
     return(

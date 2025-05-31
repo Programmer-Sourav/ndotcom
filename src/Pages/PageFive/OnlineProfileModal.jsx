@@ -18,7 +18,8 @@ export default function OnlineProfileModal(){
     }
 
     const addOnBtnPress = () =>{
-        dispatch(jobsSlice.actions.addProfileSummary(profileDetails))
+        const onlineProfileDetails = profileDetails;
+        dispatch(jobsSlice.actions.actionAccomplishments(onlineProfileDetails))
     }
     
     return(

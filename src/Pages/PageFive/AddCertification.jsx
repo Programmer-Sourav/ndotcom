@@ -2,6 +2,7 @@ import { useState } from "react"
 import "./onlineprofile.css"
 import { Button, CloseButton, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalOverlay, useDisclosure } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
+import { jobsSlice } from "../Slices/JobsSlice";
 
 export default function AddCertification(){
 
@@ -18,7 +19,8 @@ export default function AddCertification(){
     }
 
     const addOnBtnPress = () =>{
-        dispatch()
+      const certification = cartificationStatus;
+      dispatch(jobsSlice.actions.actionAccomplishments(certification));
     }
     
     return(
