@@ -3,6 +3,8 @@ import "./adibody.css"
 
 import { useState } from "react"
 import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalOverlay, useDisclosure } from "@chakra-ui/react"
+import { jobsSlice } from "../Slices/JobsSlice";
+import { useDispatch } from "react-redux";
 
 
 export default function AddCategory(){
@@ -12,9 +14,10 @@ export default function AddCategory(){
   
     const { onOpen, isOpen, onClose} = useDisclosure();
 
-
+    const dispatch = useDispatch();
+    
     const addOnBtnPress = () =>{
-
+      dispatch(jobsSlice.actions.setPersonalProfile({category: category}))
     }
     return(
         <>

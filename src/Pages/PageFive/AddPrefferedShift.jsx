@@ -3,6 +3,7 @@ import "./adibody.css"
 
 import { useState } from "react"
 import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalOverlay, useDisclosure } from "@chakra-ui/react"
+import { jobsSlice } from "../Slices/JobsSlice";
 
 
 export default function AddPrefferedShift(){
@@ -12,7 +13,7 @@ export default function AddPrefferedShift(){
 
 
     const addOnBtnPress = () =>{
-
+        dispatch(jobsSlice.actions.actionCreateCareerProfile({preferredShift: prefferedShift}))
     }
     return(
         <>

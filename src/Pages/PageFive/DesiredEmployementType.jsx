@@ -3,6 +3,8 @@ import "./adibody.css"
 
 import { useState } from "react"
 import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalOverlay, useDisclosure } from "@chakra-ui/react"
+import { useDispatch } from "react-redux";
+import { jobsSlice } from "../Slices/JobsSlice";
 
 
 export default function DesiredEmployementType(){
@@ -10,9 +12,11 @@ export default function DesiredEmployementType(){
     const [desiredEmployement, setDesiredEmployement] = useState("Permanent")
     const { onOpen, isOpen, onClose} = useDisclosure();
 
+    const dispatch = useDispatch();
 
     const addOnBtnPress = (value) =>{
       setDesiredEmployement(value)
+      dispatch(jobsSlice.actions.actionCreateCareerProfile({employeementType: desiredEmployement}))
     }
     return(
         <>

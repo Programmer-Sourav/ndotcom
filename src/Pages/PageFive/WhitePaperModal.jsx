@@ -2,6 +2,7 @@ import { useState } from "react"
 import "./onlineprofile.css"
 import { Button, CloseButton, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalOverlay, useDisclosure } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
+import { jobsSlice } from "../Slices/JobsSlice";
 
 export default function WhitePaperModal(){
 
@@ -14,11 +15,12 @@ export default function WhitePaperModal(){
 
     function onChangeProfileDetails(e){
        const { name, value} = e.target;
-       setGithubStats({...whitePaperStats, [name] : value })
+       setWhitePaperStats({...whitePaperStats, [name] : value })
     }
 
     const addOnBtnPress = () =>{
-        dispatch()
+        const publication = whitePaperStats;
+        dispatch(jobsSlice.actions.actionAccomplishments(publication))
     }
     
     return(

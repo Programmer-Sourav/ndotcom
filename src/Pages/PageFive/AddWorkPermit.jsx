@@ -1,6 +1,7 @@
 import { useDisclosure, Button, Modal, ModalOverlay, ModalCloseButton, ModalBody, ModalContent, ModalFooter } from "@chakra-ui/react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import { jobsSlice } from "../Slices/JobsSlice";
 
 export default function AddWorkPermit(){
 
@@ -9,6 +10,11 @@ export default function AddWorkPermit(){
 
     const { isOpen, onOpen, onClose} = useDisclosure()
 
+    const dispatch = useDispatch()
+
+    const addOnBtnPress = () =>{
+       dispatch(jobsSlice.actions.setPersonalProfile({workPermit: workPermitBoolean}))
+    }
 
     return(
         <>
@@ -31,7 +37,13 @@ export default function AddWorkPermit(){
          Yes
          </label>
         </div>
-        </ModalBody>  
+        </ModalBody> 
+        <ModalFooter>
+        <Button colorScheme='blue' mr={3} onClick={onClose}>
+                Close
+        </Button>
+            <Button variant='ghost' onClick={addOnBtnPress}>Save</Button>
+            </ModalFooter>   
         </ModalContent>   
         </Modal>
         </>

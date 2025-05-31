@@ -23,6 +23,7 @@ export default function ChakraModal() {
 
     const onSaveResumeTitle = () =>{
       dispatch(jobsSlice.actions.addResumeTitle(resumeHeadline))
+      setResumeHeadline("");
     }
 
     const onCancelResume = () =>{
@@ -73,7 +74,7 @@ export default function ChakraModal() {
               <Button colorScheme='blue' mr={3} onClick={onClose}>
                 Close
               </Button>
-              <Button variant='ghost' onClick={onSaveResumeTitle}>Save</Button>
+              <Button variant='ghost' onClick={()=>{onSaveResumeTitle({onClose})}}>Save</Button>
             </ModalFooter>
           </ModalContent>
         </Modal>

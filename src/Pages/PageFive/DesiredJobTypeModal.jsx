@@ -12,7 +12,7 @@ export default function DesiredJobTypeModal(){
 
 
     const addOnBtnPress = () =>{
-
+        dispatch(jobsSlice.actions.actionCreateCareerProfile({jobType: desiredJob}))
     }
     return(
         <>
