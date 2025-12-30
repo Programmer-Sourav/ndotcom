@@ -1,93 +1,79 @@
 import { useState } from 'react'
 import './App.css'
-import Home from './Pages/Home'
-import TestPage from './Pages/TestPage'
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
+import { ChakraProvider } from '@chakra-ui/react'
+
+// Page imports
+import PageOne from './Pages/pageOne/PageOne'
 import PageTwo from './Pages/pageTwo/PageTwo'
-import { Route, Routes } from 'react-router'
-import RightSide from './Pages/pageThree/RightSide'
 import LeftSide from './Pages/pageThree/LeftSide'
+import RightSide from './Pages/pageThree/RightSide'
 import PageFour from './Pages/PageFour/PageFour'
 import ProfileSummary from './Pages/PageFive/ProfileSummary'
 import Accomplishments from './Pages/PageFive/Accomplishments'
 import CareerProfile from "./Pages/PageFive/CareerProfile"
 import PersonalProfile from './Pages/PageFive/PersonalProfile'
 import AddProjects from './Pages/PageFive/AddProjects'
-import BasicDetails from './Pages/ModalOne/BasicDetails'
-import ResumeTitle from './Pages/ModalTwo/ResumeTitle'
-import SkillsModal from './Pages/ModalThree/SkillsModal'
-import AddProfileSummary from './Pages/ModalFour/AddProfileSummary'
 import PendingActions from './Pages/PageSix/PendingActions'
-import ProfileRightModal from './Pages/ModalFive/ProfileRightModal'
+import MyHistory from './Pages/PageSeven/MyHistory'
 import HistoryHeader from './Pages/PageSeven/HistoryHeader.jsx/HistoryHeader'
-import Leftcontainer from './Pages/PageSeven/LeftContainer/LeftContainer'
-import RightContainer from './Pages/PageSeven/RightContainer/RightContainer'
-import SendOTP from "./Pages/PageFour/SendOTP"
-import ResumeSection from './Pages/pageTwo/ResumeSection/ResumeSection'
-import ChakraModal from './Pages/pageTwo/ResumeSection/ChakraModal'
-import { ChakraProvider } from '@chakra-ui/react'
-import AddProjectModal from './Pages/PageFive/AddProjectModal'
-import OnlineProfileModal from './Pages/PageFive/OnlineProfileModal'
-import AddIndustry from './Pages/PageFive/AddIndustry'
-import AddDepartment from './Pages/PageFive/AddDepartment'
-import DesiredJobTypeModal from './Pages/PageFive/DesiredJobTypeModal'
-import DesiredEmployementType from './Pages/PageFive/DesiredEmployementType'
-import AddPrefferedShift from './Pages/PageFive/AddPrefferedShift'
-import AddPreferredWorkLocationModal from './Pages/PageFive/AddPreferredLocationModal'
-import AddPersonalDetailsModal from './Pages/PageFive/AddPersonalDetailsModal'
-import AddDateOfBirthModal from './Pages/PageFive/AddDateOfBirthModal'
 
+// Registration Page Component
+function RegisterPage() {
+  return (
+    <div className="register-container">
+      <div className="register-left">
+        <LeftSide />
+      </div>
+      <div className="register-right">
+        <RightSide />
+      </div>
+    </div>
+  )
+}
 
-function App() {
-  
-  const [count, setCount] = useState(0)
-
-
-  const setCountHandler = () =>{
-    setCount(count =>count + 1)
-  }
-
+// Job History Page with Header
+function JobHistoryPage() {
   return (
     <>
-    {/* <AddProjectModal/> */}
-    <ChakraProvider>
-    {/* <AddProjectModal/> */}
-    {/* <Accomplishments/>  */}
-     {/* <SendOTP/> */}
-     {/* <Home/>
-     <TestPage/> */}
-     {/* <PageOne/> */}
-     {/* <button onClick={setCountHandler}>Increment Counter</button>
-     <p>{count}</p> */}
-     {/* <OnlineProfileModal/> */}
-     {/* <AddIndustry/> */}
-     {/* <AddPreferredWorkLocationModal/> */}
-     {/* <DesiredJobTypeModal/> */}
-     {/* <DesiredEmployementType/> */}
-     {/* <AddPrefferedShift/> */}
-     {/* <AddPersonalDetailsModal/> */}
-     {/* <AddDateOfBirthModal/> */}
-     <PageTwo/>
-     {/* <Routes>
-      <Route path='/index' element={PageOne}>Index</Route>
-      <Route path='/home' element={PageTwo}>Home</Route>
-     </Routes> */}
-     {/* <PageOne/> */}
-     {/* <RightSide/>    */}
-      {/*<PageFour/> */}
-      {/***Currently working */}
-      {/* <SkillsModal/> */}
-      {/* <BasicDetails/> */}
-      {/* <ResumeTitle/> */}
-      {/* <AddProfileSummary/> */}
-      {/* <PendingActions/> */}
-      {/* <ProfileRightModal/> */}
-      {/* <HistoryHeader/> */}
-      {/* <Leftcontainer/> */}
-      {/* <RightContainer/> */}
-      {/* <ResumeSection/> */}
-      {/* <ResumeTitle/> */}
-      </ChakraProvider>
+      <HistoryHeader />
+      <MyHistory />
     </>
+  )
+}
+
+function App() {
+  return (
+    <ChakraProvider>
+      <BrowserRouter>
+        <Routes>
+          {/* Home/Landing Page */}
+          <Route path="/" element={<PageOne />} />
+
+          {/* User Profile Page */}
+          <Route path="/profile" element={<PageTwo />} />
+
+          {/* Registration Page */}
+          <Route path="/register" element={<RegisterPage />} />
+
+          {/* OTP Verification */}
+          <Route path="/verify-otp" element={<PageFour />} />
+
+          {/* Job History */}
+          <Route path="/history" element={<JobHistoryPage />} />
+
+          {/* Pending Actions */}
+          <Route path="/pending-actions" element={<PendingActions />} />
+
+          {/* Profile Sections */}
+          <Route path="/profile/summary" element={<ProfileSummary />} />
+          <Route path="/profile/accomplishments" element={<Accomplishments />} />
+          <Route path="/profile/career" element={<CareerProfile />} />
+          <Route path="/profile/personal" element={<PersonalProfile />} />
+          <Route path="/profile/projects" element={<AddProjects />} />
+        </Routes>
+      </BrowserRouter>
+    </ChakraProvider>
   )
 }
 

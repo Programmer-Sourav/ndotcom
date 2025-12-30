@@ -1,107 +1,277 @@
-
-.body{
+/* Registration Right Side - Form Panel */
+.body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background: whitesmoke;
-    margin-left: 32px;
+    width: 100%;
+    max-width: 480px;
+    padding: 24px;
 }
 
-.inputfield{
-    height: 40px; 
-    width: 512px;
-    border: 1px solid lightgray;
-    border-radius: 16px;
-    padding-left: 16px;
+.body h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.labeldesign {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
     margin-bottom: 8px;
+    margin-top: 16px;
+    display: block;
 }
-.labeldesign{
-    font-weight:bold;
-    color: #000000;
-    margin-bottom: 8px;  
+
+.inputfield {
+    height: 48px;
+    width: 100%;
+    border: 1px solid #e4e5e8;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
 }
-.inputbox{
-    height: 40px; 
-    width: 512px;
-    border: 1px solid lightgray;
-    border-radius: 16px;
-    display: flex; /* Added */
-    align-items: center; /* Added */
-    text-align: start;
-    margin-bottom: 8px;
+
+.inputfield:focus {
+    outline: none;
+    border-color: #457eff;
 }
+
+.inputfield::placeholder {
+    color: #999;
+}
+
+.inputbox {
+    height: 48px;
+    width: 100%;
+    border: 1px solid #e4e5e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.inputbox .prefix {
+    background: #f5f5f5;
+    padding: 0 12px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-size: 14px;
+    border-right: 1px solid #e4e5e8;
+}
+
 .inputbox input {
-    margin: 0; /* Reset margin */
+    flex: 1;
+    height: 100%;
+    border: none;
+    padding: 0 16px;
+    font-size: 14px;
 }
-.workcontainer{
+
+.inputbox input:focus {
+    outline: none;
+}
+
+.graytext {
+    color: #8292b4;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.workcontainer {
     display: flex;
     flex-direction: row;
+    gap: 16px;
+    margin-top: 8px;
+    width: 100%;
 }
-.workbuttondesign{
-    border: 1px solid lightgray;
-    border-radius: 16px;
-    height: 88px;
-    width: 248px;
-    margin-right: 16px;
+
+.workbuttondesign {
+    flex: 1;
+    border: 1px solid #e4e5e8;
+    border-radius: 12px;
+    padding: 16px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
-.leftside-workbutton{
-  padding-left: -32px
-  ;
+.workbuttondesign:hover {
+    border-color: #457eff;
+    background-color: #f8faff;
+}
 
+.workbuttondesign:focus {
+    border-color: #457eff;
+    box-shadow: 0 0 0 3px rgba(69, 126, 255, 0.1);
+}
+
+.leftside-workbutton {
+    flex: 1;
+}
+
+.leftside-workbutton h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 4px 0;
 }
 
 .leftside-workbutton p {
-    margin-top: -20px;
     font-size: 12px;
+    color: #666;
+    margin: 0;
+    line-height: 1.4;
 }
 
-.resume-upload-btn{
-    background: orangered;
-    color: white;
-    padding: 4px 16px 4px 16px;
+.workbuttondesign img {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+/* Resume Upload */
+.upload-button-design {
+    width: 100%;
     margin-top: 8px;
-    border-radius: 16px;
-    font-size: 16px;
+}
+
+.resume-upload-btn-holder {
+    border: 2px dashed #e4e5e8;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.resume-upload-btn-holder:hover {
+    border-color: #457eff;
+    background-color: #f8faff;
+}
+
+.resume-upload-btn {
+    background: #ff6b35;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.2s ease;
 }
 
 .resume-upload-btn:hover {
-    cursor: pointer !important;
-}
-
-.resume-upload-btn-holder{
-    border: 1px solid lightgray;
-    margin-top: 8px;
-    border-radius: 16px;
-    font-size: 12px;
-    color: lightgray;
-    margin-bottom: 8px;
-   
-}
-
-.graytext{
-    color: gray;
-    font-size: 12px;
-    margin-top: -8px;
+    background-color: #e55a28;
 }
 
 .resume-upload-btn-holder span {
-    color: gray;
-    padding-right: 16px;
-}
-.graytext-two{
-    color: gray;
+    color: #8292b4;
     font-size: 12px;
 }
-.graytext-two .a{
-    font-size: bold;
+
+/* Checkbox and Terms */
+.graytext-two {
+    color: #666;
+    font-size: 12px;
+    margin-top: 16px;
+    line-height: 1.5;
 }
-.registerbtn{
-    background: blue;
+
+.graytext-two input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #457eff;
+}
+
+.graytext-two a {
+    color: #457eff;
+    font-weight: 500;
+}
+
+/* Register Button */
+.registerbtn {
+    width: 100%;
+    height: 48px;
+    background: #457eff;
     color: white;
-    border-radius: 32px;
+    border: none;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 24px;
+    transition: background-color 0.2s ease;
 }
 
+.registerbtn:hover {
+    background-color: #1f4fad;
+}
 
+/* Tablet styles */
+@media (max-width: 900px) {
+    .body {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .body h2 {
+        font-size: 20px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .body {
+        padding: 16px;
+    }
+
+    .body h2 {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .workcontainer {
+        flex-direction: column;
+    }
+
+    .workbuttondesign {
+        width: 100%;
+    }
+
+    .workbuttondesign img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .leftside-workbutton h4 {
+        font-size: 13px;
+    }
+
+    .leftside-workbutton p {
+        font-size: 11px;
+    }
+
+    .resume-upload-btn-holder {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inputfield, .inputbox {
+        height: 44px;
+    }
+
+    .registerbtn {
+        height: 44px;
+        font-size: 14px;
+    }
+}

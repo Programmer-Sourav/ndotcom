@@ -1,11 +1,38 @@
-.profilesec{
-   margin-top: 16px;
+/* PageTwo - Profile Page Layout */
+.profilesec {
+    max-width: 1200px;
+    margin: 24px auto 0 auto;
+    padding: 0 16px;
 }
 
-.resumesec{
-    margin-top: 16px;
+.resumesec {
+    max-width: 1200px;
+    margin: 24px auto 0 auto;
+    padding: 0 16px;
 }
 
-.footersec{
-    margin-top: 16px;
+.footersec {
+    margin-top: 40px;
+}
+
+/* Tablet styles */
+@media (max-width: 900px) {
+    .profilesec,
+    .resumesec {
+        margin: 16px auto 0 auto;
+        padding: 0 12px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .profilesec,
+    .resumesec {
+        margin: 12px auto 0 auto;
+        padding: 0 8px;
+    }
+
+    .footersec {
+        margin-top: 24px;
+    }
 }

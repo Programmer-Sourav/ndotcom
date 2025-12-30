@@ -1,8 +1,107 @@
-.body{
+/* Registration Left Side - Benefits Panel */
+.body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 256px;
-    height: 292px;
-    background: whitesmoke;
+    text-align: center;
+    padding: 40px 24px;
+    color: white;
+}
+
+.body img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 24px;
+    filter: brightness(0) invert(1);
+}
+
+.body h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.body p {
+    color: rgba(255,255,255,0.9);
+    font-size: 14px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.body p::before {
+    content: '✓';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.body span {
+    color: rgba(255,255,255,0.9);
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.body span::before {
+    content: '✓';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+/* Tablet styles */
+@media (max-width: 900px) {
+    .body {
+        padding: 32px 16px;
+    }
+
+    .body img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 16px;
+    }
+
+    .body h3 {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .body p, .body span {
+        font-size: 13px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .body {
+        padding: 24px 16px;
+    }
+
+    .body img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .body h3 {
+        font-size: 16px;
+    }
+
+    .body p, .body span {
+        font-size: 12px;
+    }
 }
