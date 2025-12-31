@@ -268,6 +268,7 @@ a:hover {
 
     #logo {
         flex-shrink: 0;
+        order: 1;
     }
 
     #logo img {
@@ -276,6 +277,7 @@ a:hover {
 
     .hamburger {
         display: flex !important;
+        order: 2;
         margin-left: auto;
     }
 
@@ -293,6 +295,7 @@ a:hover {
         padding: 16px;
         overflow-y: auto;
         z-index: 999;
+        order: 4;
     }
 
     .pages.mobile-open {
@@ -300,11 +303,13 @@ a:hover {
     }
 
     #buttons {
-        display: none;
+        display: none !important;
+        order: 5;
     }
 
     .foremp {
-        display: none;
+        display: none !important;
+        order: 3;
     }
 
     .dropdown {
