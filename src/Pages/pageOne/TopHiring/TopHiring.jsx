@@ -10,7 +10,7 @@ export default function TopHiring() {
 
         <div id="mid_sc">
           <div id="divmid_sc">
-            <h4>MNCs `${">"}`</h4>
+            <h4>MNCs &gt;</h4>
             <p>1.3K+ are actively hiring</p>
             <div>
               <img
@@ -33,7 +33,7 @@ export default function TopHiring() {
           </div>
 
           <div id="divmid_sc">
-            <h4>Edtech `${">"}`</h4>
+            <h4>Edtech &gt;</h4>
             <p>132 are actively hiring</p>
             <div>
               <img
@@ -56,7 +56,7 @@ export default function TopHiring() {
           </div>
 
           <div id="divmid_sc">
-            <h4>Healthcare `${">"}` </h4>
+            <h4>Healthcare &gt;</h4>
             <p>132 are actively hiring</p>
             <div>
               <img
@@ -79,7 +79,7 @@ export default function TopHiring() {
           </div>
 
           <div id="divmid_sc">
-            <h4>Unicorns `${">"}`</h4>
+            <h4>Unicorns &gt;</h4>
             <p>90 are actively hiring</p>
             <div>
               <img
@@ -102,7 +102,7 @@ export default function TopHiring() {
           </div>
 
           <div id="divmid_sc">
-            <h4>Internet `${">"}`</h4>
+            <h4>Internet &gt;</h4>
             <p>140 are actively hiring</p>
             <div>
               <img
