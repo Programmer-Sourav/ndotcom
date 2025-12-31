@@ -1,170 +1,187 @@
 import "./header.css";
+import { useState } from "react";
 
 export default function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+    setActiveDropdown(null);
+  };
+
+  const toggleDropdown = (dropdown) => {
+    setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
+  };
+
   return (
     <>
-      <head>
-        <title>My Naukri</title>
-      </head>
-      <body>
-        <div id="navbar">
-          <div id="logo">
-            <img
-              src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png"
-              alt="logo"
-            />
-          </div>
-          <div class="pages">
-            <div class="dropdown">
-              <h2 class="dropbtn" onclick="window.location.href='jobs1.html'">
-                Jobs
-              </h2>
-              <div class="dropdown-content">
-                <div>
-                  <h2>Popular Catogories</h2>
-                  <a href="#">IT jobs</a>
-                  <a href="#">Marketing jobs</a>
-                  <a href="#">Sales jobs</a>
-                  <a href="#">Data Science jobs</a>
-                  <a href="#">HR jobs</a>
-                  <a href="#">Engineering jobs</a>
-                </div>
-                <div class="hr"></div>
-                <div>
-                  <h2>Jobs in demand</h2>
-                  <a href="#">Fresher jobs</a>
-                  <a href="#">MNC jobs</a>
-                  <a href="#">Remote jobs</a>
-                  <a href="#">Work from home jobs</a>
-                  <a href="#">Walk-in jobs</a>
-                  <a href="#">Part-time jobs</a>
-                </div>
-                <div class="hr"></div>
-                <div>
-                  <h2>Explore more jobs</h2>
-                  <a href="#">jobs by catagory</a>
-                  <a href="#">jobs by skills</a>
-                  <a href="#">jobs by location</a>
-                  <a href="#">jobs by designation</a>
-                  <a href="#">Create free job alert</a>
-                </div>
-                <div class="hr"></div>
-                <div>
-                  <h2>Jobs by location</h2>
-                  <a href="#"> jobs in Delhi</a>
-                  <a href="#">jobs in Mumbai</a>
-                  <a href="#">jobs in Bengalore</a>
-                  <a href="#">jobs in Hyderabad</a>
-                  <a href="#">jobs in Chennai</a>
-                  <a href="#">jobs in Pune</a>
-                </div>
-              </div>
-            </div>
+      <div id="navbar">
+        <div id="logo">
+          <img
+            src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png"
+            alt="logo"
+          />
+        </div>
 
-            <div class="dropdown">
-              <h2 class="dropbtn" onclick="window.location.href = 'jobs1.html'">
-                Companies
-              </h2>
-              <div class="dropdown-content">
-                <div>
-                  <h2>Explore Catogories</h2>
-                  <a href="#">Unicorn</a>
-                  <a href="#">MNCs</a>
-                  <a href="#">Startup</a>
-                  <a href="#">Product based</a>
-                  <a href="#">Internet</a>
-                </div>
-                <div class="hr"></div>
-                <div>
-                  <h2>Explore collections</h2>
-                  <a href="#">Top Companies</a>
-                  <a href="#">Fintech Companies</a>
-                  <a href="#">Edtech Companies</a>
-                  <a href="#">Featured Companies</a>
-                  <a href="#">Sponsored Companies</a>
-                </div>
-                <div class="hr"></div>
-                <div>
-                  <h2>Research Companies</h2>
-                  <a href="#">Interview question</a>
-                  <a href="#">company salaries</a>
-                  <a href="#">About Companies</a>
-                  <a href="#">company reviews</a>
-                </div>
+        {/* Hamburger Menu Button */}
+        <button className="hamburger" onClick={toggleMobileMenu}>
+          <span className={`hamburger-line ${mobileMenuOpen ? 'open' : ''}`}></span>
+          <span className={`hamburger-line ${mobileMenuOpen ? 'open' : ''}`}></span>
+          <span className={`hamburger-line ${mobileMenuOpen ? 'open' : ''}`}></span>
+        </button>
+
+        {/* Navigation Menu */}
+        <div className={`pages ${mobileMenuOpen ? 'mobile-open' : ''}`}>
+          <div className={`dropdown ${activeDropdown === 'jobs' ? 'active' : ''}`}>
+            <h2 className="dropbtn" onClick={() => toggleDropdown('jobs')}>
+              Jobs
+              <i className="fa-solid fa-chevron-down"></i>
+            </h2>
+            <div className="dropdown-content">
+              <div>
+                <h3>Popular Categories</h3>
+                <a href="#">IT jobs</a>
+                <a href="#">Marketing jobs</a>
+                <a href="#">Sales jobs</a>
+                <a href="#">Data Science jobs</a>
+                <a href="#">HR jobs</a>
+                <a href="#">Engineering jobs</a>
+              </div>
+              <div className="hr"></div>
+              <div>
+                <h3>Jobs in demand</h3>
+                <a href="#">Fresher jobs</a>
+                <a href="#">MNC jobs</a>
+                <a href="#">Remote jobs</a>
+                <a href="#">Work from home jobs</a>
+                <a href="#">Walk-in jobs</a>
+                <a href="#">Part-time jobs</a>
+              </div>
+              <div className="hr"></div>
+              <div>
+                <h3>Explore more jobs</h3>
+                <a href="#">Jobs by category</a>
+                <a href="#">Jobs by skills</a>
+                <a href="#">Jobs by location</a>
+                <a href="#">Jobs by designation</a>
+                <a href="#">Create free job alert</a>
+              </div>
+              <div className="hr"></div>
+              <div>
+                <h3>Jobs by location</h3>
+                <a href="#">Jobs in Delhi</a>
+                <a href="#">Jobs in Mumbai</a>
+                <a href="#">Jobs in Bangalore</a>
+                <a href="#">Jobs in Hyderabad</a>
+                <a href="#">Jobs in Chennai</a>
+                <a href="#">Jobs in Pune</a>
               </div>
             </div>
-            <div class="dropdown">
-              <h2
-                class="dropbtn"
-                onclick="window.location.href = 'register.html'"
-              >
-                Services
-              </h2>
-              <div class="dropdown-content">
-                <div>
-                  <h2>Resume writing</h2>
-                  <a href="#">Text resume</a>
-                  <a href="#">Visual resume</a>
-                  <a href="#">Resume critique</a>
-                  <h2>
-                    <a href="#">Find jobs</a>
-                  </h2>
-                  <a href="#">Jobs4u</a>
-                </div>
-                <div class="hr"></div>
-                <div>
-                  <h2>Get recruiter's attention</h2>
-                  <a href="#">Resume display</a>
-                  <a href="#">Recruiter connection</a>
-                  <a href="#">job search booster</a>
-                  <h2>
-                    <a href="#">Monthly subscription</a>
-                  </h2>
-                  <a href="#">Basic & premium plans</a>
-                </div>
-                <div class="hr"></div>
-                <div>
-                  <h2>Learn & upskill</h2>
-                  <a href="#">Data Science courses</a>
-                  <a href="#">Technology courses</a>
-                  <a href="#">Management courses</a>
-                  <a href="#">Finance courses</a>
-                  <a href="#">Design courses</a>
-                  <a href="#">Healthcare courses</a>
-                  <a href="#">Degree programs</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="buttons">
-            <button class="login" onclick="window.location.href='login.html'">
-              Login
-            </button>
-            <button
-              class="regis"
-              onclick="window.location.href='register.html'"
-            >
-              Register
-            </button>
           </div>
 
-          <div class="foremp">
-            <div class="dropdown">
-              <h2 class="dropbtn" onclick="window.location.href = '#'">
-                For employers
-                <i class="fa-solid fa-chevron-down"></i>{" "}
-              </h2>
-              <div class="dropdown-content">
-                <div>
-                  <a href="#">Buy online</a>
-                  <a href="#">Our hiring solution</a>
-                  <a href="#">Employer Login</a>
-                </div>
+          <div className={`dropdown ${activeDropdown === 'companies' ? 'active' : ''}`}>
+            <h2 className="dropbtn" onClick={() => toggleDropdown('companies')}>
+              Companies
+              <i className="fa-solid fa-chevron-down"></i>
+            </h2>
+            <div className="dropdown-content">
+              <div>
+                <h3>Explore Categories</h3>
+                <a href="#">Unicorn</a>
+                <a href="#">MNCs</a>
+                <a href="#">Startup</a>
+                <a href="#">Product based</a>
+                <a href="#">Internet</a>
+              </div>
+              <div className="hr"></div>
+              <div>
+                <h3>Explore collections</h3>
+                <a href="#">Top Companies</a>
+                <a href="#">Fintech Companies</a>
+                <a href="#">Edtech Companies</a>
+                <a href="#">Featured Companies</a>
+                <a href="#">Sponsored Companies</a>
+              </div>
+              <div className="hr"></div>
+              <div>
+                <h3>Research Companies</h3>
+                <a href="#">Interview questions</a>
+                <a href="#">Company salaries</a>
+                <a href="#">About Companies</a>
+                <a href="#">Company reviews</a>
+              </div>
+            </div>
+          </div>
+
+          <div className={`dropdown ${activeDropdown === 'services' ? 'active' : ''}`}>
+            <h2 className="dropbtn" onClick={() => toggleDropdown('services')}>
+              Services
+              <i className="fa-solid fa-chevron-down"></i>
+            </h2>
+            <div className="dropdown-content">
+              <div>
+                <h3>Resume writing</h3>
+                <a href="#">Text resume</a>
+                <a href="#">Visual resume</a>
+                <a href="#">Resume critique</a>
+                <h3>Find jobs</h3>
+                <a href="#">Jobs4u</a>
+              </div>
+              <div className="hr"></div>
+              <div>
+                <h3>Get recruiter's attention</h3>
+                <a href="#">Resume display</a>
+                <a href="#">Recruiter connection</a>
+                <a href="#">Job search booster</a>
+                <h3>Monthly subscription</h3>
+                <a href="#">Basic & premium plans</a>
+              </div>
+              <div className="hr"></div>
+              <div>
+                <h3>Learn & upskill</h3>
+                <a href="#">Data Science courses</a>
+                <a href="#">Technology courses</a>
+                <a href="#">Management courses</a>
+                <a href="#">Finance courses</a>
+                <a href="#">Design courses</a>
+                <a href="#">Healthcare courses</a>
+                <a href="#">Degree programs</a>
               </div>
             </div>
           </div>
         </div>
-      </body>
+
+        <div id="buttons">
+          <button className="login" onClick={() => window.location.href='/login'}>
+            Login
+          </button>
+          <button className="regis" onClick={() => window.location.href='/register'}>
+            Register
+          </button>
+        </div>
+
+        <div className="foremp">
+          <div className={`dropdown ${activeDropdown === 'employer' ? 'active' : ''}`}>
+            <h2 className="dropbtn" onClick={() => toggleDropdown('employer')}>
+              For employers
+              <i className="fa-solid fa-chevron-down"></i>
+            </h2>
+            <div className="dropdown-content">
+              <div>
+                <a href="#">Buy online</a>
+                <a href="#">Our hiring solution</a>
+                <a href="#">Employer Login</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Menu Overlay */}
+      {mobileMenuOpen && (
+        <div className="mobile-overlay" onClick={toggleMobileMenu}></div>
+      )}
     </>
   );
 }
