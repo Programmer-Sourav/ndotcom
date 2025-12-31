@@ -1,5 +1,54 @@
-.historycontainer{
+/* Job History Page - Main Container */
+.historycontainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 120px);
+}
+
+/* Page Title */
+.historycontainer h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+/* Content wrapper */
+.history-content {
+    display: flex;
+    gap: 24px;
+}
+
+/* Tablet styles */
+@media (max-width: 900px) {
+    .historycontainer {
+        padding: 16px;
+    }
+
+    .historycontainer h1 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .history-content {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .historycontainer {
+        padding: 12px;
+    }
+
+    .historycontainer h1 {
+        font-size: 18px;
+    }
 }

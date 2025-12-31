@@ -1,75 +1,220 @@
-#bottom{
+/* Footer Styles */
+#bottom {
     display: flex;
-    /* border: 2px solid ; */
-    width: 95%;
-    margin-top: 60px;
-    margin: auto;
-    /* height: 200px; */
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 40px 24px;
     justify-content: space-between;
- }
- .logo-web{
-    margin-left: 10px;
-    width: 170px !important;
- }
+    background: #fff;
+    border-top: 1px solid #e4e5e8;
+}
 
- #div1{
+.logo-web {
+    margin-left: 0;
+    width: 120px !important;
+    height: auto;
+}
+
+/* Company Info Section */
+#div1 {
     width: 20%;
-    margin-top: 10px;
- }
- #div1 p{
+    min-width: 180px;
+}
+
+#div1 p {
     text-align: left;
-    margin-top: 40px !important;
+    margin-top: 20px !important;
     margin-bottom: 8px !important;
-    color: rgb(16, 16, 16);
- }
- 
- #div1>img{
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#div1 > img {
     width: 100px;
-    margin: auto;
-    margin-left: 10px;
- }
- #logos{
+    margin: 0;
+}
+
+#logos {
     display: flex;
- }
- #div1>p{
-    margin-top: 20px;
-    margin-left: 20px;
- }
- #logos>img{
-    margin-left: 20px;
- }
- #div2{
+    gap: 12px;
+    margin-top: 16px;
+}
+
+#logos > img,
+#logos > a > img {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+#logos > img:hover,
+#logos > a > img:hover {
+    opacity: 1;
+}
+
+/* Links Section */
+#div2 {
     display: flex;
-    width: 50%;
-    justify-content: space-between;
- }
- #div2>div{
-    margin-left: 50px;
- }
- #div2 div a{
+    flex: 1;
+    justify-content: center;
+    gap: 60px;
+}
+
+#div2 > div {
+    margin: 0;
+}
+
+#div2 div h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 16px 0;
+}
+
+#div2 div a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     display: block;
-    margin-bottom: 15px;
-    color: rgb(54, 54, 54);
- }
- #div3{
-    width: 30%;
-    border: 1px solid rgb(192, 190, 190);
-    margin-left: 50px;
-    padding: 10px 30px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
- }
- #div3 h3{
-    font-weight: 400;
- }
- .store>a>img{
-   width: 140px;
- }
- #div3>p{
+    margin-bottom: 12px;
+    color: #666;
+    transition: color 0.2s ease;
+}
+
+#div2 div a:hover {
+    color: #457eff;
+}
+
+/* App Download Section */
+#div3 {
+    width: 280px;
+    min-width: 240px;
+    border: 1px solid #e4e5e8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+#div3 h3 {
+    font-weight: 600;
     font-size: 16px;
-    margin-top: -20px;
-    margin-bottom: 25px;
-    color: rgb(99, 98, 98);
- }
+    color: #333;
+    margin: 0 0 8px 0;
+}
+
+#div3 > p {
+    font-size: 14px;
+    margin: 0 0 16px 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+.store {
+    display: flex;
+    gap: 12px;
+}
+
+.store > a > img {
+    width: 120px;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Copyright Section */
+.copyright {
+    text-align: center;
+    padding: 20px 24px;
+    color: #666;
+    font-size: 13px;
+    border-top: 1px solid #e4e5e8;
+    background: #f8f9fa;
+}
+
+/* Tablet styles */
+@media (max-width: 900px) {
+    #bottom {
+        flex-wrap: wrap;
+        gap: 32px;
+        padding: 32px 20px;
+    }
+
+    #div1 {
+        width: 100%;
+        order: 1;
+        text-align: center;
+    }
+
+    #div1 > img,
+    .logo-web {
+        margin: 0 auto;
+    }
+
+    #div1 p {
+        text-align: center;
+    }
+
+    #logos {
+        justify-content: center;
+    }
+
+    #div2 {
+        width: 100%;
+        order: 3;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #div3 {
+        width: 100%;
+        order: 2;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .store {
+        justify-content: center;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    #bottom {
+        padding: 24px 16px;
+        gap: 24px;
+    }
+
+    #div2 {
+        gap: 24px;
+    }
+
+    #div2 > div {
+        flex: 1;
+        min-width: 120px;
+    }
+
+    #div2 div h4 {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    #div2 div a {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    #div3 {
+        padding: 16px;
+    }
+
+    #div3 h3 {
+        font-size: 15px;
+    }
+
+    .store > a > img {
+        width: 100px;
+    }
+}

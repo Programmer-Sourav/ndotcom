@@ -1,65 +1,131 @@
-.cardcontainer{
+/* History Left Card - Job Application Card */
+.cardcontainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: aliceblue;
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #e4e5e8;
+    padding: 20px;
+    margin-bottom: 12px;
+    transition: box-shadow 0.2s ease;
 }
 
-.headerblock{
-   margin-left: 8px; 
-   margin-bottom: 8px;
-   align-self: flex-start;
-   width: auto;
+.cardcontainer:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.subheaderblock{ 
+.headerblock {
+    margin-bottom: 12px;
+    align-self: flex-start;
+}
+
+.headerblock h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 4px 0;
+}
+
+.headerblock a {
+    color: #457eff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.headerblock a:hover {
+    text-decoration: underline;
+}
+
+.subheaderblock {
     display: inline-block;
-    width: auto;
     margin-right: 16px;
+    font-size: 14px;
+    color: #666;
 }
 
-.subheaderholder{
-    margin-left: 8px; 
+.subheaderholder {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
+    gap: 4px 0;
+    margin-bottom: 12px;
 }
 
-
-.bottombar{
+.bottombar {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    margin-left: 8px;
-    margin-bottom: 16px; 
+    align-items: center;
+    gap: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #f0f0f0;
 }
 
 .contacted-pill {
-    height: 24px;
-    width: auto;
-    text-align: center;
-    padding-left: 8px;
-    padding-right: 8px;
-    border-radius: 32px;
+    height: 28px;
+    padding: 0 12px;
+    border-radius: 14px;
     font-size: 12px;
-    margin-top: 32px;
-    border: 1px solid gray;
+    font-weight: 500;
+    border: 1px solid #e4e5e8;
+    background: #f8f9fa;
+    color: #666;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
-.recruiter-active-pill{
-    height: 24px;
-    width: auto;
-    text-align: center;
-    padding-left: 8px;
-    padding-right: 8px;
-    border-radius: 32px;
+.recruiter-active-pill {
+    height: 28px;
+    padding: 0 12px;
+    border-radius: 14px;
     font-size: 12px;
-    margin-top: 32px;
-    color: gray;
-    border: 1px solid white;
+    font-weight: 500;
+    color: #0ea581;
+    background: #e6f7f2;
+    border: 1px solid #b8e6d7;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+}
+
+/* Tablet styles */
+@media (max-width: 900px) {
+    .cardcontainer {
+        padding: 16px;
+    }
+
+    .subheaderblock {
+        font-size: 13px;
+        margin-right: 12px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .cardcontainer {
+        padding: 14px;
+        border-radius: 10px;
+    }
+
+    .headerblock h3 {
+        font-size: 15px;
+    }
+
+    .subheaderblock {
+        font-size: 12px;
+    }
+
+    .bottombar {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .contacted-pill,
+    .recruiter-active-pill {
+        height: 26px;
+        font-size: 11px;
+        padding: 0 10px;
+    }
 }

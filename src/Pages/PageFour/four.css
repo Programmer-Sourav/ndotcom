@@ -1,43 +1,153 @@
-
-.body{
+/* OTP Verification Page */
+.body {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    width: fit-content;
-    height: fit-content;
-    margin-left: 64px;
+    width: 100%;
+    max-width: 480px;
+    padding: 40px 24px;
+    margin: 0 auto;
 }
 
-.inputotp{
-    height: 60px;
-    width: 60px;
-    border-radius: 8px;
-    border: 1px solid blueviolet;
-    font-size: 20px;
-    margin: 8px;
-    text-align: center;
+.headerdesign {
+    text-align: left;
+    margin-bottom: 8px;
 }
 
-.otpbox{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+.headerdesign h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
 }
 
-
-.graytext{
+.graytext {
     text-align: left;
     margin-top: 8px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
-.verifybtn{
-    width: 92px;
-    height: 40px;
+.otpbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.inputotp {
+    height: 56px;
+    width: 56px;
+    border-radius: 12px;
+    border: 2px solid #e4e5e8;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.inputotp:focus {
+    outline: none;
+    border-color: #457eff;
+    box-shadow: 0 0 0 3px rgba(69, 126, 255, 0.1);
+}
+
+.inputotp::placeholder {
+    color: #ccc;
+}
+
+.verifybtn {
+    width: 100%;
+    height: 48px;
     color: white;
-    background: blueviolet;
-    border-radius: 32px;
-    font: bold;
+    background: #457eff;
+    border: none;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 32px;
+    transition: background-color 0.2s ease;
 }
 
-.headerdesign{
-    text-align: left;
+.verifybtn:hover {
+    background-color: #1f4fad;
+}
+
+.verifybtn:disabled {
+    background-color: #b8c9e8;
+    cursor: not-allowed;
+}
+
+/* Resend OTP link */
+.resend-link {
+    color: #457eff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.resend-link:hover {
+    text-decoration: underline;
+}
+
+/* Timer text */
+.timer-text {
+    color: #666;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.timer-text span {
+    color: #ff6b35;
+    font-weight: 600;
+}
+
+/* Tablet styles */
+@media (max-width: 900px) {
+    .body {
+        padding: 32px 20px;
+    }
+
+    .headerdesign h2 {
+        font-size: 20px;
+    }
+
+    .inputotp {
+        height: 52px;
+        width: 52px;
+        font-size: 22px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .body {
+        padding: 24px 16px;
+    }
+
+    .headerdesign h2 {
+        font-size: 18px;
+    }
+
+    .otpbox {
+        gap: 8px;
+    }
+
+    .inputotp {
+        height: 48px;
+        width: 48px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    .verifybtn {
+        height: 44px;
+        font-size: 14px;
+    }
 }

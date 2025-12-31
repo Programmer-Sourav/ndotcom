@@ -1,31 +1,116 @@
-.historyheader{
+/* History Page Header */
+.historyheader {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+    border: 1px solid #e4e5e8;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
 }
 
 .leftcontainer {
-    height: 72px;
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 16px; 
-    width: 70%;
+    flex: 1;
+}
+
+.leftcontainer h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 4px 0;
+}
+
+.leftcontainer p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
 }
 
 .rightcontainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    height: 72px;
-    margin-top: 16px; 
-    width: 30%;
+    gap: 12px;
 }
-.marginfix{
-    margin-bottom: -16px;
+
+.marginfix {
+    margin-bottom: 0;
 }
-.parafix{
-    width: 60px;
+
+.parafix {
+    font-size: 14px;
+    color: #666;
     text-align: left;
 }
-.headerfix{
+
+.headerfix {
     text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Filter/Sort buttons */
+.rightcontainer button {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #e4e5e8;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.rightcontainer button:hover {
+    border-color: #457eff;
+    color: #457eff;
+}
+
+/* Tablet styles */
+@media (max-width: 900px) {
+    .historyheader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .leftcontainer {
+        width: 100%;
+    }
+
+    .rightcontainer {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .historyheader {
+        padding: 14px;
+        border-radius: 10px;
+    }
+
+    .leftcontainer h2 {
+        font-size: 18px;
+    }
+
+    .rightcontainer {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .rightcontainer button {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
 }

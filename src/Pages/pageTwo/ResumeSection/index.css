@@ -1,153 +1,347 @@
-body{
+/* Resume Section - Profile Page */
+.parent-div {
+    display: flex;
     width: 100%;
+    gap: 24px;
 }
-.parent-div{
-    display: flex;
-    width: 90%;
-    margin: auto;
-}
-.child-left{
-    width: 20%;
-    border: 1px solid rgb(129, 128, 128);
-    border-radius: 10px;
-    padding: 10px 15px 13px 20px;
+
+/* Left Sidebar - Quick Links */
+.child-left {
+    width: 240px;
+    min-width: 240px;
+    background: #fff;
+    border: 1px solid #e4e5e8;
+    border-radius: 12px;
+    padding: 16px;
     height: fit-content;
+    position: sticky;
+    top: 80px;
 }
-.quick-link{
+
+.child-left h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 12px 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e4e5e8;
+}
+
+.quick-link {
     display: flex;
     justify-content: space-between;
-    margin-top: 7px;
     align-items: center;
+    padding: 10px 12px;
+    margin: 4px 0;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    cursor: pointer;
 }
-.quick-link a{
+
+.quick-link:hover {
+    background-color: #f5f7fa;
+}
+
+.quick-link a {
     text-decoration: none;
-    font-size: 17px;
-}
-.child-left div{
-    padding: 4px 7px;
-}
-.child-left div :hover{
-    background-color: rgb(209, 210, 211);
-    /* padding: 0px 8px; */
-    border-radius: 10px;
-}
-/*  */
-.child-right{
-    width: 80%;
-    margin-left: 15px;
-}
-.child-right div{
-  padding: 15px;
-  border: 1px solid #a1a0a0;
-  border-radius: 15px;
-    
-}
-.child-right div b span {
-    font-size: 17px;
-    color: rgb(8, 186, 17);
-}
-.child-right div p{
-    font-size: 17px;
-    color: #4e4e4e;
-}
-.up-resume-btn{
-    text-align: center;
-    align-items: center;
-    border: 1px dashed rgb(114, 152, 250) !important;
-    border-radius: 15px;
-}
-.up-resume-btn button{
-    padding: 4px 9px;
-    background-color: #ffffff;
-    border: 1px solid #3371f8;
-    color: #2165f7;
-    border-radius: 15px;
-    font-size: 17px;
-    margin-top: 30px;
-    margin-bottom: 0 !important;
-}
-/*  */
-.low-part{
-    display: flex;
-    margin-top: 10px;
-    border: none !important;
-    background-color: #ECF5FF;
-}
-.low-part img{
-    width: 70px;
-    margin-right: 20px;
-}
-.low-part p span{
-    font-size: 23px;
+    font-size: 14px;
+    color: #333;
     font-weight: 500;
-    color: black;
 }
-.low-part a{
+
+.quick-link i {
+    font-size: 12px;
+    color: #8292b4;
+}
+
+.child-left div {
+    padding: 0;
+}
+
+.child-left div:hover {
+    background: none;
+}
+
+/* Right Content Area */
+.child-right {
+    flex: 1;
+    min-width: 0;
+}
+
+.child-right > div {
+    padding: 20px;
+    border: 1px solid #e4e5e8;
+    border-radius: 12px;
+    background: #fff;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.child-right div b {
+    font-size: 16px;
+    color: #333;
+}
+
+.child-right div b span {
+    font-size: 14px;
+    color: #0ea581;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.child-right div p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin: 8px 0 0 0;
+}
+
+/* Resume Upload Section */
+.up-resume-btn {
+    text-align: center;
+    border: 2px dashed #457eff !important;
+    border-radius: 12px;
+    padding: 32px 20px !important;
+    background: #f8faff !important;
+    transition: all 0.2s ease;
+}
+
+.up-resume-btn:hover {
+    background: #eef4ff !important;
+    border-color: #1f4fad !important;
+}
+
+.up-resume-btn p {
+    margin: 0 0 8px 0;
+    color: #666;
+}
+
+.up-resume-btn button {
+    padding: 10px 24px;
+    background-color: #fff;
+    border: 1px solid #457eff;
+    color: #457eff;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 16px;
+}
+
+.up-resume-btn button:hover {
+    background-color: #457eff;
+    color: #fff;
+}
+
+/* Low part - Promo section */
+.low-part {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    border: none !important;
+    background: linear-gradient(135deg, #ecf5ff 0%, #e8f0fe 100%) !important;
+    border-radius: 12px !important;
+    padding: 20px !important;
+}
+
+.low-part img {
+    width: 60px;
+    height: 60px;
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+
+.low-part p {
+    flex: 1;
+    margin: 0;
+}
+
+.low-part p span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.low-part a {
     text-decoration: none;
-    font-size: 18px;
-    margin: 30px 15px 0px 150px;
+    font-size: 14px;
+    color: #457eff;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-left: 16px;
 }
-/*  */
-.resume-headline{
-    margin-top: 20px;
-    border: 1px solid #bdbcbc !important;
-    box-shadow: 1px 1px 0px 0px #a1a0a0;
+
+.low-part a:hover {
+    text-decoration: underline;
 }
-.add-headline{
+
+/* Resume Headline Section */
+.resume-headline {
+    margin-top: 16px;
+    border: 1px solid #e4e5e8 !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.add-headline {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
-.add-headline b span{
-   margin-left: 10px !important;
+
+.add-headline b {
+    display: flex;
+    align-items: center;
 }
-.add-headline a{
+
+.add-headline b span {
+    margin-left: 8px;
+}
+
+.add-headline a {
     text-decoration: none;
-    color: #0444ce;
-}
-.headline-para{
-    font-size: 17px !important;
-}
-.profile-summary{
-    border: 1px !important;
-   
-}
-.career-profile{
-    border: 1px !important;
-    margin: -8px;
-}
-.personal-profile{
-    border: 1px !important;
-    margin: -8px;
-}
-.add-projects{
-    border: 1px !important;
-    margin: -8px;
-}
-.acomplishments{
-    border: 1px !important;
-    margin: -8px;
+    color: #457eff;
+    font-size: 14px;
+    font-weight: 600;
 }
 
-@media screen and (min-width: 480px) {
-    .body {
-      font-size: 14px;
+.add-headline a:hover {
+    text-decoration: underline;
+}
+
+.headline-para {
+    font-size: 14px !important;
+    color: #666 !important;
+    margin-top: 12px !important;
+}
+
+/* Profile sections */
+.profile-summary,
+.career-profile,
+.personal-profile,
+.add-projects,
+.acomplishments {
+    border: 1px solid #e4e5e8 !important;
+    margin: 0 !important;
+    border-radius: 12px !important;
+}
+
+/* Tablet styles */
+@media (max-width: 900px) {
+    .parent-div {
+        flex-direction: column;
+    }
+
+    .child-left {
+        width: 100%;
+        min-width: 100%;
+        position: relative;
+        top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .child-left h3 {
+        width: 100%;
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+    }
+
+    .quick-link {
+        flex: 0 0 auto;
+        padding: 8px 12px;
+        background: #f5f7fa;
+        border-radius: 20px;
+    }
+
+    .quick-link i {
+        display: none;
+    }
+
+    .child-right {
+        width: 100%;
+    }
+
+    .low-part {
+        flex-wrap: wrap;
+    }
+
+    .low-part a {
+        width: 100%;
+        margin: 12px 0 0 0;
     }
 }
 
-@media screen and (min-width: 768px) {
-    .body{
-        font-size: 16px;
+/* Mobile styles */
+@media (max-width: 600px) {
+    .parent-div {
+        gap: 12px;
     }
-}
 
-@media screen and (min-width: 1024px){
-    .body{
-        font-size: 18px;
+    .child-left {
+        padding: 10px;
+        gap: 6px;
     }
-}
 
-@media screen and (min-width: 1900px ) {
-    .body{
-        font-size: 20px;
+    .child-left h3 {
+        font-size: 13px;
+    }
+
+    .quick-link {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .quick-link a {
+        font-size: 12px;
+    }
+
+    .child-right > div {
+        padding: 16px;
+        border-radius: 10px;
+        margin-bottom: 12px;
+    }
+
+    .child-right div b {
+        font-size: 15px;
+    }
+
+    .child-right div p {
+        font-size: 13px;
+    }
+
+    .up-resume-btn {
+        padding: 24px 16px !important;
+    }
+
+    .up-resume-btn button {
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+
+    .low-part {
+        padding: 16px !important;
+    }
+
+    .low-part img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .low-part p span {
+        font-size: 14px;
+    }
+
+    .add-headline {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .add-headline a {
+        align-self: flex-start;
     }
 }
