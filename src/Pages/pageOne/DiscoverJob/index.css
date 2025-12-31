@@ -1,93 +1,159 @@
-body{
+/* Discover Jobs Section */
+body {
     width: 100%;
-    
 }
+
 #parent {
-    height: 380px;
-    width: 90%;
-    margin: auto;
-    border-radius: 20px;
-    margin-top: 40px !important;
+    width: 100%;
+    max-width: 1200px;
+    margin: 48px auto;
+    padding: 0 24px;
     display: flex;
-    align-items: center;
-    background: linear-gradient(white, rgb(253, 238, 225));
+    align-items: stretch;
+    gap: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #fff5eb 0%, #ffe8d6 100%);
 }
 
 #child1 {
-    height: 370px;
     width: 45%;
-    background-color: rgb(255, 250, 242);
-    background: linear-gradient(white, rgb(254, 243, 234));
-    border-radius: 5px;
-    color: #1b2437;
-    box-sizing: border-box;
-    text-align: left;
-    border-top: 1px solid rgb(253, 224, 197);
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#child1>img {
-    height: 160px;
-    padding-top: 20px;
-    /* width: auto; */
-    margin-left: 70px;
-    /* margin-top: 50px; */
-    margin-bottom: -10px;
+#child1 > img {
+    height: 140px;
+    width: auto;
+    margin-bottom: 24px;
 }
 
-#child1>h2 {
-    text-align: start;
-    margin-left: 70px;
-    font-size: 27px;
-    padding-bottom: 5px;
-    font-family: 'Roboto', sans-serif;
+#child1 > h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 12px 0;
 }
 
-#child1>p {
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-top: -15px;
-    padding-bottom: 0px;
-    text-align: left;
-    color: #26282c;
-    font-size: 18px;
+#child1 > p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
 }
 
 #child2 {
-    height: 430px;
-    width: 50%;
-    border: 1px solid #dbe3f4;
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    box-sizing: border-box;
-    padding: 80px 50px;
+    width: 55%;
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px;
+    gap: 16px;
+    margin: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
-#child2>div {
-    border: 1px solid #dbe3f4;
-    border-radius: 10px;
-    line-height: 5px;
-    padding-left: 15px;
+#child2 > div {
+    border: 1px solid #e4e5e8;
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.2s ease;
 }
 
-#child2>div:hover {
-    cursor: pointer;
-    margin: -5px;
+#child2 > div:hover {
+    border-color: #457eff;
+    box-shadow: 0 4px 12px rgba(69, 126, 255, 0.12);
+    transform: translateY(-2px);
+    margin: 0;
 }
 
 #child2 h4 {
-    color: #1b2437;
-    font-weight: 500;
-    padding-top: 10px;
-    text-align: left;
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 0 8px 0;
 }
 
 #child2 p {
-    color: #444c5e;
-    padding-top: 0px;
-    text-align: left;
-    font-size: 15px;
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.5;
 }
 
+/* Tablet styles */
+@media (max-width: 900px) {
+    #parent {
+        flex-direction: column;
+        margin: 32px 20px;
+        padding: 0;
+    }
+
+    #child1 {
+        width: 100%;
+        padding: 32px 24px;
+        align-items: center;
+        text-align: center;
+    }
+
+    #child1 > img {
+        height: 100px;
+        margin-bottom: 16px;
+    }
+
+    #child1 > h2 {
+        font-size: 24px;
+    }
+
+    #child2 {
+        width: calc(100% - 32px);
+        margin: 0 16px 16px;
+        padding: 24px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    #parent {
+        margin: 24px 16px;
+        border-radius: 16px;
+    }
+
+    #child1 {
+        padding: 24px 20px;
+    }
+
+    #child1 > img {
+        height: 80px;
+    }
+
+    #child1 > h2 {
+        font-size: 20px;
+    }
+
+    #child1 > p {
+        font-size: 14px;
+    }
+
+    #child2 {
+        grid-template-columns: 1fr;
+        padding: 16px;
+        margin: 0 12px 12px;
+        gap: 12px;
+    }
+
+    #child2 > div {
+        padding: 16px;
+    }
+
+    #child2 h4 {
+        font-size: 15px;
+    }
+
+    #child2 p {
+        font-size: 13px;
+    }
+}

@@ -1,137 +1,254 @@
+/* Featured Companies Section */
 #feat_sc {
-    /* margin: auto; */
-    /* font-family: Arial, Helvetica, sans-serif; */
-    margin-bottom: 60px;
+    padding: 48px 24px 60px;
     text-align: center;
-}
-.feat-option{
-    margin-top: 25px;
-
-}
-.feat-option a{
-    text-decoration: none;
-    font-size: 22px;
-    margin-left: 20px;
-    color: #3d3d3f;
-    border: 1px solid #3d3d3f;
-    padding: 5px 8px;
-    border-radius: 14px;
-}
-.all-op{
-    background-color: #efefff;
-    font-weight: 500 !important;
-    border: 1px solid #141414 !important;
-    color: #111111 !important;
+    background: #f8f9fa;
 }
 
+#feat_sc h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
 
-#middiv_sc {
+.feat-option {
+    margin-top: 24px;
     display: flex;
-    width: 95%;
-    /* height: 150px; */
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
-    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
+.feat-option a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    border: 1px solid #e4e5e8;
+    padding: 10px 20px;
+    border-radius: 24px;
+    transition: all 0.2s ease;
+}
+
+.feat-option a:hover {
+    border-color: #457eff;
+    color: #457eff;
+    background: #f8faff;
+}
+
+.all-op {
+    background-color: #457eff !important;
+    color: #fff !important;
+    border-color: #457eff !important;
+}
+
+/* Company Cards Grid */
+#middiv_sc {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 32px auto 0;
+}
 
 #ba_sc {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    border: 1px solid rgb(230, 227, 227);
-    border-radius: 10px;
-    padding: 20px;
-    margin: auto;
-    height: 300px;
-    width: 20%;
-
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e4e5e8;
+    border-radius: 12px;
+    padding: 24px;
+    background: #fff;
+    height: auto;
+    width: 100%;
+    transition: all 0.2s ease;
 }
 
 #ba_sc:hover {
-    box-shadow: rgba(116, 209, 249, 0.12) 0px 2px 4px 0px, rgba(121, 206, 243, 0.32) 0px 2px 16px 0px;
+    border-color: #457eff;
+    box-shadow: 0 4px 16px rgba(69, 126, 255, 0.12);
+    transform: translateY(-2px);
 }
 
-#ba_sc>img {
-    margin: auto;
+#ba_sc > img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    margin: 0 auto 16px;
 }
 
 #bd_sc {
-   border-radius: 7px;
-    padding: 10px;
-    background-color: #fef8f1;
-    margin: auto;
-    justify-content: center;
+    border-radius: 8px;
+    padding: 8px 12px;
+    background-color: #fff5eb;
+    margin: 0 auto 12px;
+    text-align: center;
 }
-.title-com{
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 10px !important;
+
+#bd_sc > p {
+    margin: 0;
+    font-size: 13px;
+    color: #ff6b35;
+    font-weight: 500;
 }
-.review-com{
-    color: #999797;
-    font-size: 17px;
+
+.title-com {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 8px 0;
+    text-align: center;
 }
-.review-com span{
-    margin-right: 6px;
-}
-.review-com span i{
-    color: gold;
+
+.review-com {
+    color: #666;
     font-size: 14px;
+    text-align: center;
+    margin: 0 0 12px 0;
 }
 
-#bd_sc>p {
-    margin: auto;
-    text-align: center;
+.review-com span {
+    margin-right: 4px;
 }
 
-#bm_sc p{
-    text-align: center;
+.review-com span i {
+    color: #ffc107;
+    font-size: 12px;
 }
 
 #bp_sc {
-    /* height: 30px; */
-    /* width: 100px; */
-    font-weight: 500;
-    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 24px;
     padding: 10px 20px;
-    margin: auto;
-    border: 1px solid rgb(232, 235, 246);
-    background-color: rgb(232, 235, 246);
-    color: rgb(41, 116, 244);
-
+    margin: auto 0 0;
+    border: none;
+    background-color: #e8f0fe;
+    color: #457eff;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 #bp_sc:hover {
-    cursor: pointer;
+    background-color: #457eff;
+    color: #fff;
 }
 
 #bm_sc {
-    font-size: 17px;
-    color: #3d3d3f;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 16px;
 }
 
+#bm_sc p {
+    margin: 4px 0;
+}
 
-
-#bottomDivButton { 
-    height: 50px;
+/* View All Button */
+#bottomDivButton {
+    height: 48px;
     width: 200px;
-    margin-left: 42%;
-    border: 1px solid #457eff;
+    margin: 40px auto 0;
+    display: block;
+    border: 2px solid #457eff;
     color: #457eff;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 24px;
     font-size: 16px;
     font-weight: 600;
-    margin-top: 35px;
-
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 #bottomDivButton:hover {
-    cursor: pointer;
-    background-color: #98b6fb;
+    background-color: #457eff;
+    color: #fff;
 }
 
-#bdv_Sc:hover {
-    cursor: pointer;
-    background-color: #98b6fb;
+/* Tablet styles */
+@media (max-width: 900px) {
+    #feat_sc {
+        padding: 40px 20px 48px;
+    }
+
+    #feat_sc h2 {
+        font-size: 24px;
+    }
+
+    #middiv_sc {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    #ba_sc {
+        padding: 20px;
+    }
+
+    .feat-option {
+        gap: 8px;
+    }
+
+    .feat-option a {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    #feat_sc {
+        padding: 32px 16px 40px;
+    }
+
+    #feat_sc h2 {
+        font-size: 20px;
+    }
+
+    #middiv_sc {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    #ba_sc {
+        padding: 16px;
+    }
+
+    #ba_sc > img {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 12px;
+    }
+
+    .title-com {
+        font-size: 14px;
+    }
+
+    .review-com {
+        font-size: 12px;
+    }
+
+    #bp_sc {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    #bottomDivButton {
+        width: 160px;
+        height: 44px;
+        font-size: 14px;
+    }
+
+    .feat-option {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding: 0 8px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .feat-option a {
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
 }
