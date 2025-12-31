@@ -1,80 +1,180 @@
-#premimum{
-    border: 1px solid rgb(188, 187, 187);
-   border-radius: 10px;
+/* Premium Job Search Section */
+#premimum {
+    border: 1px solid #e4e5e8;
+    border-radius: 16px;
     display: flex;
-    width:90%;
-    margin: auto;
-    margin-top: 50px;
-    height: 170px;
-}
-#pimg{
-    text-align: center;
     align-items: center;
-}
-#pimg img{
-    margin: 15px 0px 0px 10px;
-    width: 150px;
-    /* width: 200px; */
-    /* border: 2px solid; */
-}
-#infor{
-    width: 50%;
-    margin-left: 30px;
-}
-#infor h3{
-    font-size: 22px;
-    font-weight: 600;
-    /* margin-top: px !important; */
-    margin-bottom: 0 !important;
-}
-#infor>p{
-    color: grey;
-    margin-top: 5px !important;
-    margin-bottom: 5px !important;
-    font-size: 17px;
-}
-.si{
-    display: flex;
-    margin-top: 20px;
-}
-.si a{
-    text-decoration: none;
-    border: 0.7px solid rgb(219, 201, 201);
-    border-radius: 20px;
-    font-size: 16px;
-    margin-left: 20px;
-    padding: 5px 10px;
-    color: rgb(39, 38, 38);
-}
-.si a i{
-    color: rgb(150, 150, 255);
-}
-#pbtn{
-  width: 30%;
-  text-align: right;
-  
-}
-.fastforward-btn{
-    border: none;
-    background-color: lavender;
-    color: #3b3b3b;
-    padding: 4px 8px;
-    font-size: 14px;
-    border-radius: 0px 0px 10px 10px;
-}
-#pbtn p{
-    margin-top: 5px !important;
-    font-size: 16px;
-    color: #5a5a5a;
+    width: 100%;
+    max-width: 1200px;
+    margin: 48px auto;
+    padding: 24px;
+    background: #fff;
+    gap: 24px;
 }
 
-#o{
-    margin-top: 35px;
-    padding: 10px 25px;
+#pimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pimg img {
+    width: 140px;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+
+#infor {
+    flex: 1;
+}
+
+#infor h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 8px 0;
+}
+
+#infor > p {
+    color: #666;
+    margin: 0 0 16px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.si {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+}
+
+.si a {
+    text-decoration: none;
+    border: 1px solid #e4e5e8;
     border-radius: 20px;
+    font-size: 14px;
+    padding: 8px 16px;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.si a:hover {
+    border-color: #457eff;
+    color: #457eff;
+}
+
+.si a i {
+    color: #457eff;
+    margin-right: 6px;
+}
+
+#pbtn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.fastforward-btn {
+    border: none;
+    background-color: #eff0ff;
+    color: #666;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 0 0 8px 8px;
+}
+
+#pbtn p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+#o {
+    padding: 12px 28px;
+    border-radius: 24px;
     font-weight: 600;
-    background-color: rgba(28, 46, 250, 0.977);
-    color: rgb(255, 255, 255);
+    font-size: 15px;
+    background-color: #457eff;
+    color: #fff;
     border: none;
     cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#o:hover {
+    background-color: #1f4fad;
+}
+
+/* Tablet styles */
+@media (max-width: 900px) {
+    #premimum {
+        flex-wrap: wrap;
+        margin: 32px 20px;
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
+
+    #pimg {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #pimg img {
+        width: 120px;
+    }
+
+    #infor {
+        width: 100%;
+        text-align: center;
+    }
+
+    #infor h3 {
+        font-size: 18px;
+    }
+
+    .si {
+        justify-content: center;
+    }
+
+    #pbtn {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    #premimum {
+        margin: 24px 16px;
+        width: calc(100% - 32px);
+        padding: 16px;
+        gap: 16px;
+    }
+
+    #pimg img {
+        width: 100px;
+    }
+
+    #infor h3 {
+        font-size: 16px;
+    }
+
+    #infor > p {
+        font-size: 14px;
+    }
+
+    .si a {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    #o {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
 }
