@@ -64,3 +64,39 @@
 .careerprofileholder .careertwo .careeractionbtn:active {
     outline: none;
 }
+
+/* Tablet styles */
+@media (max-width: 900px) {
+   .cpbody {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+   }
+
+   .careerprofileholder {
+      flex-wrap: wrap;
+   }
+
+   .careerprofileholder .careerone,
+   .careerprofileholder .careertwo {
+      width: 100%;
+      height: auto;
+   }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+   .cpbody {
+      padding: 16px;
+   }
+
+   .careerprofileholder {
+      flex-direction: column;
+      gap: 16px;
+   }
+
+   .careerprofileholder .careerone,
+   .careerprofileholder .careertwo {
+      width: 100%;
+   }
+}

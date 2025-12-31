@@ -44,3 +44,43 @@
     border: 1px solid lightgray;
     padding: 8px;
 }
+
+/* Tablet styles */
+@media (max-width: 900px) {
+   .fnbody {
+      width: 100%;
+      max-width: 100%;
+   }
+
+   .psflex {
+      width: 100%;
+   }
+
+   .inputbox,
+   .inputeditbox {
+      width: 100%;
+   }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+   .fnbody {
+      padding: 8px;
+   }
+
+   .psflex {
+      flex-direction: column;
+      gap: 8px;
+   }
+
+   .inputbox,
+   .inputeditbox {
+      width: 100%;
+      margin-left: 0;
+   }
+
+   .inputboxtwo {
+      width: 100%;
+      margin-left: 0;
+   }
+}

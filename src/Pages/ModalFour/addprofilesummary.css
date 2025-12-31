@@ -73,3 +73,39 @@ font-size: 12px;
     background-color: blue;
     margin-left: 8px;
 }
+
+/* Tablet styles */
+@media (max-width: 900px) {
+   .apsbody {
+      width: 100%;
+      max-width: 100%;
+   }
+
+   .textareadesign {
+      width: 100%;
+   }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+   .apsbody {
+      padding: 0 12px;
+      box-sizing: border-box;
+   }
+
+   .headerflex {
+      margin-left: 0;
+   }
+
+   .bottombtnflex {
+      flex-direction: column;
+      gap: 12px;
+      height: auto;
+   }
+
+   .cancelbtn,
+   .savebtn {
+      width: 100%;
+      margin: 0;
+   }
+}

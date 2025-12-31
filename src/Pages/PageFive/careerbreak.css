@@ -14,3 +14,24 @@
     border-radius: 8px;
     outline: none;
 }
+
+/* Tablet styles */
+@media (max-width: 900px) {
+   .cbbody {
+      width: 100%;
+      padding: 0 16px;
+      box-sizing: border-box;
+   }
+
+   .textareadiv,
+   .selectinputstyle {
+      width: 100%;
+   }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+   .cbbody {
+      padding: 0 12px;
+   }
+}

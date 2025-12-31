@@ -66,5 +66,25 @@
  .project-percentage{
     color: green;
  }
- 
- 
+
+/* Tablet styles */
+@media (max-width: 900px) {
+   .fbody {
+      width: 100%;
+      max-width: 100%;
+   }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+   .fbody {
+      width: 100%;
+      padding: 12px;
+   }
+
+   .headerbox {
+      flex-wrap: wrap;
+      height: auto;
+      gap: 8px;
+   }
+}

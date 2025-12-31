@@ -123,3 +123,51 @@ margin-left: -8px;
   font: bolder;
   border-radius: 0px;
 }
+
+/* Tablet styles */
+@media (max-width: 900px) {
+   .skillsbody {
+      width: 100%;
+      height: auto;
+   }
+
+   .skillspara {
+      width: 100% !important;
+   }
+
+   .skillspillsholder,
+   .skillpillswithcloseparent {
+      width: 100%;
+   }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+   .skillsbody {
+      padding: 0 12px;
+      box-sizing: border-box;
+   }
+
+   .skillsheader,
+   .skillspara,
+   .inputbox,
+   .skillspillsholder,
+   .skillpillswithcloseparent {
+      margin-left: 0;
+   }
+
+   .skillspillsholder,
+   .skillpillswithcloseparent {
+      flex-wrap: wrap;
+   }
+
+   .bottombtnpanel {
+      flex-direction: column;
+      gap: 12px;
+   }
+
+   .btnone,
+   .btntwo {
+      width: 100%;
+   }
+}

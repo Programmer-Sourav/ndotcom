@@ -3,3 +3,19 @@
     flex-direction: column;
     justify-content: flex-start;
 }
+
+/* Tablet styles */
+@media (max-width: 900px) {
+   .adibod {
+      width: 100%;
+      padding: 0 16px;
+      box-sizing: border-box;
+   }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+   .adibod {
+      padding: 0 12px;
+   }
+}

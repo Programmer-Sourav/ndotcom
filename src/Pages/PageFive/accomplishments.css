@@ -68,3 +68,38 @@
     margin-top: 8px; /* Add spacing between top and below portions */
    /* text-align: left;
 } */
+
+/* Tablet styles */
+@media (max-width: 900px) {
+   .abody {
+      width: 100%;
+      max-width: 100%;
+   }
+
+   .itembox {
+      width: 100%;
+      max-width: 100%;
+   }
+
+   .itembox .topportion {
+      width: 100%;
+   }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+   .abody {
+      padding: 12px;
+   }
+
+   .itembox {
+      width: 100%;
+   }
+
+   .itembox .topportion {
+      width: 100%;
+      flex-wrap: wrap;
+      height: auto;
+      gap: 8px;
+   }
+}

@@ -19,3 +19,29 @@ border: 1px solid lightgray;
 border-radius: 16px;
 padding: 8px;
 }
+
+/* Tablet styles */
+@media (max-width: 900px) {
+   .opbody {
+      width: 100%;
+      padding: 0 16px;
+      box-sizing: border-box;
+   }
+
+   .inputbox,
+   .inputboxdesc {
+      width: 100%;
+   }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+   .opbody {
+      padding: 0 12px;
+   }
+
+   .inputbox,
+   .inputboxdesc {
+      width: 100%;
+   }
+}

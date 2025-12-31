@@ -184,3 +184,66 @@
     font-size: large;
     font: 600;
 }
+
+/* Tablet styles */
+@media (max-width: 900px) {
+   .modalforbasic {
+      width: 100%;
+      padding: 0 16px;
+      box-sizing: border-box;
+   }
+
+   .inputdesign,
+   .inputbox,
+   .telephonebox {
+      width: 100%;
+      max-width: 100%;
+   }
+
+   .styledinputthree {
+      width: 100%;
+   }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+   .modalforbasic {
+      padding: 0 12px;
+   }
+
+   .inputdesign,
+   .inputbox,
+   .telephonebox {
+      width: 100%;
+   }
+
+   .inputgroup {
+      flex-direction: column;
+      gap: 8px;
+   }
+
+   .styledinput,
+   .styledinputone,
+   .styledinputtwo,
+   .styledinputthree {
+      width: 100%;
+      margin-right: 0;
+   }
+
+   .radiogroup,
+   .radiogroupwithoutmargin {
+      flex-wrap: wrap;
+      gap: 8px;
+   }
+
+   .flexstyle {
+      flex-direction: column;
+      margin-left: 0;
+      gap: 8px;
+   }
+
+   .btnflex {
+      flex-direction: column;
+      gap: 12px;
+   }
+}

@@ -65,3 +65,25 @@
    padding: 8px;
 }
 
+/* Tablet styles */
+@media (max-width: 900px) {
+   .fbody {
+      width: 100%;
+      max-width: 100%;
+   }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+   .fbody {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+   }
+
+   .headerbox {
+      flex-wrap: wrap;
+      height: auto;
+      gap: 8px;
+   }
+}
