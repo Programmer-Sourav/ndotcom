@@ -19,7 +19,7 @@ export default function PresentationModal(){
     }
 
     const addOnBtnPress = () =>{
-        dispatch(jobsSlice.actions.actionAccomplishments(presentation));
+        dispatch(jobsSlice.actions.actionAccomplishments({category: "presentation", data: presentation}));
     }
     
     return(

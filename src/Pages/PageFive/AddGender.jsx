@@ -16,7 +16,7 @@ export default function AddGender(){
 
     function addOnBtnPress(){
       const genderAndMaritalStatus = {gender: gender, maritalStatus: maritalStatus}
-      dispatch(jobsSlice.actions.setPersonalProfile(genderAndMaritalStatus))
+      dispatch(jobsSlice.actions.setPersonalProfile({genderAndMaritalStatus: genderAndMaritalStatus}))
     }
 
     return(

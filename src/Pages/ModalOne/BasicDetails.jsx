@@ -2,7 +2,7 @@ import { useState } from "react"
 
 import "./basic.css"
 import { useDispatch } from "react-redux"
-import { addBasicDetailsAsync } from "../Slices/JobsSlice"
+import { jobsSlice } from "../Slices/JobsSlice"
 import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalOverlay, useDisclosure } from "@chakra-ui/react"
 
 export default function BasicDetails(){
@@ -48,7 +48,8 @@ export default function BasicDetails(){
 
     const saveOnButtonClick = () =>{
        const  basicDetailsObject = {name: name, experience: experience, country: currentCountry, state: selectedState, mobile: mobileNumber, telephone: telephone, availaibility: selectedAvailability}
-       dispatch(addBasicDetailsAsync(basicDetailsObject))
+       dispatch(jobsSlice.actions.setBasicProfileDetails(basicDetailsObject))
+       onClose()
     }
 
     const onChangeTelephone = (e) => {
@@ -61,7 +62,7 @@ export default function BasicDetails(){
 
     return(
         <>
-        <Button onClick={onOpen}>Add Basic Details</Button> 
+        <Button size="sm" variant="ghost" leftIcon={<i className="fa-solid fa-pen"></i>} onClick={onOpen}>Edit</Button>
         <Modal isOpen = {isOpen} onClose={onClose} size="xl">
         <ModalOverlay/>
         <ModalContent>

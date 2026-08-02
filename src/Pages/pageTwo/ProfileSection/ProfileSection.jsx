@@ -1,6 +1,11 @@
 import "./index.css";
+import { useSelector } from "react-redux";
+import BasicDetails from "../../ModalOne/BasicDetails";
 
 export default function ProfileSection() {
+  const basicProfileDetails = useSelector((state) => state.jobseeker.basicProfileDetails);
+  const displayName = basicProfileDetails && basicProfileDetails.name ? basicProfileDetails.name : "Md Nahid Hossain Mazumder";
+
   return (
     <>
       <body>
@@ -16,15 +21,13 @@ export default function ProfileSection() {
           <div class="center-part">
             <div class="top-center">
               <div>
-                <h2>Md Nahid Hossain Mazumder</h2>
+                <h2>{displayName}</h2>
                 <p>
                   Profile last updated - <span>Yesterday</span>
                 </p>
               </div>
               <div>
-                <span>
-                  <i class="fa-solid fa-pen"></i>
-                </span>
+                <BasicDetails />
               </div>
             </div>
             <hr class="hr-mid" />

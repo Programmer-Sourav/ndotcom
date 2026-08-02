@@ -20,7 +20,7 @@ export default function WhitePaperModal(){
 
     const addOnBtnPress = () =>{
         const publication = whitePaperStats;
-        dispatch(jobsSlice.actions.actionAccomplishments(publication))
+        dispatch(jobsSlice.actions.actionAccomplishments({category: "publication", data: publication}))
     }
     
     return(

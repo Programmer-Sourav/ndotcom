@@ -3,7 +3,9 @@ import "./index.css";
 import ModalComponent from "../../PageFive/ModalComponent";
 import ReactModal from "react-modal";
 import Modal from "./Modal";
-import { Button, useDisclosure } from "@chakra-ui/react";
+import { Button, useDisclosure, useToast } from "@chakra-ui/react";
+import { useDispatch, useSelector } from "react-redux";
+import { jobsSlice } from "../../Slices/JobsSlice";
 import ChakraModal from "./ChakraModal";
 import SkillsModal from "../../ModalThree/SkillsModal";
 import AddProfileSummary from "../../ModalFour/AddProfileSummary";
@@ -18,6 +20,10 @@ import AddProjectModal from "../../PageFive/AddProjectModal";
 export default function ResumeSection() {
 
   const {onOpen} = useDisclosure()
+  const dispatch = useDispatch();
+  const toast = useToast();
+  const jobseeker = useSelector((state) => state.jobseeker);
+  const { submitted, submittedAt } = jobseeker;
 
 
   const [file, setFile] = useState("")
@@ -55,6 +61,17 @@ export default function ResumeSection() {
      console.error("Error", error)
     }
 }
+  const handleSubmitAllDetails = () => {
+    dispatch(jobsSlice.actions.createJobProfile());
+    toast({
+      title: "Profile submitted",
+      description: "All your saved profile details have been submitted successfully.",
+      status: "success",
+      duration: 4000,
+      isClosable: true,
+    });
+  };
+
   return (
     <>
       <body>
@@ -177,6 +194,31 @@ export default function ResumeSection() {
       </div>
       <div id="accomplishments" className="acomplishments">
       <Accomplishments/> 
+      </div>
+
+      <div className="submit-all-section">
+        <Button
+          colorScheme="green"
+          size="lg"
+          onClick={handleSubmitAllDetails}
+        >
+          Submit All Details
+        </Button>
+        {submitted && (
+          <div className="submit-confirmation">
+            <p>✓ Profile submitted{submittedAt ? ` on ${new Date(submittedAt).toLocaleString()}` : ""}.</p>
+            <ul>
+              <li>Resume headline: {jobseeker.resumeTitle || "Not added"}</li>
+              <li>Key skills: {jobseeker.skills || "Not added"}</li>
+              <li>Career profile fields filled: {Object.values(jobseeker.careerProfile).filter(Boolean).length} / 7</li>
+              <li>Personal details fields filled: {Object.values(jobseeker.personalProfile).filter(Boolean).length} / 8</li>
+              <li>Projects added: {jobseeker.projects.length}</li>
+              <li>
+                Accomplishments added: {Object.values(jobseeker.accomplishmentsDetails).reduce((total, list) => total + list.length, 0)}
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
       </div>
         

@@ -20,7 +20,7 @@ export default function AddPatentModal(){
 
     const addOnBtnPress = () =>{
         const patent = patentStatus;
-        dispatch(jobsSlice.actions.actionAccomplishments(patent));
+        dispatch(jobsSlice.actions.actionAccomplishments({category: "patent", data: patent}));
     }
     
     return(

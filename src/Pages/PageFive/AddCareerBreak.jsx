@@ -15,7 +15,7 @@ export default function AddCareerBreak(){
     
     function addOnBtnPress(){
         const careerBreak = {hasBreak: careerBreakBoolean, reason: careerBreakReason}
-        dispatch(jobsSlice.actions.setPersonalProfile(careerBreak))
+        dispatch(jobsSlice.actions.setPersonalProfile({careerBreak: careerBreak}))
     }
 
     return(

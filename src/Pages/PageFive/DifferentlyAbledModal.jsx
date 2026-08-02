@@ -15,7 +15,7 @@ export default function DifferentlyAbledModal(){
     const dispatch = useDispatch();
     
     const addOnBtnPress = () =>{
-     dispatch(jobsSlice.actions.setPersonalProfile(desiredJob))
+     dispatch(jobsSlice.actions.setPersonalProfile({differentlyAbled: desiredJob}))
     }
     return(
         <>

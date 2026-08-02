@@ -193,6 +193,8 @@ export const jobsSlice = createSlice(
           companiesList : [],
           status: "idle",
           error: null,
+          submitted: false,
+          submittedAt: null,
           profileData: "",
           basicProfileDetails: "",
           profileSummaryData: "",
@@ -236,20 +238,25 @@ export const jobsSlice = createSlice(
         },
     reducers: {
          createJobProfile : (state, action ) =>{
-            
+            state.status = "submitted";
+            state.submitted = true;
+            state.submittedAt = new Date().toISOString();
+            state.profileData = {
+              basicProfileDetails: state.basicProfileDetails,
+              profileSummaryData: state.profileSummaryData,
+              resumeTitle: state.resumeTitle,
+              skills: state.skills,
+              personalProfile: state.personalProfile,
+              careerProfile: state.careerProfile,
+              accomplishmentsDetails: state.accomplishmentsDetails,
+              projects: state.projects
+            };
          },
          setBasicProfileDetails : (state, action) =>{
-           
+           state.basicProfileDetails = { ...state.basicProfileDetails, ...action.payload };
          },
          setPersonalProfile: (state, action) =>{
-          state.careerProfile.genderAndMaritalStatus = action.payload.genderAndMaritalStatus;
-          state.careerProfile.dateOfBirth = action.payload.dateOfBirth;
-          state.careerProfile.category = action.payload.category;
-          state.careerProfile.differentlyAbled = action.payload.differentlyAbled;
-          state.careerProfile.careerBreak = action.payload.careerBreak;
-          state.careerProfile.workPermit = action.payload.workPermit;
-          state.careerProfile.address = action.payload.address;
-          state.careerProfile.languages = action.payload.languages;
+          state.personalProfile = { ...state.personalProfile, ...action.payload };
          },
          addProfileSummary  : (state, action) =>{
               state.profileSummaryData = action.payload
@@ -262,25 +269,17 @@ export const jobsSlice = createSlice(
           state.skills = action.payload
          },
          actionCreateCareerProfile : (state, action) =>{
-           state.careerProfile.currentIndustry = action.payload.currentIndustry;
-           state.careerProfile.jobType = action.payload.jobType;
-           state.careerProfile.department = action.payload.department;
-           state.careerProfile.employeementType = action.payload.employeementType;
-           state.careerProfile.preferredWorkLocation = action.payload.preferredWorkLocation;
-           state.careerProfile.expectedSalary = action.payload.expectedSalary;
-           state.careerProfile.preferredShift = action.payload.preferredShift;
+           state.careerProfile = { ...state.careerProfile, ...action.payload };
          },
          actionAccomplishments : (state, action) =>{
-           state.accomplishmentsDetails.onlineProfile = [...state.accomplishmentsDetails.onlineProfile, action.payload.onlineProfileDetails];
-           state.accomplishmentsDetails.workSample = [...state.accomplishmentsDetails.workSample, action.payload.workSample];
-           state.accomplishmentsDetails.certification = [...state.accomplishmentsDetails.certification, action.payload.certification];
-           state.accomplishmentsDetails.patent = [...state.accomplishmentsDetails.patent, action.payload.patent];
-           state.accomplishmentsDetails.presentation = [...state.accomplishmentsDetails.presentation, action.payload.presentation];
-           state.accomplishmentsDetails.publication = [...state.accomplishmentsDetails.publication, action.payload.publication];
+           const { category, data } = action.payload;
+           if (category && state.accomplishmentsDetails[category] !== undefined) {
+             state.accomplishmentsDetails[category] = [...state.accomplishmentsDetails[category], data];
+           }
          },
 
          actionAddProjects : (state, action ) =>{
-          state.projects = [...state.projects, action.payload.projectDetails]
+          state.projects = [...state.projects, action.payload]
          },
          actionUpdateProfile : (state, action) =>{
           //

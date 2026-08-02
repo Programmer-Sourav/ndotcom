@@ -20,7 +20,7 @@ export default function WorkSampleModal(){
 
     const addOnBtnPress = () =>{
         const workSample = githubStats;
-        dispatch(jobsSlice.actions.actionAccomplishments(workSample))
+        dispatch(jobsSlice.actions.actionAccomplishments({category: "workSample", data: workSample}))
     }
     
     return(

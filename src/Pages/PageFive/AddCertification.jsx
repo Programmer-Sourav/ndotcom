@@ -20,7 +20,7 @@ export default function AddCertification(){
 
     const addOnBtnPress = () =>{
       const certification = cartificationStatus;
-      dispatch(jobsSlice.actions.actionAccomplishments(certification));
+      dispatch(jobsSlice.actions.actionAccomplishments({category: "certification", data: certification}));
     }
     
     return(

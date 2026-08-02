@@ -1,6 +1,5 @@
 import "./header.css";
 import { useState } from "react";
-import Logo from "../assets/logo";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,7 +19,7 @@ export default function Header() {
       <div id="navbar">
         <div id="logo">
           <img
-            src={Logo}
+            src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png"
             alt="logo"
           />
         </div>
