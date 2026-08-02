@@ -133,7 +133,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 /* Utility classes */
-.container {
+.brand-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
@@ -160,7 +160,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 /* Card styles */
-.card {
+.brand-card {
   background: var(--brand-paper);
   border: 1px solid var(--brand-border);
   border-radius: var(--radius-lg);
@@ -201,14 +201,14 @@ input:focus, select:focus, textarea:focus {
 
 /* Responsive breakpoints */
 @media (max-width: 1200px) {
-  .container {
+  .brand-container {
     max-width: 100%;
     padding: 0 24px;
   }
 }
 
 @media (max-width: 768px) {
-  .container {
+  .brand-container {
     padding: 0 16px;
   }
 
@@ -226,7 +226,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 @media (max-width: 480px) {
-  .container {
+  .brand-container {
     padding: 0 12px;
   }
 

@@ -38,7 +38,7 @@
 
 .careerprofileholder .careerone .careeractionbtn{
     outline: none;
-    color: blue;
+    color: #2f6b4f;
     border: none; /* Remove default border */
     background: none; /* Remove default background */
     cursor: pointer; /* Change cursor to pointer on hover */
@@ -53,7 +53,7 @@
 
 .careerprofileholder .careertwo .careeractionbtn{
     outline: none;
-    color: blue;
+    color: #2f6b4f;
     border: none; /* Remove default border */
     background: none; /* Remove default background */
     cursor: pointer; /* Change cursor to pointer on hover */

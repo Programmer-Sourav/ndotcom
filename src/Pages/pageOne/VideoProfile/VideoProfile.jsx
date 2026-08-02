@@ -5,13 +5,13 @@ export default function VideoProfile() {
     <>
       <body>
         <div class="videoprofile">
-          <div class="left-one">
+          <div class="vp-left">
             <h3>Stand out among recruiters with a video profile</h3>
             <p>Available for both Android and iOS apps</p>
             <input type="text" placeholder="Enter mobile number..." />
             <button>Get link</button>
 
-            <div class="store">
+            <div class="vp-store">
               <a href="https://play.google.com/store/apps/details?id=naukriApp.appModules.login&hl=en&utm_source=naukri&utm_medium=footer">
                 <img
                   src="https://static.naukimg.com/s/0/0/i/new-homepage/android-app.png"
@@ -27,7 +27,7 @@ export default function VideoProfile() {
             </div>
           </div>
 
-          <div class="center-one">
+          <div class="vp-center">
             <div>
               <img
                 src="https://static.naukimg.com/s/0/0/i/download-app-link/qr-code.svg"
@@ -37,7 +37,7 @@ export default function VideoProfile() {
             </div>
           </div>
 
-          <div class="right-one">
+          <div class="vp-right">
             <img
               src="https://static.naukimg.com/s/0/0/i/download-app-link/MaskGroupOneTheme.png"
               alt=""

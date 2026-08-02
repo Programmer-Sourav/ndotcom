@@ -17,14 +17,14 @@ body {
 }
 
 /* Left Section - Text & Input */
-.left-one {
+.vp-left {
     width: 40%;
     padding: 40px;
     display: flex;
     flex-direction: column;
 }
 
-.left-one h3 {
+.vp-left h3 {
     font-size: 24px;
     font-weight: 700;
     color: #232620;
@@ -32,14 +32,14 @@ body {
     line-height: 1.3;
 }
 
-.left-one p {
+.vp-left p {
     font-size: 15px;
     color: #5c6355;
     margin: 0 0 24px 0;
 }
 
 /* Input with Button */
-.left-one input {
+.vp-left input {
     display: inline-block;
     padding: 14px 120px 14px 20px;
     border-radius: 10px;
@@ -52,11 +52,11 @@ body {
     box-sizing: border-box;
 }
 
-.left-one input::placeholder {
+.vp-left input::placeholder {
     color: #8f9285;
 }
 
-.left-one button {
+.vp-left button {
     border: none;
     margin-left: -110px;
     background-color: #2f6b4f;
@@ -70,26 +70,26 @@ body {
     white-space: nowrap;
 }
 
-.left-one button:hover {
+.vp-left button:hover {
     background-color: #1c4530;
 }
 
 /* App Store Links */
-.store {
+.vp-store {
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin-top: 24px;
 }
 
-.store a img {
+.vp-store a img {
     width: 140px;
     height: auto;
     border-radius: 8px;
 }
 
 /* Center Section - QR Code */
-.center-one {
+.vp-center {
     width: 20%;
     display: flex;
     justify-content: center;
@@ -97,7 +97,7 @@ body {
     padding: 20px;
 }
 
-.center-one div {
+.vp-center div {
     padding: 20px;
     background-color: #fff;
     text-align: center;
@@ -106,19 +106,19 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-.center-one div p {
+.vp-center div p {
     color: #5c6355;
     font-size: 13px;
     margin: 12px 0 0 0;
 }
 
-.center-one div img {
+.vp-center div img {
     width: 100px;
     height: 100px;
 }
 
 /* Right Section - Image */
-.right-one {
+.vp-right {
     width: 40%;
     display: flex;
     align-items: flex-end;
@@ -129,7 +129,7 @@ body {
     margin: 0;
 }
 
-.right-one img {
+.vp-right img {
     height: 280px;
     width: auto;
     object-fit: contain;
@@ -144,44 +144,44 @@ body {
         width: calc(100% - 40px);
     }
 
-    .left-one {
+    .vp-left {
         width: 100%;
         padding: 32px 24px;
         text-align: center;
         align-items: center;
     }
 
-    .left-one h3 {
+    .vp-left h3 {
         font-size: 22px;
     }
 
-    .left-one input {
+    .vp-left input {
         max-width: 100%;
     }
 
-    .store {
+    .vp-store {
         flex-direction: row;
         justify-content: center;
     }
 
-    .center-one {
+    .vp-center {
         width: 100%;
         padding: 0 24px 24px;
     }
 
-    .center-one div {
+    .vp-center div {
         display: inline-flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .right-one {
+    .vp-right {
         width: 100%;
         justify-content: center;
         padding: 0;
     }
 
-    .right-one img {
+    .vp-right img {
         height: 220px;
     }
 }
@@ -194,57 +194,57 @@ body {
         border-radius: 12px;
     }
 
-    .left-one {
+    .vp-left {
         padding: 24px 20px;
     }
 
-    .left-one h3 {
+    .vp-left h3 {
         font-size: 18px;
     }
 
-    .left-one p {
+    .vp-left p {
         font-size: 14px;
         margin-bottom: 20px;
     }
 
-    .left-one input {
+    .vp-left input {
         padding: 12px 100px 12px 16px;
         font-size: 13px;
     }
 
-    .left-one button {
+    .vp-left button {
         padding: 10px 16px;
         font-size: 13px;
         margin-left: -95px;
     }
 
-    .store {
+    .vp-store {
         flex-direction: column;
         align-items: center;
     }
 
-    .store a img {
+    .vp-store a img {
         width: 130px;
     }
 
-    .center-one {
+    .vp-center {
         padding: 0 20px 20px;
     }
 
-    .center-one div {
+    .vp-center div {
         padding: 16px;
     }
 
-    .center-one div img {
+    .vp-center div img {
         width: 80px;
         height: 80px;
     }
 
-    .center-one div p {
+    .vp-center div p {
         font-size: 12px;
     }
 
-    .right-one img {
+    .vp-right img {
         height: 180px;
     }
 }

@@ -9,56 +9,56 @@
     padding-left: 16px;
 }
 
-.careerpara{
+.pp-careerpara{
     text-align: left;
 }
 
-.careerprofileholder{
+.pp-careerprofileholder{
     display: flex;
     justify-content: space-between;
     text-align: left;
 }
 
-.careerprofileholder .careerone{
+.pp-careerprofileholder .pp-careerone{
    display: flex;
    flex-direction: column;
    height: 128px;
    width: 512px;
 }
 
-.careerprofileholder .careertwo{
+.pp-careerprofileholder .pp-careertwo{
     display: flex;
     flex-direction: column;
     height: 128px;
     width: 512px;
 }
 
-.careerprofileholder .careerone .careeractionbtn{
+.pp-careerprofileholder .pp-careerone .pp-careeractionbtn{
     outline: none;
-    color: blue;
+    color: #2f6b4f;
     border: none; /* Remove default border */
     background: none; /* Remove default background */
     cursor: pointer; /* Change cursor to pointer on hover */
     margin-bottom: 16px;
 }
-.careerprofileholder .careerone .careeractionbtn:hover,
-.careerprofileholder .careerone .careeractionbtn:active {
+.pp-careerprofileholder .pp-careerone .pp-careeractionbtn:hover,
+.pp-careerprofileholder .pp-careerone .pp-careeractionbtn:active {
     outline: none;
 }
 
 
 
-.careerprofileholder .careertwo .careeractionbtn{
+.pp-careerprofileholder .pp-careertwo .pp-careeractionbtn{
     outline: none;
-    color: blue;
+    color: #2f6b4f;
     border: none; /* Remove default border */
     background: none; /* Remove default background */
     cursor: pointer; /* Change cursor to pointer on hover */
     margin-bottom: 16px;
 
 }
-.careerprofileholder .careertwo .careeractionbtn:hover,
-.careerprofileholder .careertwo .careeractionbtn:active {
+.pp-careerprofileholder .pp-careertwo .pp-careeractionbtn:hover,
+.pp-careerprofileholder .pp-careertwo .pp-careeractionbtn:active {
     outline: none;
 }
 
@@ -70,8 +70,8 @@
       height: auto;
    }
 
-   .careerprofileholder .careerone,
-   .careerprofileholder .careertwo {
+   .pp-careerprofileholder .pp-careerone,
+   .pp-careerprofileholder .pp-careertwo {
       width: 100%;
       height: auto;
    }
@@ -83,13 +83,13 @@
       padding: 16px;
    }
 
-   .careerprofileholder {
+   .pp-careerprofileholder {
       flex-direction: column;
       gap: 16px;
    }
 
-   .careerprofileholder .careerone,
-   .careerprofileholder .careertwo {
+   .pp-careerprofileholder .pp-careerone,
+   .pp-careerprofileholder .pp-careertwo {
       width: 100%;
    }
 }

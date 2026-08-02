@@ -109,7 +109,7 @@ margin-left: -8px;
   justify-content: flex-end;
 }
 .btnone{
- color: blue;
+ color: #2f6b4f;
  height: 40px;
  background-color: white;
  font: bolder;
@@ -119,7 +119,7 @@ margin-left: -8px;
 .btntwo{
   color: white;
   height: 40px;
-  background-color: blue;
+  background-color: #2f6b4f;
   font: bolder;
   border-radius: 0px;
 }

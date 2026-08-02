@@ -116,7 +116,7 @@
 }
 
 .emailstyle{
-    color : blue;
+    color: #2f6b4f;
     background: transparent;
     outline: none;
     margin-top: 8px;
@@ -135,7 +135,7 @@
 }
 
 .emailstyle{
-    color : blue;
+    color: #2f6b4f;
     background: transparent;
     outline: none;
     margin-top: 8px;
@@ -166,14 +166,14 @@
 
 .btnone{
    background-color: white;
-   color: blue;
+   color: #2f6b4f;
    text-align: center;
    font: bold;
    outline: none;
 }
 
 .btntwo{
-   background-color: blue;
+   background-color: #2f6b4f;
    color: white;
    text-align: center;
    font: bold;

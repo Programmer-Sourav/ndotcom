@@ -2,7 +2,7 @@
    display: flex;
    align-items: flex-start;
    height: 128px;
-   background-color: blue;
+   background-color: #2f6b4f;
 }
 
 .headerbox{
@@ -21,7 +21,7 @@
 .headerbox .rightheader{
    align-items: flex-end;
    background-color: transparent;
-   color: blue;
+   color: #2f6b4f;
    outline: none;
 }
 
@@ -55,7 +55,7 @@
  
  .rightheader{
     background-color: transparent;
-    color: blue;
+    color: #2f6b4f;
     outline: none;
  }
  

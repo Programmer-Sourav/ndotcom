@@ -63,14 +63,14 @@ font-size: 12px;
 }
 
 .cancelbtn {
-    color: blue;
+    color: #2f6b4f;
     background-color: white;
     margin-right: 8px;
 }
 
 .savebtn {
     color: white;
-    background-color: blue;
+    background-color: #2f6b4f;
     margin-left: 8px;
 }
 

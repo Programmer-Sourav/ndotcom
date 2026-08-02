@@ -1,37 +1,37 @@
-/* .fbody{
+/* .ps-fbody{
    display: flex;
    align-items: flex-start;
    height: 128px;
-   background-color: blue;
+   background-color: #2f6b4f;
 }
 
-.headerbox{
+.ps-headerbox{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    height: 40px;
 }
 
-.headerbox .leftheader{
+.ps-headerbox .ps-leftheader{
   align-items: flex-start;
   flex-grow: 1;
 }
 
 
-.headerbox .rightheader{
+.ps-headerbox .ps-rightheader{
    align-items: flex-end;
    background-color: transparent;
-   color: blue;
+   color: #2f6b4f;
    outline: none;
 }
 
 
-.summarypara{
+.ps-summarypara{
    text-align: left;
    margin-top: 16px;
 } */
 
-.fbody {
+.ps-fbody {
    display: flex;
    flex-direction: column; /* Align children in a column */
    align-items: stretch; /* Stretch children to full width */
@@ -41,7 +41,7 @@
    width: max-content;
 }
 
-.headerbox {
+.ps-headerbox {
    display: flex;
    justify-content: space-between; /* Spacing between children */
    height: 40px;
@@ -50,24 +50,24 @@
    border: 1px !important; 
 }
 
-.leftheader {
+.ps-leftheader {
    margin-right: auto; /* Pushes the header left to the extreme left */
 }
 
-.rightheader{
+.ps-rightheader{
    background-color: transparent;
-   color: blue;
+   color: #2f6b4f;
    outline: none;
 }
 
-.summarypara {
+.ps-summarypara {
    text-align: left;
    padding: 8px;
 }
 
 /* Tablet styles */
 @media (max-width: 900px) {
-   .fbody {
+   .ps-fbody {
       width: 100%;
       max-width: 100%;
    }
@@ -75,13 +75,13 @@
 
 /* Mobile styles */
 @media (max-width: 768px) {
-   .fbody {
+   .ps-fbody {
       width: 100%;
       max-width: 100%;
       margin: 0 auto;
    }
 
-   .headerbox {
+   .ps-headerbox {
       flex-wrap: wrap;
       height: auto;
       gap: 8px;

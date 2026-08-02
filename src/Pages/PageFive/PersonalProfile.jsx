@@ -18,26 +18,26 @@ return(
         
  <div className="ppbody">
         <h3>Personal details</h3>
-        <div className = "careerprofileholder"> 
-        <div className= "careerone"> 
+        <div className = "pp-careerprofileholder"> 
+        <div className= "pp-careerone"> 
         <label>Personal</label>
-        <label onClick={addCurrentIndustry} className="careeractionbtn"><AddGender/></label>
+        <label onClick={addCurrentIndustry} className="pp-careeractionbtn"><AddGender/></label>
         <label>Date of birth</label>
-        <label onClick={addCurrentIndustry} className="careeractionbtn"><AddDateOfBirthModal/></label>
+        <label onClick={addCurrentIndustry} className="pp-careeractionbtn"><AddDateOfBirthModal/></label>
         <label>Category</label>
-        <label onClick={addCurrentIndustry} className="careeractionbtn"><AddCategory/></label>
+        <label onClick={addCurrentIndustry} className="pp-careeractionbtn"><AddCategory/></label>
         <label>Differently abled</label>
-        <label onClick={addCurrentIndustry} className="careeractionbtn"><DifferentlyAbledModal/></label>
+        <label onClick={addCurrentIndustry} className="pp-careeractionbtn"><DifferentlyAbledModal/></label>
         </div>
-        <div className= "careertwo"> 
+        <div className= "pp-careertwo"> 
         <label>Career break</label>
-        <label onClick={addCurrentIndustry} className="careeractionbtn"><AddCareerBreak/></label>
+        <label onClick={addCurrentIndustry} className="pp-careeractionbtn"><AddCareerBreak/></label>
         <label>Work permit</label>
-        <label onClick={addCurrentIndustry} className="careeractionbtn"><AddWorkPermit/></label>
+        <label onClick={addCurrentIndustry} className="pp-careeractionbtn"><AddWorkPermit/></label>
         <label>Address</label>
-        <label onClick={addCurrentIndustry} className="careeractionbtn">Add Address</label>
+        <label onClick={addCurrentIndustry} className="pp-careeractionbtn">Add Address</label>
         <label>Languages</label>
-        <label onClick={addCurrentIndustry} className="careeractionbtn">Add Languages</label>
+        <label onClick={addCurrentIndustry} className="pp-careeractionbtn">Add Languages</label>
         </div>
         </div>
         </div>
