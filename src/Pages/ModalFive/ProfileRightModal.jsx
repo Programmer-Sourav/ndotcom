@@ -37,7 +37,7 @@ export default function ProfileRightModal(){
              </div>
            </div>
            <div className="bottomcontainer">
-              <label className="paradesign">Naukri Blog</label>
+              <label className="paradesign">Pair Jobs Blog</label>
               <label className="paradesign">Settings</label>
               <label className="paradesign">Logout</label>
              </div>

@@ -11,13 +11,13 @@
 .body h2 {
     font-size: 24px;
     font-weight: 600;
-    color: #333;
+    color: #232620;
     margin-bottom: 24px;
 }
 
 .labeldesign {
     font-weight: 600;
-    color: #333;
+    color: #232620;
     font-size: 14px;
     margin-bottom: 8px;
     margin-top: 16px;
@@ -27,7 +27,7 @@
 .inputfield {
     height: 48px;
     width: 100%;
-    border: 1px solid #e4e5e8;
+    border: 1px solid #e1d9c4;
     border-radius: 8px;
     padding: 0 16px;
     font-size: 14px;
@@ -36,17 +36,17 @@
 
 .inputfield:focus {
     outline: none;
-    border-color: #457eff;
+    border-color: #2f6b4f;
 }
 
 .inputfield::placeholder {
-    color: #999;
+    color: #8f9285;
 }
 
 .inputbox {
     height: 48px;
     width: 100%;
-    border: 1px solid #e4e5e8;
+    border: 1px solid #e1d9c4;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -54,14 +54,14 @@
 }
 
 .inputbox .prefix {
-    background: #f5f5f5;
+    background: #f2ede1;
     padding: 0 12px;
     height: 100%;
     display: flex;
     align-items: center;
-    color: #666;
+    color: #5c6355;
     font-size: 14px;
-    border-right: 1px solid #e4e5e8;
+    border-right: 1px solid #e1d9c4;
 }
 
 .inputbox input {
@@ -77,7 +77,7 @@
 }
 
 .graytext {
-    color: #8292b4;
+    color: #6f7a68;
     font-size: 12px;
     margin-top: 4px;
     margin-bottom: 0;
@@ -93,7 +93,7 @@
 
 .workbuttondesign {
     flex: 1;
-    border: 1px solid #e4e5e8;
+    border: 1px solid #e1d9c4;
     border-radius: 12px;
     padding: 16px;
     display: flex;
@@ -104,13 +104,13 @@
 }
 
 .workbuttondesign:hover {
-    border-color: #457eff;
-    background-color: #f8faff;
+    border-color: #2f6b4f;
+    background-color: #f6f2e6;
 }
 
 .workbuttondesign:focus {
-    border-color: #457eff;
-    box-shadow: 0 0 0 3px rgba(69, 126, 255, 0.1);
+    border-color: #2f6b4f;
+    box-shadow: 0 0 0 3px rgba(47, 107, 79, 0.1);
 }
 
 .leftside-workbutton {
@@ -120,13 +120,13 @@
 .leftside-workbutton h4 {
     font-size: 14px;
     font-weight: 600;
-    color: #333;
+    color: #232620;
     margin: 0 0 4px 0;
 }
 
 .leftside-workbutton p {
     font-size: 12px;
-    color: #666;
+    color: #5c6355;
     margin: 0;
     line-height: 1.4;
 }
@@ -144,7 +144,7 @@
 }
 
 .resume-upload-btn-holder {
-    border: 2px dashed #e4e5e8;
+    border: 2px dashed #e1d9c4;
     border-radius: 12px;
     padding: 20px;
     display: flex;
@@ -155,15 +155,15 @@
 }
 
 .resume-upload-btn-holder:hover {
-    border-color: #457eff;
-    background-color: #f8faff;
+    border-color: #2f6b4f;
+    background-color: #f6f2e6;
 }
 
 .resume-upload-btn {
-    background: #ff6b35;
+    background: #b5651d;
     color: white;
     padding: 10px 24px;
-    border-radius: 20px;
+    border-radius: 8px;
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
@@ -172,17 +172,17 @@
 }
 
 .resume-upload-btn:hover {
-    background-color: #e55a28;
+    background-color: #8f4f18;
 }
 
 .resume-upload-btn-holder span {
-    color: #8292b4;
+    color: #6f7a68;
     font-size: 12px;
 }
 
 /* Checkbox and Terms */
 .graytext-two {
-    color: #666;
+    color: #5c6355;
     font-size: 12px;
     margin-top: 16px;
     line-height: 1.5;
@@ -190,11 +190,11 @@
 
 .graytext-two input[type="checkbox"] {
     margin-right: 8px;
-    accent-color: #457eff;
+    accent-color: #2f6b4f;
 }
 
 .graytext-two a {
-    color: #457eff;
+    color: #2f6b4f;
     font-weight: 500;
 }
 
@@ -202,10 +202,10 @@
 .registerbtn {
     width: 100%;
     height: 48px;
-    background: #457eff;
+    background: #2f6b4f;
     color: white;
     border: none;
-    border-radius: 24px;
+    border-radius: 10px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -214,7 +214,7 @@
 }
 
 .registerbtn:hover {
-    background-color: #1f4fad;
+    background-color: #1c4530;
 }
 
 /* Tablet styles */

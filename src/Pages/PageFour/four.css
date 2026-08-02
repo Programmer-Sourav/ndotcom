@@ -17,14 +17,14 @@
 .headerdesign h2 {
     font-size: 24px;
     font-weight: 600;
-    color: #333;
+    color: #232620;
     margin: 0;
 }
 
 .graytext {
     text-align: left;
     margin-top: 8px;
-    color: #666;
+    color: #5c6355;
     font-size: 14px;
     line-height: 1.5;
 }
@@ -41,31 +41,31 @@
     height: 56px;
     width: 56px;
     border-radius: 12px;
-    border: 2px solid #e4e5e8;
+    border: 2px solid #e1d9c4;
     font-size: 24px;
     font-weight: 600;
     text-align: center;
-    color: #333;
+    color: #232620;
     transition: all 0.2s ease;
 }
 
 .inputotp:focus {
     outline: none;
-    border-color: #457eff;
-    box-shadow: 0 0 0 3px rgba(69, 126, 255, 0.1);
+    border-color: #2f6b4f;
+    box-shadow: 0 0 0 3px rgba(47, 107, 79, 0.1);
 }
 
 .inputotp::placeholder {
-    color: #ccc;
+    color: #d8cfb8;
 }
 
 .verifybtn {
     width: 100%;
     height: 48px;
     color: white;
-    background: #457eff;
+    background: #2f6b4f;
     border: none;
-    border-radius: 24px;
+    border-radius: 10px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -74,17 +74,17 @@
 }
 
 .verifybtn:hover {
-    background-color: #1f4fad;
+    background-color: #1c4530;
 }
 
 .verifybtn:disabled {
-    background-color: #b8c9e8;
+    background-color: #cdd9c3;
     cursor: not-allowed;
 }
 
 /* Resend OTP link */
 .resend-link {
-    color: #457eff;
+    color: #2f6b4f;
     font-size: 14px;
     font-weight: 600;
     margin-top: 16px;
@@ -98,13 +98,13 @@
 
 /* Timer text */
 .timer-text {
-    color: #666;
+    color: #5c6355;
     font-size: 14px;
     margin-top: 16px;
 }
 
 .timer-text span {
-    color: #ff6b35;
+    color: #b5651d;
     font-weight: 600;
 }
 

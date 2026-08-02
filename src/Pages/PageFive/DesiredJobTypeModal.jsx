@@ -16,7 +16,7 @@ export default function DesiredJobTypeModal(){
     }
     return(
         <>
-        <Button onClick={onOpen} style={{background: "white", color: "blue", outline: "none", height: "32px", width: "180px", display: "flex", justifyContent: "left", outline: "none", border:"none"}}>Add desired job type</Button>
+        <Button onClick={onOpen} style={{background: "white", color: "#2f6b4f", outline: "none", height: "32px", width: "180px", display: "flex", justifyContent: "left", outline: "none", border:"none"}}>Add desired job type</Button>
         <Modal  isOpen={isOpen} onClose={onClose}>
          <ModalOverlay/>
          <ModalContent>
@@ -32,7 +32,7 @@ export default function DesiredJobTypeModal(){
         </div>
         </ModalBody>   
         <ModalFooter>
-        <Button colorScheme='blue' mr={3} onClick={onClose}>
+        <Button colorScheme='green' mr={3} onClick={onClose}>
                 Close
         </Button>
             <Button variant='ghost' onClick={addOnBtnPress}>Save</Button>

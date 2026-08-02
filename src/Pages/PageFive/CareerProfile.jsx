@@ -14,7 +14,7 @@ export default function CareerProfile(){
     return(
         <div className="cpbody">
         <h3>Career profile</h3>
-        <p className="careerpara">This information will help the recruiters and Naukri know about your current job profile and also your desired job criteria. This will also help us personalize your job recommendations.</p>
+        <p className="careerpara">This information will help the recruiters and Pair Jobs know about your current job profile and also your desired job criteria. This will also help us personalize your job recommendations.</p>
         <div className = "careerprofileholder"> 
         <div className= "careerone"> 
         <label>Current industry</label>

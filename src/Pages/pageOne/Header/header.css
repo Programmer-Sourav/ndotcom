@@ -33,11 +33,11 @@
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #232620;
 }
 
 a:hover {
-    color: #457eff;
+    color: #2f6b4f;
     text-decoration: none;
 }
 
@@ -48,27 +48,27 @@ a:hover {
 }
 
 .login {
-    border: 1px solid #457eff;
-    border-radius: 20px;
+    border: 1px solid #2f6b4f;
+    border-radius: 8px;
     padding: 8px 20px;
     font-weight: 600;
     cursor: pointer;
-    color: #457eff;
+    color: #2f6b4f;
     background-color: white;
     font-size: 14px;
     transition: all 0.2s ease;
 }
 
 .login:hover {
-    background-color: #e8f0fe;
+    background-color: #eaf1e7;
 }
 
 .regis {
-    border-radius: 20px;
+    border-radius: 8px;
     border: none;
     padding: 10px 24px;
     color: white;
-    background-color: #ff6b35;
+    background-color: #b5651d;
     cursor: pointer;
     font-size: 14px;
     font-weight: 600;
@@ -76,14 +76,14 @@ a:hover {
 }
 
 .regis:hover {
-    background-color: #e55a28;
+    background-color: #8f4f18;
 }
 
 .dropbtn {
     padding: 8px 16px;
     font-size: 14px;
     font-weight: 500;
-    color: #333;
+    color: #232620;
     cursor: pointer;
 }
 
@@ -102,14 +102,14 @@ a:hover {
 }
 
 .dropdown h2:hover {
-    background-color: #f5f5f5;
-    border-bottom: 2px solid #ff6b35;
+    background-color: #f2ede1;
+    border-bottom: 2px solid #b5651d;
 }
 
 .fa-chevron-down {
     font-size: 10px;
     margin-left: 6px;
-    color: #666;
+    color: #5c6355;
     transition: transform 0.2s ease;
 }
 
@@ -134,22 +134,22 @@ a:hover {
 .dropdown-content h3 {
     font-size: 13px;
     font-weight: 600;
-    color: #333;
+    color: #232620;
     padding: 10px 16px 6px;
     margin: 0;
     border-bottom: none;
 }
 
 .dropdown-content a {
-    color: #666;
+    color: #5c6355;
     padding: 8px 16px;
     display: block;
     font-size: 13px;
 }
 
 .dropdown-content a:hover {
-    background-color: #f5f7fa;
-    color: #457eff;
+    background-color: #f5f0e2;
+    color: #2f6b4f;
 }
 
 /* Desktop: show dropdown on hover */
@@ -159,7 +159,7 @@ a:hover {
     }
 
     .dropdown:hover .dropbtn {
-        color: #457eff;
+        color: #2f6b4f;
     }
 
     .hamburger {
@@ -203,7 +203,7 @@ a:hover {
 .hamburger-line {
     width: 100%;
     height: 2px;
-    background-color: #333;
+    background-color: #232620;
     border-radius: 2px;
     transition: all 0.3s ease;
     transform-origin: center;
@@ -320,7 +320,7 @@ a:hover {
     .dropdown h2 {
         font-size: 16px;
         padding: 14px 0;
-        border-bottom: 1px solid #e4e5e8;
+        border-bottom: 1px solid #e1d9c4;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -328,7 +328,7 @@ a:hover {
 
     .dropdown h2:hover {
         background-color: transparent;
-        border-bottom: 1px solid #e4e5e8;
+        border-bottom: 1px solid #e1d9c4;
     }
 
     .dropdown-content {
@@ -336,7 +336,7 @@ a:hover {
         position: static;
         box-shadow: none;
         padding: 0 0 0 16px;
-        background: #f8f9fa;
+        background: #faf7ef;
         border-radius: 0;
         margin-bottom: 8px;
     }
@@ -347,7 +347,7 @@ a:hover {
 
     .dropdown-content h3 {
         font-size: 12px;
-        color: #666;
+        color: #5c6355;
         padding: 12px 0 6px;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -356,7 +356,7 @@ a:hover {
     .dropdown-content a {
         padding: 10px 0;
         font-size: 14px;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #e8e0cd;
     }
 
     .dropdown-content a:last-child {
@@ -377,7 +377,7 @@ a:hover {
     .hr {
         display: block;
         height: 1px;
-        background: #e4e5e8;
+        background: #e1d9c4;
         margin: 8px 0;
     }
 }

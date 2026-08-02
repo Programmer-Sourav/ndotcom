@@ -1,26 +1,26 @@
 /* Sponsored Companies Section */
 #btn1 {
     border: none;
-    border-radius: 20px;
+    border-radius: 8px;
     padding: 8px 16px;
     font-size: 14px;
-    border: 1px solid #e4e5e8;
+    border: 1px solid #e1d9c4;
     background-color: #fff;
-    color: #666;
+    color: #5c6355;
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
 #btn1:hover {
-    border-color: #457eff;
-    color: #457eff;
+    border-color: #2f6b4f;
+    color: #2f6b4f;
 }
 
 .more-4 {
     border: none;
     background-color: #fff;
     font-size: 14px;
-    color: #666;
+    color: #5c6355;
     cursor: pointer;
 }
 
@@ -56,7 +56,7 @@
 }
 
 #main_sc {
-    border: 1px solid #e4e5e8;
+    border: 1px solid #e1d9c4;
     border-radius: 16px;
     padding: 20px;
     background: #fff;
@@ -65,8 +65,8 @@
 }
 
 #main_sc:hover {
-    border-color: #457eff;
-    box-shadow: 0 4px 16px rgba(69, 126, 255, 0.12);
+    border-color: #2f6b4f;
+    box-shadow: 0 4px 16px rgba(47, 107, 79, 0.12);
     transform: translateY(-2px);
 }
 
@@ -75,7 +75,7 @@
     height: 56px;
     margin: 0 auto 12px;
     padding: 8px;
-    border: 1px solid #e4e5e8;
+    border: 1px solid #e1d9c4;
     border-radius: 12px;
     object-fit: contain;
 }
@@ -83,12 +83,12 @@
 .card-title h3 {
     font-size: 16px;
     font-weight: 600;
-    color: #333;
+    color: #232620;
     margin: 0 0 8px 0;
 }
 
 #word_sc {
-    color: #666;
+    color: #5c6355;
     font-size: 13px;
     margin: 0;
 }
@@ -98,7 +98,7 @@
 }
 
 #word_sc p i {
-    color: #ffc107;
+    color: #c9971f;
 }
 
 .word-sc-data {
@@ -109,18 +109,18 @@
 .word-sc-data div {
     display: inline-block;
     padding: 4px 10px;
-    border: 1px solid #e4e5e8;
+    border: 1px solid #e1d9c4;
     border-radius: 12px;
-    color: #666;
+    color: #5c6355;
     margin: 4px 2px;
 }
 
 .word-sc-data span {
     display: inline-block;
     padding: 4px 10px;
-    border: 1px solid #e4e5e8;
+    border: 1px solid #e1d9c4;
     border-radius: 12px;
-    color: #666;
+    color: #5c6355;
     margin: 4px 2px;
 }
 
@@ -131,11 +131,11 @@
 }
 
 .view-all button {
-    color: #457eff;
+    color: #2f6b4f;
     background-color: #fff;
-    border-radius: 24px;
+    border-radius: 10px;
     padding: 12px 28px;
-    border: 2px solid #457eff;
+    border: 2px solid #2f6b4f;
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
@@ -143,7 +143,7 @@
 }
 
 .view-all button:hover {
-    background-color: #457eff;
+    background-color: #2f6b4f;
     color: #fff;
 }
 

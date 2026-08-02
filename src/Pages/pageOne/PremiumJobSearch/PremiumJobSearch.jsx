@@ -29,7 +29,7 @@ export default function PremiumJobSearch() {
             </div>
           </div>
           <div id="pbtn">
-            <button class="fastforward-btn">by MyNaukri fastforward</button>
+            <button class="fastforward-btn">by Pair Jobs fastforward</button>
             <br />
             <button id="o">Learn more</button>
             <p>Includes paid services</p>

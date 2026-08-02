@@ -126,7 +126,7 @@ export default function SkillsModal(){
         </div>
         </ModalBody>
         <ModalFooter>
-              <Button colorScheme='blue' mr={3} onClick={onClose}>
+              <Button colorScheme='green' mr={3} onClick={onClose}>
                 Close
               </Button>
               <Button variant='ghost' onClick={saveOnClick}>Save</Button>

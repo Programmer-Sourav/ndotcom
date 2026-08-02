@@ -8,7 +8,7 @@
     border-radius: 12px;
     padding: 20px 24px;
     margin-bottom: 20px;
-    border: 1px solid #e4e5e8;
+    border: 1px solid #e1d9c4;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
 }
 
@@ -22,13 +22,13 @@
 .leftcontainer h2 {
     font-size: 20px;
     font-weight: 600;
-    color: #333;
+    color: #232620;
     margin: 0 0 4px 0;
 }
 
 .leftcontainer p {
     font-size: 14px;
-    color: #666;
+    color: #5c6355;
     margin: 0;
 }
 
@@ -45,7 +45,7 @@
 
 .parafix {
     font-size: 14px;
-    color: #666;
+    color: #5c6355;
     text-align: left;
 }
 
@@ -53,16 +53,16 @@
     text-align: center;
     font-size: 14px;
     font-weight: 600;
-    color: #333;
+    color: #232620;
 }
 
 /* Filter/Sort buttons */
 .rightcontainer button {
     padding: 8px 16px;
-    border-radius: 20px;
-    border: 1px solid #e4e5e8;
+    border-radius: 8px;
+    border: 1px solid #e1d9c4;
     background: #fff;
-    color: #333;
+    color: #232620;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
@@ -70,8 +70,8 @@
 }
 
 .rightcontainer button:hover {
-    border-color: #457eff;
-    color: #457eff;
+    border-color: #2f6b4f;
+    color: #2f6b4f;
 }
 
 /* Tablet styles */

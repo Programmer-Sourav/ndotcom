@@ -10,7 +10,7 @@ export default function Leftcontainer(){
         <div className="container"> 
           <div className="topbuttoncontainer">
             <button className = "custombtn">Recruiter Actions (1)</button>
-            <button className = "custombtn">Applies on Naukri (13) </button>
+            <button className = "custombtn">Applies on Pair Jobs (13) </button>
             </div>
             <LeftCard/>
         </div>

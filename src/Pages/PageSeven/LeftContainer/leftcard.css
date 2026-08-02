@@ -5,7 +5,7 @@
     justify-content: flex-start;
     background-color: #fff;
     border-radius: 12px;
-    border: 1px solid #e4e5e8;
+    border: 1px solid #e1d9c4;
     padding: 20px;
     margin-bottom: 12px;
     transition: box-shadow 0.2s ease;
@@ -23,12 +23,12 @@
 .headerblock h3 {
     font-size: 16px;
     font-weight: 600;
-    color: #333;
+    color: #232620;
     margin: 0 0 4px 0;
 }
 
 .headerblock a {
-    color: #457eff;
+    color: #2f6b4f;
     font-weight: 600;
     text-decoration: none;
 }
@@ -41,7 +41,7 @@
     display: inline-block;
     margin-right: 16px;
     font-size: 14px;
-    color: #666;
+    color: #5c6355;
 }
 
 .subheaderholder {
@@ -59,7 +59,7 @@
     align-items: center;
     gap: 12px;
     padding-top: 12px;
-    border-top: 1px solid #f0f0f0;
+    border-top: 1px solid #ece4d2;
 }
 
 .contacted-pill {
@@ -68,9 +68,9 @@
     border-radius: 14px;
     font-size: 12px;
     font-weight: 500;
-    border: 1px solid #e4e5e8;
-    background: #f8f9fa;
-    color: #666;
+    border: 1px solid #e1d9c4;
+    background: #faf7ef;
+    color: #5c6355;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,9 +82,9 @@
     border-radius: 14px;
     font-size: 12px;
     font-weight: 500;
-    color: #0ea581;
-    background: #e6f7f2;
-    border: 1px solid #b8e6d7;
+    color: #3f8562;
+    background: #e8f2e9;
+    border: 1px solid #c9dcc2;
     display: flex;
     justify-content: center;
     align-items: center;

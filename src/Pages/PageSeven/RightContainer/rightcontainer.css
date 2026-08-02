@@ -7,7 +7,7 @@
     max-width: 400px;
     background: #fff;
     border-radius: 12px;
-    border: 1px solid #e4e5e8;
+    border: 1px solid #e1d9c4;
     padding: 24px;
     height: fit-content;
     position: sticky;
@@ -19,7 +19,7 @@
     flex-direction: row;
     gap: 16px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #ece4d2;
     margin-bottom: 20px;
 }
 
@@ -32,7 +32,7 @@
 .topleft h3 {
     font-size: 16px;
     font-weight: 600;
-    color: #333;
+    color: #232620;
     margin: 0 0 4px 0;
 }
 
@@ -46,7 +46,7 @@
     display: inline-block;
     margin-right: 12px;
     font-size: 14px;
-    color: #666;
+    color: #5c6355;
 }
 
 .subheaderholder {
@@ -66,7 +66,7 @@
 .appstatusholder h4 {
     font-size: 14px;
     font-weight: 600;
-    color: #333;
+    color: #232620;
     margin: 0 0 16px 0;
 }
 
@@ -79,7 +79,7 @@
 }
 
 .greencircle {
-    background-color: #0ea581;
+    background-color: #3f8562;
     height: 16px;
     width: 16px;
     border-radius: 50%;
@@ -96,7 +96,7 @@
 }
 
 .greenbar {
-    background-color: #0ea581;
+    background-color: #3f8562;
     height: 3px;
     flex: 1;
     display: inline-block;
@@ -104,7 +104,7 @@
 }
 
 .graybar {
-    background-color: #e4e5e8;
+    background-color: #e1d9c4;
     height: 3px;
     flex: 1;
     display: inline-block;
@@ -112,7 +112,7 @@
 }
 
 .graycircle {
-    background-color: #e4e5e8;
+    background-color: #e1d9c4;
     height: 16px;
     width: 16px;
     border-radius: 50%;
@@ -139,14 +139,14 @@
 .statusheader {
     font-size: 12px;
     font-weight: 600;
-    color: #333;
+    color: #232620;
     text-align: center;
     margin-bottom: 4px;
 }
 
 .graytext {
     font-size: 11px;
-    color: #666;
+    color: #5c6355;
     text-align: center;
 }
 

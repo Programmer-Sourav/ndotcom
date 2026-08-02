@@ -70,7 +70,7 @@ export default function RightSide(){
         Send me important updates on <span> <img src="https://static.naukimg.com/s/7/104/assets/images/whatsappicon.81b19a23.svg" height="8px" width="8px" alt="whatsapp"/></span> WhatsApp
         </label>
         <p className="graytext-two">
-        By clicking Register, you agree to the <a href="">Terms and Conditions</a> & <a href="">Privacy Policy</a> of Naukri.com
+        By clicking Register, you agree to the <a href="">Terms and Conditions</a> & <a href="">Privacy Policy</a> of Pair Jobs
         </p>
         <button onClick={registerNow} className="registerbtn">Register now</button>
         </div>

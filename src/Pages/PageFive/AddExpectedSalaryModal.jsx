@@ -16,7 +16,7 @@ export default function AddExpectedSalaryModal(){
     }
     return(
         <>
-        <Button onClick={onOpen} style={{background: "white", color: "blue", outline: "none", height: "32px"}}>Add expected salary</Button>
+        <Button onClick={onOpen} style={{background: "white", color: "#2f6b4f", outline: "none", height: "32px"}}>Add expected salary</Button>
         <Modal  isOpen={isOpen} onClose={onClose} size="xl">
          <ModalOverlay/>
          <ModalContent>
@@ -29,7 +29,7 @@ export default function AddExpectedSalaryModal(){
         </div>
         </ModalBody>   
         <ModalFooter>
-        <Button colorScheme='blue' mr={3} onClick={onClose}>
+        <Button colorScheme='green' mr={3} onClick={onClose}>
                 Close
         </Button>
             <Button variant='ghost' onClick={addOnBtnPress}>Save</Button>

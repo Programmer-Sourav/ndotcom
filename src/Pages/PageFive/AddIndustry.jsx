@@ -19,7 +19,7 @@ export default function AddIndustry(){
     }
     return(
         <>
-        <Button onClick={onOpen} style={{background: "white", color: "blue", width: "180px", display: "flex", justifyContent: "left", outline: "none", border:"none"}}>Add current industry</Button>
+        <Button onClick={onOpen} style={{background: "white", color: "#2f6b4f", width: "180px", display: "flex", justifyContent: "left", outline: "none", border:"none"}}>Add current industry</Button>
         <Modal  isOpen={isOpen} onClose={onClose}>
          <ModalOverlay/>
          <ModalContent>
@@ -35,7 +35,7 @@ export default function AddIndustry(){
         </div>
         </ModalBody>   
         <ModalFooter>
-        <Button colorScheme='blue' mr={3} onClick={onClose}>
+        <Button colorScheme='green' mr={3} onClick={onClose}>
                 Close
         </Button>
             <Button variant='ghost' onClick={addOnBtnPress}>Save</Button>

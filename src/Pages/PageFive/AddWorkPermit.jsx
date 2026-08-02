@@ -18,7 +18,7 @@ export default function AddWorkPermit(){
 
     return(
         <>
-        <Button onClick={onOpen} style={{background: "transparent", height: "32px", color: "blue"}}>Add work permit status</Button>
+        <Button onClick={onOpen} style={{background: "transparent", height: "32px", color: "#2f6b4f"}}>Add work permit status</Button>
         <Modal isOpen={isOpen} onClose={onClose} size="xl">
         <ModalOverlay/>
         <ModalContent> 
@@ -39,7 +39,7 @@ export default function AddWorkPermit(){
         </div>
         </ModalBody> 
         <ModalFooter>
-        <Button colorScheme='blue' mr={3} onClick={onClose}>
+        <Button colorScheme='green' mr={3} onClick={onClose}>
                 Close
         </Button>
             <Button variant='ghost' onClick={addOnBtnPress}>Save</Button>

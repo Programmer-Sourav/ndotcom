@@ -24,7 +24,7 @@ export default function PresentationModal(){
     
     return(
         <>
-        <Button onClick={onOpen}  style={{height: "32px", outline: "none", color: "blue", backgroundColor: "white"}}>Add</Button>   {/*onOpen prop will be supplied to button onClick*/}
+        <Button onClick={onOpen}  style={{height: "32px", outline: "none", color: "#2f6b4f", backgroundColor: "white"}}>Add</Button>   {/*onOpen prop will be supplied to button onClick*/}
         <Modal isOpen={isOpen} onClose={onClose} size="xl"> {/* Modal will receive isOpen prop to open */}
         <ModalOverlay/> 
         <ModalContent>   
@@ -40,7 +40,7 @@ export default function PresentationModal(){
         </div>  
         </ModalBody>
         <ModalFooter>
-              <Button colorScheme='blue' mr={3} onClick={onClose}>
+              <Button colorScheme='green' mr={3} onClick={onClose}>
                 Close
               </Button>
               <Button variant='ghost' onClick={addOnBtnPress}>Save</Button>

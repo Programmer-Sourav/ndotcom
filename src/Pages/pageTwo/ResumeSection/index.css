@@ -10,7 +10,7 @@
     width: 240px;
     min-width: 240px;
     background: #fff;
-    border: 1px solid #e4e5e8;
+    border: 1px solid #e1d9c4;
     border-radius: 12px;
     padding: 16px;
     height: fit-content;
@@ -21,10 +21,10 @@
 .child-left h3 {
     font-size: 14px;
     font-weight: 600;
-    color: #333;
+    color: #232620;
     margin: 0 0 12px 0;
     padding-bottom: 12px;
-    border-bottom: 1px solid #e4e5e8;
+    border-bottom: 1px solid #e1d9c4;
 }
 
 .quick-link {
@@ -39,19 +39,19 @@
 }
 
 .quick-link:hover {
-    background-color: #f5f7fa;
+    background-color: #f5f0e2;
 }
 
 .quick-link a {
     text-decoration: none;
     font-size: 14px;
-    color: #333;
+    color: #232620;
     font-weight: 500;
 }
 
 .quick-link i {
     font-size: 12px;
-    color: #8292b4;
+    color: #6f7a68;
 }
 
 .child-left div {
@@ -70,7 +70,7 @@
 
 .child-right > div {
     padding: 20px;
-    border: 1px solid #e4e5e8;
+    border: 1px solid #e1d9c4;
     border-radius: 12px;
     background: #fff;
     margin-bottom: 16px;
@@ -79,19 +79,19 @@
 
 .child-right div b {
     font-size: 16px;
-    color: #333;
+    color: #232620;
 }
 
 .child-right div b span {
     font-size: 14px;
-    color: #0ea581;
+    color: #3f8562;
     font-weight: 500;
     margin-left: 8px;
 }
 
 .child-right div p {
     font-size: 14px;
-    color: #666;
+    color: #5c6355;
     line-height: 1.6;
     margin: 8px 0 0 0;
 }
@@ -99,29 +99,29 @@
 /* Resume Upload Section */
 .up-resume-btn {
     text-align: center;
-    border: 2px dashed #457eff !important;
+    border: 2px dashed #2f6b4f !important;
     border-radius: 12px;
     padding: 32px 20px !important;
-    background: #f8faff !important;
+    background: #f6f2e6 !important;
     transition: all 0.2s ease;
 }
 
 .up-resume-btn:hover {
-    background: #eef4ff !important;
-    border-color: #1f4fad !important;
+    background: #eef1e4 !important;
+    border-color: #1c4530 !important;
 }
 
 .up-resume-btn p {
     margin: 0 0 8px 0;
-    color: #666;
+    color: #5c6355;
 }
 
 .up-resume-btn button {
     padding: 10px 24px;
     background-color: #fff;
-    border: 1px solid #457eff;
-    color: #457eff;
-    border-radius: 20px;
+    border: 1px solid #2f6b4f;
+    color: #2f6b4f;
+    border-radius: 8px;
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
@@ -130,7 +130,7 @@
 }
 
 .up-resume-btn button:hover {
-    background-color: #457eff;
+    background-color: #2f6b4f;
     color: #fff;
 }
 
@@ -140,7 +140,7 @@
     align-items: center;
     margin-top: 16px;
     border: none !important;
-    background: linear-gradient(135deg, #ecf5ff 0%, #e8f0fe 100%) !important;
+    background: linear-gradient(135deg, #eef1e4 0%, #eaf1e7 100%) !important;
     border-radius: 12px !important;
     padding: 20px !important;
 }
@@ -160,7 +160,7 @@
 .low-part p span {
     font-size: 16px;
     font-weight: 600;
-    color: #333;
+    color: #232620;
     display: block;
     margin-bottom: 4px;
 }
@@ -168,7 +168,7 @@
 .low-part a {
     text-decoration: none;
     font-size: 14px;
-    color: #457eff;
+    color: #2f6b4f;
     font-weight: 600;
     white-space: nowrap;
     margin-left: 16px;
@@ -181,7 +181,7 @@
 /* Resume Headline Section */
 .resume-headline {
     margin-top: 16px;
-    border: 1px solid #e4e5e8 !important;
+    border: 1px solid #e1d9c4 !important;
     box-shadow: 0 1px 4px rgba(0,0,0,0.04);
 }
 
@@ -202,7 +202,7 @@
 
 .add-headline a {
     text-decoration: none;
-    color: #457eff;
+    color: #2f6b4f;
     font-size: 14px;
     font-weight: 600;
 }
@@ -213,7 +213,7 @@
 
 .headline-para {
     font-size: 14px !important;
-    color: #666 !important;
+    color: #5c6355 !important;
     margin-top: 12px !important;
 }
 
@@ -223,7 +223,7 @@
 .personal-profile,
 .add-projects,
 .acomplishments {
-    border: 1px solid #e4e5e8 !important;
+    border: 1px solid #e1d9c4 !important;
     margin: 0 !important;
     border-radius: 12px !important;
 }
@@ -254,8 +254,8 @@
     .quick-link {
         flex: 0 0 auto;
         padding: 8px 12px;
-        background: #f5f7fa;
-        border-radius: 20px;
+        background: #f5f0e2;
+        border-radius: 8px;
     }
 
     .quick-link i {
